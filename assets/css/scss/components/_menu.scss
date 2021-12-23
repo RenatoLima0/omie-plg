@@ -1,0 +1,173 @@
+// MENU 
+.nav-mobile {
+  background-color: $heavyBlue;
+  display: block;
+  padding: 2rem .5rem 1rem;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+
+  .cta.transparent-cta {
+    color: #fff;
+    border: 2px solid #fff;
+    margin-left: 1rem;
+  }
+  
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .menu-hamburguer {
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    .traco {
+      background-color: #fff;
+      border-radius: 10px;
+      height: 4px;
+      margin: 4px 0;
+      transition: 0.5s;
+      width: 100%;
+    }
+
+    .traco-1,
+    .traco-3 {
+      transform-origin: center right;
+    }
+
+    .traco-1 {
+      margin: 0 0 4px 0;
+    }
+
+    .traco-3 {
+      margin: 4px 0 0 0;
+    }
+  }
+
+  .menu-hamburguer.ativo {
+    .traco-1 {
+      transform: rotateZ(-45deg);
+    }
+
+    .traco-2 {
+      opacity: 0;
+    }
+
+    .traco-3 {
+      transform: rotateZ(45deg);
+    }
+  }
+
+  .items-menu {
+    background-color: #fff;
+    position: fixed;
+    transform: translateX(-150%);
+    transition: .3s;
+  }
+}
+
+@media (min-width: 428px){
+  .nav-mobile {
+    padding: 2rem 1.5rem 1rem;
+
+    .menu-hamburguer {
+      width: 2.75rem;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .nav-mobile {
+    .cta.transparent-cta {
+      margin-left: 15rem;
+      padding: 0.625rem 4rem;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .nav-mobile .cta.transparent-cta {
+    margin-left: 30rem;
+  }
+}
+
+@media (min-width: 1320px){
+  .nav-desktop {
+    background: #fff;
+    padding: 1.5rem $paddingFluidXDesktop;
+    // position: fixed;
+    top: 0;
+    width: 100%;
+
+
+    .logo-omie-menu {
+      display: flex;
+
+      img {
+        width: 70%;
+      }
+    }
+
+    .items-menu {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0 0;
+      padding: 0;
+
+      li {
+        margin: 0 .5rem;
+      }
+
+      a {
+        font-weight: 500;
+        opacity: .7;
+        padding: 1rem .75rem;
+        transition: .3s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .btns-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .entrar {
+      font-weight: 700;
+    }
+
+    .cta.transparent-cta {
+      border: 2px solid $heavyBlue;
+      padding: .5rem 1.5rem;
+    }
+  }
+
+  .margin-menu {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1920px){
+  .nav-desktop {
+    .logo-omie-menu {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

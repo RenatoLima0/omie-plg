@@ -11,7 +11,8 @@
     "gulp-sass": "^3.2.1",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.1",
-    "nouislider": "^15.1.1"
+    "nouislider": "^15.1.1",
+    "owl.carousel": "^2.3.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

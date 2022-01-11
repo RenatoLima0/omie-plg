@@ -303,8 +303,8 @@ form .btn {
 // =============================
 .form-progress {
 	position: relative;
-	display: none;
-	margin: 3rem auto;
+	display: block;
+	margin: 1rem auto;
 	width: 100%;
 	max-width: 400px;
 }
@@ -335,7 +335,7 @@ progress {
 
 .form-progress-indicator {
 	position: absolute;
-	top: -6px;
+	top: -3px;
 	left: 0;
 	display: inline-block;
 	width: 20px;
@@ -347,16 +347,37 @@ progress {
 	transition-delay: .3s;
 	will-change: transform;
 	
-	&.one		{ left: 0; }
-	&.two 	{ left: 33%; }
-	&.three { left: 66%; }	
-	&.four 	{ left: 100%; }	
-	
 	&.active {
 		animation: bounce .5s forwards;
 		animation-delay: .5s;
 		border-color: $lightBlue;
 	}
+}
+
+.form-progress-indicator.trial {
+	&.one		{ left: 0; }
+	&.two 	{ left: 20%; }
+	&.three { left: 40%; }	
+	&.four 	{ left: 60%; }	
+	&.five 	{ left: 80%; }	
+	&.six 	{ left: 100%; }	
+}
+
+.form-progress-indicator.fit {
+	&.one		   { left: 0; }
+	&.two 	   { left: 7.7%; }
+	&.three    { left: 15.4%; }	
+	&.four 	   { left: 23.1%; }	
+	&.five 	   { left: 30.8%; }	
+	&.six 	   { left: 38.5%; }	
+	&.seven    { left: 46.2%; }	
+	&.eight	   { left: 53.9%; }	
+	&.nine 	   { left: 61.6%; }	
+	&.ten 	   { left: 69.3%; }	
+	&.eleven   { left: 77.7%; }	
+	&.twelve   { left: 85.4%; }	
+	&.thirteen { left: 93.1%; }	
+	&.fourteen { left: 100.8%; }	
 }
 
 // =============================
@@ -528,6 +549,14 @@ progress {
 			}
 		}
 	}
+
+	.form-progress {
+		max-width: 500px;
+	}
+
+	.section.active {
+    margin: 3rem 1.5rem 0;
+	}
 }
 
 @media(min-width: 1024px) and (min-height: 1366px) {
@@ -561,7 +590,7 @@ progress {
 
 	.section.active {
     margin: 0 0 0 0;
-		padding: 4rem 1.5rem 3rem;
+		padding: 2.5rem 1.5rem 3rem;
 	}
 
 	form {

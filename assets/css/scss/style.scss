@@ -48,6 +48,20 @@ a:hover {
   border: 3px solid $heavyBlue;
 }
 
+// PÁGINA FIT
+.select-seg {
+  position: relative;
+}
+
+.btns-active-fit {
+  .cta.blue-cta {
+    background-color: #dedede;
+    border: 1px solid #dedede;
+    cursor: not-allowed;
+  }
+}
+// PÁGINA FIT
+
 // FOOTER 
 footer {
 

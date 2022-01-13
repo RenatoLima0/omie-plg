@@ -9,6 +9,7 @@ $paddingFluidXDesktop: 2rem;
 
 @import "components/menu";
 @import "components/forms";
+@import "pages/about";
 
 *, a {
   color: $heavyBlue;
@@ -59,6 +60,13 @@ a:hover {
     border: 1px solid #dedede;
     cursor: not-allowed;
   }
+}
+
+.box-default {
+  padding: 80px;
+}
+.mb-80 {
+  margin-bottom: 80px;
 }
 // PÁGINA FIT
 

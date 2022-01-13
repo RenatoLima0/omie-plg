@@ -1,0 +1,358 @@
+@import "../theme";
+
+.banner-about-us {
+  background-color: #001e27;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  flex-direction: column;
+  background-image: url(../images/about-us/pattern1.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 600px;
+
+  h1, h2 {
+    color: $color-white;
+    font-size: 2.8em;
+    line-height: 56px;    
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: $color-white;
+    font-size: 1.4em;
+    line-height:32px;
+  }
+}
+
+.box-banner {
+  max-width: 880px;
+  text-align: center;
+  width: 100%;
+}
+
+.box-card {
+  display: flex;
+  justify-content: space-around;
+
+  &.banner-box-card {
+    background-image: url(../images/about-us/pattern2.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 240px;
+    align-items: flex-start;
+  } 
+
+  div {
+    background: $color-white;
+    width: 397px;    
+    padding: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 56, 73, 0.06);
+    border-radius: 8px;
+    &.box1 {
+      margin-top: -210px;
+      height:178px;
+    }    
+
+    label {
+      line-height: 24px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      line-height: 32px;
+      margin: 0 0 16px 0;
+      font-weight: 700;
+    }
+    
+    p {
+      margin: 0;
+      font-size: 1em;
+      line-height: 24px;
+    }
+  }
+}
+
+.sub-title {
+  font-size: 2em;
+  color: #001E27;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  .grid-item {
+    padding: 24px 64px;  
+
+    h3 {
+      font-size: 1.4em;
+      line-height:32px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 24px;
+    }
+  }
+}
+
+.box-bussiness {
+  div {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 24px 24px 0 24px;
+    width: 397px;
+
+    h3 {
+      color: #F7F7F7;
+      font-size: 1.4em;
+    }
+
+    p {
+      color: #F7F7F7;
+      font-size: 1em;
+    }
+  }
+}
+
+.box-info {
+  width: 397px;
+  padding: 24px;
+
+  h3 {
+    font-size: 2em;
+    line-height: 40px;
+  }
+
+  p {
+    font-size: 1.4em;
+    line-height: 32px;
+  }
+}
+
+.box-tab {
+  max-width: 600px;
+  width: 100%;
+
+  ul {
+    padding: 0;
+    border-bottom: 1px solid #DBDFDE;
+    display: flex;
+    li {
+      width: 300px;
+      list-style: none;
+      text-align: center;
+      font-size: 1em;
+      cursor: pointer;
+      &.active {
+        border-bottom: 2px #00E2F4 solid;
+      }
+    }
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+
+    img {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.box-list {
+  max-width: 607px;
+  width: 100%;
+  background-image: url(../images/about-us/play-laranja.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 420px;
+
+  ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+    li {     
+      list-style: none;
+      font-size: 1em;   
+      background: #FFFFFF;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      padding: 24px;
+      height: auto;
+      margin-bottom: 32px; 
+
+      div {
+        div {
+          width: 410px;
+        }
+      }
+    }
+  }
+}
+.box-info-list {
+  max-width: 454px;
+  width: 100%;
+  padding: 24px;
+}
+
+.box-work {
+  max-width: 397px;
+  width: 100%;
+  width: 100%;
+  padding: 24px;
+  margin-right: 80px;
+  margin-top: 80px;
+
+  h4 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  button {
+    background-color: #00E2F4;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 1000px;
+  }
+}
+
+.box-video {
+  background: #F7F7F7;
+  border-radius: 16px;
+  height: 320px;
+  margin-top: 160px;
+
+  img {
+    position: absolute;
+    top: -30px;
+  }
+
+  div {
+    max-width: 398px;
+    width: 100%;
+    float: right;
+
+    p {
+      line-height: 32px;
+      font-size: 1.4em;
+      color: #001E27;
+
+      &:nth-of-type(2) {
+        font-weight: bold;
+        font-size: 0.9em;
+
+        span {
+          font-weight: normal;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }  
+}
+
+.box-card-news {
+  img {
+    border-radius: 16px 16px 0 0;
+  }
+
+  div {
+    max-width: 397px;
+    width: 100%;
+    border: 1px solid #C2D4D6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .info-box {
+      border: none;
+      padding: 24px;
+      height: auto;
+
+      h4 {
+        font-size: 1.4em;
+        line-height: 32px;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 24px;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-end;
+
+        button {
+          background: none;  
+          border: none;        
+          font-weight: 700;
+          padding: 0;
+          margin-top: 40px;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.box-mb-200{  
+  margin-bottom: -220px;
+}
+
+.bg-light {
+  background: #F7F7F7;
+}
+
+.banner-mid {  
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(../images/about-us/pattern3.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right;
+
+  img:nth-of-type(1)  {
+    margin-top: 40px;
+  }
+
+  img:nth-of-type(2) {
+    width: 1100px;
+  }
+}
+
+.pattern-video {
+  background-image: url(../images/about-us/pattern4.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0px 360px;
+}

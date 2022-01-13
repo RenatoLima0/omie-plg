@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omie PLG</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="">
+  <nav class="nav-mobile d-xl-none">
+    <header>
+      <a href="/" class="link-nav-mobile">
+        <img src="assets/images/logo-omie.png" alt="Destaques" class="">
+      </a>
+
+      <a href="" class="cta transparent-cta">Experimente</a>
+
+      <div class="menu-hamburguer">
+        <span class="traco traco-1"></span>
+        <span class="traco traco-2"></span>
+        <span class="traco traco-3"></span>
+      </div>
+    </header>
+
+    <div class="items-menu">
+      <!-- <form class="form-group" action="">
+        <input type="text" class="form-control" placeholder="Digite o que deseja">
+        <button type="submit" class="cta dark-cta"> Buscar </button>
+      </form> -->
+
+      <a class="cta menu btn-comercial green-cta btn-comercial-tag" data-bs-toggle="modal" data-bs-target="#modal-menu-comercial" data-eventlabel="falar-com-especialista" data-category="omie-menu" data-eventaction="intencao-clique-botao" data-lead="intencao-comercial">Falar com especialista</a>
+      <a class="cta menu btn-experimente blue-cta btn-comercial-tag" data-bs-toggle="modal" data-bs-target="#modal-menu-experimente" data-eventlabel="experimente" data-category="omie-menu" data-eventaction="intencao-clique-botao" data-lead="intencao-trial">Experimente</a>
+
+      <hr>
+
+      <a href="https://app.omie.com.br/" rel="noreferrer" class="login-cta">Entrar</a>
+
+      <a href="#" class="btn dropdown-toggle" rel="noreferrer"> Soluções </a>
+      <div class="sub-menu">
+        <ul>
+          <li class="fecha-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            Voltar
+          </li>
+          <li class="title-menu">Para empreendedores</li>
+          <li class="btn">
+            <a href="/sistema-erp/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-full" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Full <br> <small>Sistema de gestão completo</small></a>
+          </li>
+          <li class="btn">
+            <a href="/fit/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-fit" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.FIT <br> <small>Sistema ERP grátis</small></a>
+          </li>
+          <li class="btn">
+            <a href="/omie-cash/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-cash" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Cash <br> <small>Conta corrente digital</small></a>
+          </li>
+          <li class="btn">
+            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-academy" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Academy <br> <small>Cursos</small></a>
+          </li>
+          <li class="btn">
+            <a href="https://store.omie.com.br/" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-store" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Store <br> <small>Loja de Apps</small></a>
+          </li>
+          <li class="btn">
+            <a href="/treinamento/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="treinamentos" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Treinamentos</a>
+          </li>
+          <li class="btn">
+            <a href="/credito/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="credito-empresarial" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Crédito empresarial</a>
+          </li>
+
+          <li class="title-menu">Para contadores</li>
+          <li class="btn">
+            <a href="/contadores/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="contabilidade-digital" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Contabilidade digital</a>
+          </li>
+          <li class="btn">
+            <a href="/sistema-erp/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-full" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Full <br> <small>Sistema de gestão completo</small></a>
+          </li>
+          <li class="btn">
+            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-academy" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Academy <br> <small>Cursos</small></a>
+          </li>
+          <li class="btn">
+            <a href="/infinity/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-infinity" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Infinity</a>
+          </li>
+          <li class="btn">
+            <a href="/seja-franqueado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="franquias" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Franquias</a>
+          </li>
+          <li class="btn">
+            <a href="https://oneflow.com.br/" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="oneflow" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Oneflow</a>
+          </li>
+          <li class="btn">
+            <a href="/credito/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="credito-empresarial" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Crédito empresarial</a>
+          </li>
+          <li class="btn">
+            <a href="/simbiose/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="simbiose" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Simbiose</a>
+          </li>
+          <li class="btn">
+            <a href="https://www.aceleresuadigitalizacao.com.br/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="acelere-digitalizacao" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Acelere sua digitalização</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <a href="#" class="btn dropdown-toggle">Recursos do sistema</a>
+      <div class="sub-menu">
+        <ul>
+          <li class="fecha-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            Voltar
+          </li>
+          <li class="title-menu">Para o seu negócio</li>
+          <li class="btn">
+            <a href="/segmentos/marketing-e-propaganda/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="agencia-marketing" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Agência de marketing</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/bares/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="bares-restaurantes" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Bares e restaurantes</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/comercio/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="comercio" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Comércio</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/construcao-civil/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="construcao-civil" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Construção civil</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/distribuidoras/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="distribuidoras" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Distribuidoras</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/sistema-erp-industria/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="industrias" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Indústrias</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/transportes/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="logistica" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Logística</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/loja-de-varejo-e-atacado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="varejo" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">PDV para lojas</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/servicos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="servicos" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Serviços</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Ver todos</a>
+          </li>
+
+          <li class="title-menu">Módulos</li>
+          <li class="btn">
+            <a href="/modulos/compras-estoque-e-producao/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="compras-estoque" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Compras e estoque</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/crm/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="crm" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">CRM</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/financas/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="financas" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Finanças</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/painel-do-contador/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="painel-contador" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Painel do contador</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/compras-estoque-e-producao/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="producao-custos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Produção e custos</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/servicos-e-nfs-e/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="servicos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Serviços</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/vendas-e-nfe/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="vendas" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Vendas</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Ver todos</a>
+          </li>
+
+          <li class="title-menu">Funcionalidades</li>
+          <li class="btn">
+            <a href="/funcionalidades/conciliacao-bancaria/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="conciliacao-bancaria" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Conciliação bancária</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/controle-financeiro-empresarial/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="controle-financeiro" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Controle financeira</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/emissao-de-boletos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="emissao-de-boletos" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Emissão de boletos</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/gerenciamento-de-estoque/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="gerenciamento-estoque" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Gerenciamento de estoque</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/marketplace/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="marketplace" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Integração com marketplace</a>
+          </li>
+          <!-- <li class="btn">
+            <a href="/funcionalidades/">Inteligência artificial fiscal</a>
+          </li> -->
+          <li class="btn">
+            <a href="/funcionalidades/nota-fiscal/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="nota-fiscal" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Notas fiscais</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/relatorios/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="relatorios" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Relatórios personalizados</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Ver todos</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="/precos/" class="btn plano-preco-menu-mobile btn-interacao-tag" rel="noreferrer" data-eventlabel="plano-preco" data-category="omie-menu-plano-preco" data-eventaction="plano-preco-clique-botao"> Plano e preços </a>
+
+      <a href="#" class="btn dropdown-toggle"> Omie pra Você </a>
+      <div class="sub-menu">
+        <ul>
+          <li class="fecha-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            Voltar
+          </li>
+          <li class="title-menu">Quem somos?</li>
+          <li class="btn">
+            <a href="#">SEJA OMIE</a>
+          </li>
+          <li class="btn">
+            <a href="/seja-franqueado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="seja-franqueado" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Seja franqueado</a>
+          </li>
+          <li class="btn">
+            <a href="/unidades-franqueadas/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="unidades-franqueadas" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Unidades franqueadas</a>
+          </li>
+          <li class="btn">
+            <a href="/contadores/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="parceiros" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Seja parceiro</a>
+          </li>
+          <li class="btn">
+            <a href="https://trabalheconosco.vagas.com.br/omie" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="trabalhe-conosco" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Trabalhe conosco</a>
+          </li>
+          <li class="btn">
+            <a href="/sobre/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="sobre" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Sobre nós</a>
+          </li>
+          <li class="btn">
+            <a href="/suporte/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="suporte" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Suporte</a>
+          </li>
+          <li class="btn">
+            <a href="https://developer.omie.com.br/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="developer" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Developer</a>
+          </li>
+          <li class="btn">
+            <a href="https://ajuda.omie.com.br/pt-BR/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="ajuda" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Ajuda</a>
+          </li>
+          <li class="title-menu">Conteúdo</li>
+          <li class="btn">
+            <a href="https://blog.omie.com.br/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank"  class="btn-interacao-tag" rel="noreferrer" data-eventlabel="blog" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Blog</a>
+          </li>
+          <li class="btn">
+            <a href="/imprensa/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="sala-imprensa" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Sala de Imprensa</a>
+          </li>
+          <li class="btn">
+            <a href="https://blog.omie.com.br/categories/empreendedorismo/?utm_source=site&utm_medium=topo&__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="empreendedorismo" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Empreendedorismo</a>
+          </li>
+          <li class="btn">
+            <a href="https://blog.omie.com.br/categories/contadores/?utm_source=site&utm_medium=topo&__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="contabilidade" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Contabilidade</a>
+          </li>
+          <li class="btn">
+            <a href="/eventos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="eventos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Eventos</a>
+          </li>
+          <li class="btn">
+            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="cursos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Cursos</a>
+          </li>
+          <li class="btn">
+            <a href="/treinamento/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="treinamentos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Treinamentos</a>
+          </li>
+          <!-- <li class="btn">
+            <a href="#">Podcasts</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="nav-desktop">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-xl-2">
+          <a href="/" class="logo-omie-menu">
+            <img src="assets/images/logo-omie.png" alt="Logo Omie">
+          </a>
+        </div>
+        <div class="col-xl-9 col-xxl-6 d-flex justify-content-between">
+          <ul class="items-menu">
+            <li><a href="">Empresas</a></li>
+            <li><a href="">Contadores</a></li>
+            <li><a href="">Planos</a></li>
+            <li><a href="">Funcionalidades</a></li>
+            <li><a href="">Franquias</a></li>
+          </ul>
+
+          <div class="btns-menu">
+            <a href="" class="entrar">Entrar</a>
+            <a href="" class="cta transparent-cta">Experimente grátis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="banner-about-us">
+    <div class="box-banner">
+      <h1>Estamos potencializando o crescimento das empresas brasileiras</h1>
+      <p>Nossa missão é alavancar o empreendedorismo brasileiro através de um sistema de gestão intuitivo aliado a um banco digital e educação empreendedora.</p>
+    </div>    
+  </section>
+  <section class="banner-box-card box-default box-card">
+    <div class="box1">
+      <h3>Propósito</h3>
+      <p>Potencializar o crescimento das empresas brasileiras para que elas prosperem cada vez mais.</p>
+    </div>
+    <div class="box1">
+      <h3>Missão</h3>
+      <p>Oferecer uma plataforma que solucione os desafios do dia a dia das empresas de um jeito simples, intuitivo e eficiente.</p>
+    </div>
+    <div class="box1">
+      <h3>Visão</h3>
+      <p>Liderar a transformação digital, facilitando a rotina de empresas e contadores com o objetivo de impulsionar a economia do Brasil.</p>
+    </div>    
+  </section>
+  <section class="box-default">
+    <h2 class="sub-title">No que acreditamos</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <span>
+          <img src="./assets/images/about-us/ico-execucao.svg"/>
+        </span>
+        <h3>Execução</h3>
+        <p>Todos os nossos serviços são executados com excelência.</p>
+      </div>
+      <div class="grid-item">
+        <span>
+          <img src="./assets/images/about-us/ico-confianca.svg"/>
+        </span>
+        <h3>Confiança</h3>
+        <p>Confiamos na lealdade e na transparência dos integrantes da nossa equipe.</p>
+      </div>
+      <div class="grid-item">
+        <span>
+          <img src="./assets/images/about-us/ico-experiencia.svg"/>
+        </span>
+        <h3>Experiência</h3>
+        <p>Construímos as melhores experiências a partir dos maiores desafios.</p>
+      </div>
+      <div class="grid-item">
+        <span>
+          <img src="./assets/images/about-us/ico-aprendizado.svg"/>
+        </span>
+        <h3>Aprendizado</h3>
+        <p>Nosso motor é o aprendizado, acreditamos que é ele que nos diferencia.</p>
+      </div>
+      <div class="grid-item">
+        <span>
+          <img src="./assets/images/about-us/ico-paixao.svg"/>
+        </span>
+        <h3>Paixão</h3>
+        <p>Trabalhamos com paixão e é isso que nos mobiliza de forma incansável.</p>
+      </div>
+      <div class="grid-item">
+        <span>
+          <img src="./assets/images/about-us/ico-crescimento.svg"/>
+        </span>
+        <h3>Crescimento</h3>
+        <p>Assumimos os riscos como uma forma de crescer e nos empoderar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="box-default box-mb-200">
+    <h2 class="sub-title">Nossa trajetória de sucesso</h2>
+    <div class="box-card">
+      <div>
+        <label>2013</label>
+        <h3>Omiexperience S/A</h3>
+        <p>Nascemos e crescemos rapidamente, em sintonia à comunidade contábil.</p>
+      </div>
+      <div>
+        <label>2014</label>
+        <h3>1° aporte: 
+          Astella Venture Capital</h3>
+        <p>Reforçamos o papel dos contadores, através de parcerias com o SESCON SP e RJ.</p>
+      </div>
+      <div>
+        <label>2015</label>
+        <h3>Expansão Regional</h3>
+        <p>Inauguramos o plano de franquias com unidades próprias em SP e RJ.</p>
+      </div>    
+    </div>
+  </section>
+
+  <section class="box-default banner-about-us banner-mid">
+    <div class="box-banner">
+      <h2>Vamos impulsionar seu negócio</h2>
+      <p>Queremos alavancar o empreendedorismo brasileiro através de uma plataforma que reune gestão, finanças e educação.</p>
+    </div>    
+    <img src="./assets/images/logo-omie.png" />
+    <img src="./assets/images/about-us/setas-grafismo.png" />
+    
+    <div class="d-flex box-bussiness w-100 justify-content-around">
+      <div>
+        <h3>Gestão</h3>
+        <p>Um sistema de gestão eficiente onde você controla todas as áreas da sua empresa de um jeito simples e rápido.</p>
+      </div>
+      <div>
+        <h3>Finanças</h3>
+        <p>Todas as funcionalidades de um banco digital diretamente no sistema de gestão, para facilitar o seu dia a dia.</p>
+      </div>
+      <div>
+        <h3>Educação</h3>
+        <p>Cursos gratuitos com os melhores profissionais do mercado para potencializar as habilidades da sua equipe e impulsionar seu negócio.</p>
+      </div>    
+    </div>
+  </section>
+  <section class="pattern-video">
+    <div class="box-default">
+      <div class="d-flex justify-content-between">
+        <div class="box-info mb-80">
+          <h3>Empresas que estão apostando no nosso crescimento</h3>
+          <p>Recebemos investimentos milionários e contamos com parceiros influentes no mercado.</p>
+        </div>    
+        <div class="box-tab">
+          <ul>
+            <li class="active">Investidores</li>
+            <li>Parceiros</li>
+          </ul>
+          <div>
+          <img src="./assets/images/about-us/logo-ace.png">
+          <img src="./assets/images/about-us/logo-aws.png">
+          <img src="./assets/images/about-us/logo-softbank.png">
+          <img src="./assets/images/about-us/logo-itau.png">
+          </div>
+        </div>
+      </div>
+      <div class="box-default position-relative box-video">
+        <img src="./assets/images/about-us/video.png">
+        <div>
+          <p>“Com a parceria com a Omie a gente consegue ajudar o cliente a tomar a melhor decisão e acompanhar sua evolução.”</p>
+          <p>Fabio Oberle <span>Contador consultivo Omie</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between box-default px-0">
+      <div class="box-info-list mb-80">
+        <h3>Fique por dentro</h3>
+        <p>As principais notícias e eventos sobre o setor que mais cresce no Brasil, em um só lugar.</p>
+      </div>    
+      <div class="box-list">
+        <ul>
+          <li>
+            <div class="d-flex justify-content-between align-items-start">
+              <img src="./assets/images/about-us/ico-imprensa.svg" />
+              <div>
+                <h5>Imprensa</h5>
+                <p>Acompanhe as principais novidades sobre a Omie.</p>
+              </div>
+              <img src="./assets/images/Arrow-right.png">
+            </div>
+          </li>
+          <li>
+            <div class="d-flex justify-content-between align-items-start">
+              <img src="./assets/images/about-us/ico-localizacao.svg" />
+              <div>
+                <h5>Eventos</h5>
+                <p>Participe de eventos presenciais e virtuais sobre o ecossistema Omie.</p>
+              </div>
+              <img src="./assets/images/Arrow-right.png">
+            </div>
+          </li>          
+        </ul>
+      </div>
+    </div> 
+  </section>
+  <section class="box-defult d-flex justify-content-between bg-light">
+    <img src="./assets/images/about-us/img-trabalheconosco.png" />
+    <div class="box-work">
+      <h4>Trabalhe <br> conosco</h4>
+      <p>Faça parte do time que está revolucionando o mercado.</p>
+      <button>Conheça nossas vagas</button>
+    </div>
+  </section>
+
+  <section class="box-default">
+    <h2 class="sub-title">Novidades e conteúdos exclusivos para empreender da melhor forma</h2>
+   <div class="box-card-news d-flex justify-content-between">
+     <div>
+      <img src="./assets/images/about-us/video.png">
+       <div class="info-box">
+        <h4>O que são e como funcionam as microfranquias?</h4>
+        <p>As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!</p>
+        <div>
+          <button>Saiba Mais</button>
+          <img src="./assets/images/Arrow-right.png">
+        </div>       
+      </div>
+     </div>
+
+     <div>
+      <img src="./assets/images/about-us/video.png">
+      <div class="info-box">
+       <h4>O que são e como funcionam as microfranquias?</h4>
+       <p>As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!</p>
+       <div>
+        <button>Saiba Mais</button>
+        <img src="./assets/images/Arrow-right.png">
+      </div>     
+     </div>
+    </div>
+
+    <div>
+      <img src="./assets/images/about-us/video.png">
+      <div class="info-box">
+       <h4>O que são e como funcionam as microfranquias?</h4>
+       <p>As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!</p>
+        <div>
+          <button>Saiba Mais</button>
+          <img src="./assets/images/Arrow-right.png">
+        </div>      
+     </div>
+    </div>
+   </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container con-partners">
+      <div class="row">
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-astella.png" alt="">
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-softbank.png" alt="">
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-riverwood.png" alt="">
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-aws.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row d-lg-none">
+        <div class="col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Contadores</button>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Franquias
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Empresas
+              </button>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Segurança e privacidade
+              </button>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                A Omie
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="anchor-links">
+              <li><a href="">Ajuda</a></li>
+              <li><a href="">Fale conosco</a></li>
+              <li><a href="">Experimente grátis</a></li>
+              <li><a href="">Funcionalidades</a></li>
+              <li><a href="">Cursos Omie.Academy</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center d-none d-lg-flex">
+        <div class="col-lg-3">
+          <ul class="links-site">
+            <li class="list-title">Contadores</li>
+            <li><a href="">Omie para contadores</a></li>
+            <li><a href="">Seja Parceiro</a></li>
+            <li><a href="">Produtos para contadores</a></li>
+            <li><a href="">Clube de vantagens</a></li>
+          </ul>
+
+          <ul class="links-site">
+            <li class="list-title">Franquias</li>
+            <li><a href="">Benefícios</a></li>
+            <li><a href="">Unidades franqueadas</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="links-site">
+            <li class="list-title">Empresas</li>
+            <li><a href="">Omie para empresas</a></li>
+            <li><a href="">Planos</li>
+            <li><a href="">Omie.Cash</a></li>
+            <li><a href="">Produtos financeiros</a></li>
+            <li><a href="">Treinamentos</a></li>
+            <li><a href="">Loja de aplicativos</a></li>
+          </ul>
+
+          <ul class="links-site">
+            <li class="list-title">Segurança e privacidade</li>
+            <li><a href="">Política de privacidade</a></li>
+            <li><a href="">Segurança de informação</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="links-site links-unique">
+            <li class="list-title">A Omie</li>
+            <li><a href="">Quem somos</a></li>
+            <li><a href="">Parceiros</a></li>
+            <li><a href="">Quem ama usa</a></li>
+            <li><a href="">Sala de imprensa</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Carreiras</a></li>
+            <li><a href="">Eventos</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="links-site links-unique">
+            <li><a href="" class="list-title">Ajuda</a></li>
+            <li><a href="" class="list-title">Fale conosco</a></li>
+            <li><a href="" class="list-title">Experimente grátis</a></li>
+            <li><a href="" class="list-title">Funcionalidades</a></li>
+            <li><a href="" class="list-title">Cursos Omie.Academy</a></li>
+            <li><a href="" class="list-title">Desenvolvedores</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-heavy-blue">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-md-3 col-lg-2 order-md-1 d-none d-md-block">
+          <a href="/" class="logo-omie-footer">
+            <img src="assets/images/logo-omie.png" alt="Logo Omie footer">
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 order-md-3">
+          <div class="row social">
+            <div class="col-3 text-center">
+              <a href="https://www.facebook.com/omieoficial" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/facebook.svg" alt="Facebook Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="https://www.instagram.com/omieoficial/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/insta.svg" alt="Instagram Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="https://www.linkedin.com/company/omie/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/linkedin.svg" alt="Linkedin Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="https://www.youtube.com/user/omiexperience" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/youtube.svg" alt="Youtube Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-7 text-center order-md-2">
+          <address class="text-white mb-0">Av. Jurubatuba, 460 - São Paulo - SP <br class="d-block d-md-none"> 0800 942 7592</address>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

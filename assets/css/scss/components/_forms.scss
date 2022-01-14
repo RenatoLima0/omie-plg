@@ -6,6 +6,7 @@ $page-animDuration: .2s;
   min-height: calc(100vh - 82px);
   display: flex;
 	justify-content: center;
+	position: relative;
   transition: $page-animDuration;
 
   .col-initial {
@@ -459,6 +460,54 @@ progress {
 	height: 100%;
 }
 
+.sec-tab {
+	bottom: 0;
+	background-color: #fff;
+	left: 0;
+	padding: .5rem 0;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	.div-tabs {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.progress-tab {
+		max-width: 279px;
+		width: calc(100% - 112px);
+	}
+
+	.seta-tab {
+		cursor: pointer;
+		padding: 1rem;
+	}
+
+	.lista-tab {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0 0;
+		padding: 0;
+
+		div {
+			position: relative;
+			height: 4px;
+			width: 16px;
+			background-color: #ECEEEE;
+			transition: .3s;
+			
+			&.active {
+				width: 32px;
+				background-color: $lightBlue;
+			}
+		}
+	}
+}
+
 @media(min-width: 768px){
 	.section.active {
 		margin: 5rem 1.5rem 0;
@@ -642,5 +691,11 @@ progress {
 			font-size: 1rem;
 			margin: 1.5rem 0 1rem;
 		}
+	}
+}
+
+@media(min-width: 1920px) {
+	.header-form {
+    max-width: 1320px;
 	}
 }

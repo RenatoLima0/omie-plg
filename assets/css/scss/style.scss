@@ -541,7 +541,6 @@ footer {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0;
-  height: 600px;
 
   div:nth-of-type(2) {
     padding: 0 350px 0 0;
@@ -787,4 +786,43 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   padding: 24px;
+}
+
+.input-full {
+  max-width: 761px;
+}
+
+.grid-container-2 {
+  grid-template-columns: 49% 49%;
+  display: grid;
+}
+
+.grid-container-3 {
+  grid-template-columns: 33% 33% 33%;
+  display: grid;
+}
+
+.grid-container-4 {
+  grid-template-columns: 24% 24% 24% 24%;
+  display: grid;
+}
+
+.box-funcionalidades {
+  border-radius: 16px;
+  border: 2px solid #DBDFDE;
+  padding: 24px;
+}
+
+.img-box-funcionalidades {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+}
+.img-box-funcionalidades-right {
+  position: absolute;
+  top: 30px;
+  right: 10%;
+}
+.box-map {
+  background:#001E27;
 }

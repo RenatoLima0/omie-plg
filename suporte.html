@@ -295,25 +295,26 @@
       </div>
     </div>
   </nav>
-  <div class="banner-contadores d-flex justify-content-between align-items-center">
+  <div class="banner-contadores d-flex justify-content-between align-items-end">
     <div class="col-md-6">
       <img src="./assets/images/suporte/img-banner.png" />
     </div>
-    <div class="col-md-6">
-      <h1>Fale Conosco</h1>
-      <p>Nossa equipe de atendimento está sempre pronta  para te ajudar a melhorar sua experiência.</p>
+    <div class="col-md-6 info-fale-conosco">
+      <h1 class="mb-3">Fale Conosco</h1>
+      <p>Nossa equipe de atendimento está sempre pronta para te ajudar a melhorar sua experiência.</p>
     </div>
   </div>
   <section class="box-default">
-  <div class="row">
+  <div class="row align-items-start">
     <div class="col-md-6">
+      <div class="box-div-info">
       <h3>Aproveite nossa ajuda especializada para o que precisar</h3>
-        <p>Estamos sempre preparados para tirar todas as suas dúvidas através dos nossos canais de atendimento.
-        </p>
+        <p>Estamos sempre preparados para tirar todas as suas dúvidas através dos nossos canais de atendimento.</p>
+      </div>
     </div>
     <div class="col-md-6">
-      <div class="box-list">
-        <ul>
+      <div class="box-list no-image-bg">
+        <ul class="m-0">
           <li>
             <div class="d-flex justify-content-start align-items-start">
               <img src="./assets/images/about-us/ico-imprensa.svg" />
@@ -323,20 +324,22 @@
               </div>
             </div>
           </li>
-          <li class="row">
-            <div class="d-flex justify-content-start align-items-start col-md-6">
+          <li class="row box-list-info">
+            <div class="d-flex justify-content-start align-items-start col-md-6 info">
               <img src="./assets/images/about-us/ico-localizacao.svg" />
               <div class="ml-2">
                 <h5>Ajuda</h5>
                 <p>Acesse as dicas e respostas da nossa equipe sobre as dúvidas mais frequentes.</p>
               </div>
+              <img src="./assets/images/suporte/setinha.svg" />
             </div>
-            <div class="d-flex justify-content-start align-items-start col-md-6">
+            <div class="d-flex justify-content-start align-items-start col-md-6 info">
               <img src="./assets/images/about-us/ico-localizacao.svg" />
               <div class="ml-2">
                 <h5>Chat</h5>
                 <p>Receba atendimento personalizado, rápido e em tempo real.</p>
               </div>
+              <img src="./assets/images/suporte/setinha.svg" />
             </div>
           </li>    
         </ul>   
@@ -357,32 +360,36 @@
         </div>
         <div class="row mb-3">
           <div class="col-md-6">
-            <input type="text" placeholder="E-mail" />
+            <input type="email" placeholder="E-mail" />
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Telefone" />
+            <input type="phone" placeholder="Telefone" />
           </div>
         </div>
         <div class="col-md-12 mb-3">
           <input type="text" placeholder="Digite sua mensagem e diga como podemos ajudar"  class="input-full"/>
         </div>
-        <button class="btn-thirty float-right mr-3 mt-4">Enviar</button>        
+        <button class="btn-thirty float-right mr-3 mt-4">Enviar <img src="./assets/images/suporte/setinha.svg" /></button>        
       </form>
     </div>
     <div class="col-md-6">
+      <div class="box-div-info">
       <h3>Envie sua mensagem</h3>
         <p>Você pode preencher o formulário ao lado ou enviar um email para <strong>ajuda@omie.com.br</strong></p>
+      </div>
     </div>
   </section>
 
   <section class="box-default pattern-video no-image-bg">   
-    <div class="box-default position-relative box-video mt-0">
-      <img src="./assets/images/about-us/video.png">
-      <div>
-        <p>“Com a parceria com a Omie a gente consegue ajudar o cliente a tomar a melhor decisão e acompanhar sua evolução”</p>
-        <p>Fabio Oberle <span> Contador consultivo, Omie</span></p>
+    <div class="box-default pattern-home-4">   
+      <div class="box-default position-relative box-video pattern-home-5">
+        <img src="./assets/images/about-us/video.png">
+        <div>
+          <p>“Com a parceria com a Omie a gente consegue ajudar o cliente a tomar a melhor decisão e acompanhar sua evolução.”</p>
+          <p>Fabio Oberle <span>Contador consultivo Omie</span></p>
+        </div>
       </div>
-    </div>
+    </div>   
 </section>
 
 

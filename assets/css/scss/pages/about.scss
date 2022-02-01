@@ -101,6 +101,9 @@
 }
 
 .box-bussiness {
+  @media(max-width:980px) {
+    flex-direction: column;
+  }
   div {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
@@ -109,6 +112,10 @@
     padding: 24px 24px 0 24px;
     width: 397px;
     border-bottom: 0!important;
+    @media(max-width:980px) {
+      width: 100%;
+      margin-bottom: 24px;
+    }
 
     &:nth-of-type(1) {
       border-bottom: 4px solid #5E16FF!important;
@@ -207,6 +214,9 @@
 
       label.number {
         font-size: 2.6em;
+        @media(max-width:860px) {
+          font-size: 1.6em;
+        }
       }
 
       div {
@@ -221,6 +231,9 @@
   max-width: 454px;
   width: 100%;
   padding: 24px;
+  @media (max-width:860px) {
+    text-align: center
+  }
 }
 
 .box-work {
@@ -254,18 +267,39 @@
   border-radius: 16px;
   height: 320px;
   margin-top: 160px;
+
+  @media(max-width:1360px) {
+    height: auto;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 16px!important;
+  }
+ 
   @media(max-width:980px) {
     height: auto;
     margin-top: 0;
     overflow: hidden;
+    padding: 16px!important;
   }
 
   img {
     position: absolute;    
     top: -30px;
 
+    @media(max-width:1440px) {
+      width: 45%;
+    }
+
+    @media(max-width:1360px) {
+      top: 0;
+      position:relative;
+    }
+
     @media(max-width:980px) {
       position: relative;
+      top: 0px;
+      width:100%;
+      margin-bottom: 16px;
     }
   }
 
@@ -274,10 +308,21 @@
     width: 100%;
     float: right;
 
+    @media(max-width:1440px) {
+      max-width: 280px;
+    }
+
     p {
       line-height: 32px;
       font-size: 1.4em;
       color: #001E27;
+      @media(max-width:1760px) {
+        font-size: 1em;
+      }
+
+      @media(max-width:980px) {
+        font-size: 1em;
+      }
 
       &:nth-of-type(2) {
         font-weight: bold;

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omie PLG</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="">
+  <nav class="nav-mobile d-xl-none">
+    <header>
+      <a href="/" class="link-nav-mobile">
+        <img src="assets/images/logo-omie.png" alt="Destaques" class="">
+      </a>
+
+      <a href="" class="cta transparent-cta">Experimente</a>
+
+      <div class="menu-hamburguer">
+        <span class="traco traco-1"></span>
+        <span class="traco traco-2"></span>
+        <span class="traco traco-3"></span>
+      </div>
+    </header>
+
+    <div class="items-menu">
+      <!-- <form class="form-group" action="">
+        <input type="text" class="form-control" placeholder="Digite o que deseja">
+        <button type="submit" class="cta dark-cta"> Buscar </button>
+      </form> -->
+
+      <a class="cta menu btn-comercial green-cta btn-comercial-tag" data-bs-toggle="modal" data-bs-target="#modal-menu-comercial" data-eventlabel="falar-com-especialista" data-category="omie-menu" data-eventaction="intencao-clique-botao" data-lead="intencao-comercial">Falar com especialista</a>
+      <a class="cta menu btn-experimente blue-cta btn-comercial-tag" data-bs-toggle="modal" data-bs-target="#modal-menu-experimente" data-eventlabel="experimente" data-category="omie-menu" data-eventaction="intencao-clique-botao" data-lead="intencao-trial">Experimente</a>
+
+      <hr>
+
+      <a href="https://app.omie.com.br/" rel="noreferrer" class="login-cta">Entrar</a>
+
+      <a href="#" class="btn dropdown-toggle" rel="noreferrer"> Soluções </a>
+      <div class="sub-menu">
+        <ul>
+          <li class="fecha-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            Voltar
+          </li>
+          <li class="title-menu">Para empreendedores</li>
+          <li class="btn">
+            <a href="/sistema-erp/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-full" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Full <br> <small>Sistema de gestão completo</small></a>
+          </li>
+          <li class="btn">
+            <a href="/fit/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-fit" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.FIT <br> <small>Sistema ERP grátis</small></a>
+          </li>
+          <li class="btn">
+            <a href="/omie-cash/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-cash" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Cash <br> <small>Conta corrente digital</small></a>
+          </li>
+          <li class="btn">
+            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-academy" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Academy <br> <small>Cursos</small></a>
+          </li>
+          <li class="btn">
+            <a href="https://store.omie.com.br/" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-store" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Store <br> <small>Loja de Apps</small></a>
+          </li>
+          <li class="btn">
+            <a href="/treinamento/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="treinamentos" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Treinamentos</a>
+          </li>
+          <li class="btn">
+            <a href="/credito/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="credito-empresarial" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Crédito empresarial</a>
+          </li>
+
+          <li class="title-menu">Para contadores</li>
+          <li class="btn">
+            <a href="/contadores/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="contabilidade-digital" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Contabilidade digital</a>
+          </li>
+          <li class="btn">
+            <a href="/sistema-erp/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-full" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Full <br> <small>Sistema de gestão completo</small></a>
+          </li>
+          <li class="btn">
+            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-academy" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Academy <br> <small>Cursos</small></a>
+          </li>
+          <li class="btn">
+            <a href="/infinity/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-infinity" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Infinity</a>
+          </li>
+          <li class="btn">
+            <a href="/seja-franqueado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="franquias" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Franquias</a>
+          </li>
+          <li class="btn">
+            <a href="https://oneflow.com.br/" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="oneflow" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Oneflow</a>
+          </li>
+          <li class="btn">
+            <a href="/credito/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="credito-empresarial" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Crédito empresarial</a>
+          </li>
+          <li class="btn">
+            <a href="/simbiose/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="simbiose" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Simbiose</a>
+          </li>
+          <li class="btn">
+            <a href="https://www.aceleresuadigitalizacao.com.br/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="acelere-digitalizacao" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Acelere sua digitalização</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <a href="#" class="btn dropdown-toggle">Recursos do sistema</a>
+      <div class="sub-menu">
+        <ul>
+          <li class="fecha-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            Voltar
+          </li>
+          <li class="title-menu">Para o seu negócio</li>
+          <li class="btn">
+            <a href="/segmentos/marketing-e-propaganda/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="agencia-marketing" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Agência de marketing</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/bares/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="bares-restaurantes" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Bares e restaurantes</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/comercio/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="comercio" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Comércio</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/construcao-civil/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="construcao-civil" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Construção civil</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/distribuidoras/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="distribuidoras" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Distribuidoras</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/sistema-erp-industria/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="industrias" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Indústrias</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/transportes/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="logistica" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Logística</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/loja-de-varejo-e-atacado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="varejo" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">PDV para lojas</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/servicos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="servicos" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Serviços</a>
+          </li>
+          <li class="btn">
+            <a href="/segmentos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Ver todos</a>
+          </li>
+
+          <li class="title-menu">Módulos</li>
+          <li class="btn">
+            <a href="/modulos/compras-estoque-e-producao/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="compras-estoque" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Compras e estoque</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/crm/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="crm" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">CRM</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/financas/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="financas" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Finanças</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/painel-do-contador/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="painel-contador" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Painel do contador</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/compras-estoque-e-producao/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="producao-custos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Produção e custos</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/servicos-e-nfs-e/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="servicos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Serviços</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/vendas-e-nfe/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="vendas" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Vendas</a>
+          </li>
+          <li class="btn">
+            <a href="/modulos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Ver todos</a>
+          </li>
+
+          <li class="title-menu">Funcionalidades</li>
+          <li class="btn">
+            <a href="/funcionalidades/conciliacao-bancaria/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="conciliacao-bancaria" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Conciliação bancária</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/controle-financeiro-empresarial/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="controle-financeiro" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Controle financeira</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/emissao-de-boletos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="emissao-de-boletos" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Emissão de boletos</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/gerenciamento-de-estoque/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="gerenciamento-estoque" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Gerenciamento de estoque</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/marketplace/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="marketplace" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Integração com marketplace</a>
+          </li>
+          <!-- <li class="btn">
+            <a href="/funcionalidades/">Inteligência artificial fiscal</a>
+          </li> -->
+          <li class="btn">
+            <a href="/funcionalidades/nota-fiscal/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="nota-fiscal" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Notas fiscais</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/relatorios/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="relatorios" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Relatórios personalizados</a>
+          </li>
+          <li class="btn">
+            <a href="/funcionalidades/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Ver todos</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="/precos/" class="btn plano-preco-menu-mobile btn-interacao-tag" rel="noreferrer" data-eventlabel="plano-preco" data-category="omie-menu-plano-preco" data-eventaction="plano-preco-clique-botao"> Plano e preços </a>
+
+      <a href="#" class="btn dropdown-toggle"> Omie pra Você </a>
+      <div class="sub-menu">
+        <ul>
+          <li class="fecha-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            Voltar
+          </li>
+          <li class="title-menu">Quem somos?</li>
+          <li class="btn">
+            <a href="#">SEJA OMIE</a>
+          </li>
+          <li class="btn">
+            <a href="/seja-franqueado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="seja-franqueado" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Seja franqueado</a>
+          </li>
+          <li class="btn">
+            <a href="/unidades-franqueadas/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="unidades-franqueadas" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Unidades franqueadas</a>
+          </li>
+          <li class="btn">
+            <a href="/contadores/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="parceiros" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Seja parceiro</a>
+          </li>
+          <li class="btn">
+            <a href="https://trabalheconosco.vagas.com.br/omie" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="trabalhe-conosco" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Trabalhe conosco</a>
+          </li>
+          <li class="btn">
+            <a href="/sobre/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="sobre" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Sobre nós</a>
+          </li>
+          <li class="btn">
+            <a href="/suporte/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="suporte" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Suporte</a>
+          </li>
+          <li class="btn">
+            <a href="https://developer.omie.com.br/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="developer" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Developer</a>
+          </li>
+          <li class="btn">
+            <a href="https://ajuda.omie.com.br/pt-BR/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="ajuda" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Ajuda</a>
+          </li>
+          <li class="title-menu">Conteúdo</li>
+          <li class="btn">
+            <a href="https://blog.omie.com.br/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank"  class="btn-interacao-tag" rel="noreferrer" data-eventlabel="blog" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Blog</a>
+          </li>
+          <li class="btn">
+            <a href="/imprensa/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="sala-imprensa" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Sala de Imprensa</a>
+          </li>
+          <li class="btn">
+            <a href="https://blog.omie.com.br/categories/empreendedorismo/?utm_source=site&utm_medium=topo&__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="empreendedorismo" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Empreendedorismo</a>
+          </li>
+          <li class="btn">
+            <a href="https://blog.omie.com.br/categories/contadores/?utm_source=site&utm_medium=topo&__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="contabilidade" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Contabilidade</a>
+          </li>
+          <li class="btn">
+            <a href="/eventos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="eventos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Eventos</a>
+          </li>
+          <li class="btn">
+            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="cursos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Cursos</a>
+          </li>
+          <li class="btn">
+            <a href="/treinamento/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="treinamentos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Treinamentos</a>
+          </li>
+          <!-- <li class="btn">
+            <a href="#">Podcasts</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="nav-desktop">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-xl-2">
+          <a href="/" class="logo-omie-menu">
+            <img src="assets/images/logo-omie.png" alt="Logo Omie">
+          </a>
+        </div>
+        <div class="col-xl-9 col-xxl-6 d-flex justify-content-between">
+          <ul class="items-menu">
+            <li><a href="">Empresas</a></li>
+            <li><a href="">Contadores</a></li>
+            <li><a href="">Planos</a></li>
+            <li><a href="">Funcionalidades</a></li>
+            <li><a href="">Franquias</a></li>
+          </ul>
+
+          <div class="btns-menu">
+            <a href="" class="entrar">Entrar</a>
+            <a href="" class="cta transparent-cta">Experimente grátis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="banner-about-us banner-faq">
+    <div class="box-banner">
+      <h1>Contrato de Adesão para Prestação de Serviços do Omie.Cash</h1> 
+    </div>    
+  </section>
+  <section class="banner-box-card box-card responsive-flex-column">
+   
+  </section>
+
+  <section class="container pattern-video no-image-bg">
+    <div class="d-flex justify-content-between container px-0">
+      <div class="mb-80 col-md-12 col-lg-12 box-faq">
+        <h4>Palavras do CEO:</h4>
+        <p>Apresentamos o Código de Conduta da Omie, que determina as orientações para uma postura ética nas relações internas e externas.<br>
+          Em tempos de mudanças constantes e cada vez mais velozes, a transparência e a observância às normas tornam-se fundamentais.<br>
+          As premissas aqui descritas devem guiar o comportamento e as decisões de todos os colaboradores, franqueados e fornecedores para juntos continuarmos a trilhar uma jornada de sucesso coesa com nossos valores.<br>
+          Este Código de Conduta representa um novo passo rumo a uma empresa ainda mais fortalecida, pautada em princípios éticos, sempre alinhados às melhores práticas de convívio. Que ele seja, efetivamente, o início de uma nova fase de transparência, com foco nas pessoas e na preservação do bem comum, em que a Omie possa destacar-se como exemplo de administração e conduta.<br>
+          Contamos com cada um de vocês.</p>
+
+          <h4>OMIE</h4>
+
+          <p><span>Nosso propósito:</span> Nosso propósito é trazer prosperidade para a pequena e média empresa brasileira.<br>
+          <span>Nossa Missão:</span> Nossa missão é reduzir o gap de eficiência para nas pequenas e médias empresas brasileiras, ajudando nossos clientes a serem mais produtivos e competitivos, vivendo seu pleno potencial empreendedor.<br>
+          <span>Fazemos isso através de três pilares: </span>software de gestão, educação empreendedora e acesso a serviços financeiros, reunidos em uma plataforma única e simples de usar.<br>
+          <span>Nossa Visão:</span> Estamos construindo #juntos a maior e mais importante empresa de software do Brasil, porque é a empresa que vai ajudar a mudar o país através do crescimento das PMEs.</p>
+
+          <h4>Valores da Omiexperience</h4>
+
+          <p>Nossa cultura é o reflexo do pensamento das pessoas que trabalham aqui, que compartilham uma série de valores que se refletem em todas as ações do nosso dia a dia. Acreditamos que pessoas constroem uma grande empresa, não apenas tecnologia, por isso somos fanáticos por esses seis itens abaixo:</p>
+          <p>
+          <span>Passion:</span> amamos o que fazemos e isso a gente vê no entusiasmo e na energia com que alcançamos nossos objetivos. Nosso time é imbatível, incansável e imparável!<br>
+          <span>Trust:</span> confiamos uns nos outros, por isso nenhum problema vai parar debaixo do tapete. Esse é o nosso entendimento de trabalho em equipe e a forma de criar parcerias duradouras.<br>
+          <span>Perpetual Learners:</span> buscamos soluções melhores obsessivamente, não nos conformamos apenas com o que já sabemos. Esse é o nosso motor, nosso principal diferencial.<br>
+          <span>Entrepreneurship:</span> nosso estilo de vida: corremos risco com responsabilidade. Somos otimistas e enfrentamos nossos desafios com foco e disciplina.<br>
+          Execution: sempre há uma forma mais criativa e inovadora de fazer as coisas, mas sem uma excelente execução, isso não vale nada. E combinando criatividade com execução, superamos todas as expectativas.<br>
+          <span>The journey matters:</span> transformar as PMEs é uma maratona, não uma corrida de 100m. Acreditamos que esta jornada pode ser ao mesmo tempo desafiadora, divertida e motivadora. Por isso cuidamos para que nossos times, clientes, parceiros e investidores tenham uma experience extraordinária!</p>
+
+          <h4>Princípios Éticos</h4>
+          <p>  
+            1. Valorizar o bem comum, das pessoas e do interesse em conjunto.<br>
+            2. Evitar situações em que os interesses pessoais possam entrar em conflito com os interesses da empresa.<br>
+            3. Preservar a integridade pessoal e profissional do público interno e externo.<br>
+            4. Ter tolerância com as divergências, desde que respeitados os direitos individuais e coletivos.<br>
+            5. Preservar a imagem e o patrimônio material e intelectual da empresa.</p>
+
+            <h4>Objetivo do Código</h4>
+            <p>O manual de conduta tem o objetivo de orientar, combater e bloquear qualquer ato ilícito, de corrupção ou fraudes pelas partes.</p>
+
+            <h4>A Quem se Destina
+            </h4>
+
+            <p>O presente documento aplica-se aos administradores e colaboradores da Omiexperience S.A., além de fornecedores de bens e serviços, incluindo seus administradores, colaboradores e prepostos.<br>
+    Sua validade será a partir de sua publicação do documento nas mídias da empresa, os colaboradores deverão ler o conteúdo e confirmarem o termo de aceite afirmando que estão de acordo com a política da Omie.<br>
+    Conhecer e cumprir o Código de Ética e Conduta é premissa para fazer parte da nossa jornada.</p>
+
+
+    <h4>Compromisso com a Ética
+    </h4>
+
+    <p>Espera-se que após o conhecimento deste Código de Ética e Conduta, todo colaborador comprometa-se a segui-lo e disseminá-lo entre os outros colaboradores, sejam pares, superiores ou subordinados, garantindo, assim, o profissionalismo no ambiente de trabalho e integridade da Omie. A manutenção da nossa reputação é vital aos nossos negócios e por isso temos uma abordagem de tolerância zero com relação a quaisquer atos de corrupção e má conduta.<br>
+      Qualquer violação ou desrespeito aos princípios contidos neste Código de Ética e Conduta devem ser levados ao conhecimento do Canal de Denúncias, que será monitorado pela xxxxxx (colocar área ou empresa que fará a auditoria), por meio dos seguintes meios:<br>
+      Não sei se já temos, mas é muito importante ter um comitê de ética.</p>
+
+
+      canaldedenuncia@omie.com.br
+
+
+     
+     <h3> Direcionamento Geral Omie</h3>
+     <h4> Direcionamento Geral Omie</h4>
+      A omissão diante do conhecimento de possíveis violações cometidas por colaboradores de todos os níveis, clientes, fornecedores ou parceiros será considerada atitude antiética.
+      O relato de situações irreais com o objetivo de prejudicar outras pessoas ou empresas por interesses pessoais será igualmente considerado antiético.
+
+      <h4>Garantia de não Retalização</h4>
+      <p>Respeitando o nosso valor “TRUST”, onde nenhum problema vai para debaixo do tapete, a Omie acredita na importância de um ambiente saudável de trabalho onde todos possam falar das preocupações sobre questões éticas sem temer ser prejudicado ou sofrer punições. A Omie não desligará, retaliará ou discriminará de qualquer outra forma os colaboradores por comunicarem questões de natureza ética. Colaboradores que acreditam terem sido expostos à retaliação após abordar questões de natureza ética, devem levar esse assunto ao Canal de Denúncias.</p>
+
+      <h4>Compromisso com a Ética <br>
+        Anonimato e confidencialidade: </h4>
+
+     
+      <p>A Omie assegura o anonimato de todos os colaboradores que desejem realizar um relato de violação do Código de Ética e Conduta.
+      Tais relatos serão recebidos pelo Comitê de Ética que tomará as ações necessárias para o tratamento das denúncias de acordo com as nossas práticas de negócio, políticas e leis aplicáveis.
+      O sigilo sobre a identidade daqueles que relatarem ou participarem da investigação da violação deste Código de Ética e Conduta será mantido e garantido pela Omie.</p>
+     
+      <h4>Responsabilidade Adicional dos Líderes</h4>
+      
+      <p>Acreditamos que a liderança é a chave para a obtenção dos nossos resultados. É de responsabilidade dos gestores, por meio do seu exemplo, cumprir bem, como divulgar, orientar e fazer com que seus colaboradores cumpram integralmente este Código de Ética e Conduta, diretrizes, normas e procedimentos relacionados.
+      É essencial a atuação dos nossos Gestores na manutenção do clima organizacional de respeito e de confiança, tratando igualmente cada um de seus colaboradores e servindo de exemplo na prática das diretrizes éticas para estes e para terceiros.</p>
+      <h4>Medidas Disciplinares
+      Violações do código de ética e conduta: </h4>
+      
+      <p>O comitê Omie investigará pronta e rigorosamente todos os fatos que envolvam suspeita de fraude, furto, roubo, danos ao patrimônio, apropriação indébita, manipulação de informações ou qualquer outro crime, contravenção penal ou ato ilícito e atos que se desviem das diretrizes e procedimentos corporativos, dos quais é parte integrante ao presente código.
+      A constatação da violação do Código, das nossas políticas ou de alguma lei pode resultar em:
+      Ações disciplinares, inclusive a rescisão do vínculo empregatício, dependendo da natureza e da gravidade da violação do Código.
+      No caso de violação da lei, penalidades civis e/ou criminais podem ser impostas por um órgão governamental ou um tribunal.</p>
+      <h4>Conduta dos Colaboradores
+      Orientação geral: </h4>
+      <p>Fortalecendo ainda mais nosso valor “Entrepreneurship” onde enfrentamos nossos desafios com foco e disciplina, buscamos orientar por meio do nosso Código de Conduta as atitudes e comportamentos que esperamos de nossos colaboradores.
+      As políticas, normas e procedimentos internos da Omie devem ser seguidas.
+      Espera-se dos colaboradores o respeito absoluto aos colegas de trabalho, sendo inadmissível qualquer manifestação de discriminação e preconceito referente a sexo, raça, origem, religião, idade, opção política, opção sexual, deficiência física ou mental, bem como, qualquer outro tipo de discriminação que possa vir a constranger a dignidade da pessoa. Também não serão toleradas agressões físicas ou verbais, e assédio moral e/ou sexual.
+      Todos os colaboradores devem atuar em parceria visando atingir as diretrizes e metas da organização, preservando a visão e valores da Omie.</p>
+      <h3>Ambiente Interno</h3>
+      <h4> Conduta dos Colaboradores
+      Relacionamento interno: </h4>
+      
+      <p>Todos os colaboradores são responsáveis por manter suas relações com cordialidade e respeito no ambiente de trabalho e agir alinhado com este Código, garantindo um ambiente livre de restrições ou insinuações de qualquer natureza.
+      Respeitamos o direito de as pessoas relacionarem-se livremente. Todavia, nas relações de parentesco, de amizade ou romance, espera-se o bom senso e o compromisso com a empresa a fim de que o fato não afete o desempenho dos envolvidos ou cause desconforto aos colegas de trabalho.
+      Em casos de relacionamentos familiares e/ou amorosos, é proibida a subordinação direta entre uma das partes, salvo se aprovados previamente pelo Conselho.
+      Contamos com um ambiente que estimula o trabalho e as decisões em equipe, encorajando diversidade, respeito mútuo, simplicidade e humildade, bem como livre de assédio e discriminação com base em raça, cor, credo, religião, sexo, idade, pessoas com necessidades especiais, nacionalidade, ascendência, estado civil, orientação sexual, convicção política e ideológica ou qualquer outro motivo.</p>
+      <h4>Conduta dos Colaboradores<br>
+      Segurança e saúde:</h4>
+      <p>Apoiamos, protegemos e preservamos os Direitos Humanos, adotando políticas e práticas que contribuam para a erradicação do trabalho infantil, do trabalho escravo, forçado ou compulsório e da exploração sexual de crianças e adolescentes. Não toleramos qualquer prática que viole esses direitos.
+      A Omie apresenta tolerância zero para violência, de qualquer tipo, no local de trabalho.
+      Também proíbe a posse de armas no local de trabalho, exceto para os seguranças*** (temos segurança?) ou demais profissionais que devam utilizar o armamento como ferramenta de trabalho. Nos termos permitidos pela lei local, esta proibição estende-se aos estacionamentos da empresa, bem como nossas instalações.
+      Não será aceito qualquer ato que possa fazer outro indivíduo sentir-se ameaçado ou inseguro. Isto inclui ataques, ameaças verbais ou qualquer expressão de hostilidade, intimidação, agressão ou trotes.
+      É proibido o uso de Drogas nos âmbitos da empresa e em quaisquer eventos onde represente a marca. As bebidas alcóolicas são permitidas em datas de específicas direcionadas para eventos internos e comemorações de metas atingidas. (verificar se há uma maneira melhor de divulgar)
+      A segurança e a integridade das pessoas são responsabilidade de todos e devem ser garantidas a qualquer custo.
+      A Omie disponibiliza equipamentos de proteção coletiva, bem como treina os colaboradores para o uso adequado, de forma a preservar a vida.
+      Cabe aos colaboradores a observância das diretrizes, normas e procedimentos de segurança e as NR’s - Normas Regulamentadoras, em conformidade com as orientações do R.H.</p>
+      <h4>Conduta dos Colaboradores<br>
+      Informações confidenciais e privilegiadas:</h4>
+      <p>
+        . É vedado a qualquer colaborador o uso de informações, obtidas no uso de suas funções dentro ou fora da empresa, em benefício próprio ou de terceiros, assim como repasse sem prévia autorização por escrito, de diretrizes, políticas, normas e procedimentos da Omie.<br>
+      . Os colaboradores não estão autorizados a divulgar informações sobre a Omie para a imprensa, entidades governamentais, investidores, clientes, entre outros.<br>
+      . O uso de senhas e crachás fornecidos pela empresa é individual e intransferível, sendo terminantemente proibido seu compartilhamento em qualquer nível.<br>
+      Os colaboradores devem seguir as diretrizes e práticas estabelecidas nas Normas de Segurança da Informação
+      . É proibido utilizar os meios eletrônicos da empresa (e-mail, telefone, correio de voz, etc.) para envio ou recebimento (consciente) de piadas, correntes, e-mail com conteúdo inapropriado ou pornográfico, arquivos anexos como fotos e vídeos com conteúdo particular ou qualquer outro arquivo com conteúdo particular.<br>
+      . Os recursos e equipamentos usados na atividade profissional são de propriedade da empresa, assim, a Omie se reserva o direito de acessar, gravar ou monitorar quaisquer dos seus meios eletrônicos, no ambiente público da empresa.<br>
+      . Pertencerão a Omie todos os descobrimentos e desenvolvimentos que possam vir a gerar patentes industriais ou documentos autorais, realizados por profissionais no exercício da sua atividade remunerada pela Omie.<br>
+      . Somente colaboradores previamente autorizados pelas Diretorias, poderão dar entrevistas e/ou prestar esclarecimentos a qualquer tipo de mídia em nome da Omie.</p>
+      <h4>Conduta dos Colaboradores<br>
+      Bens: </h4>
+     <p> Os colaboradores deverão zelar pelo bom uso e pela conservação dos ativos da empresa, tais como: instalações, máquinas, equipamentos, móveis, veículos, recursos de informática, valores e outros. O uso dos bens da Omie deverá ser restrito à atividade profissional do colaborador dentro e fora da empresa, sendo proibido seu uso para fins particulares.<br>
+      A utilização da internet, telefone, software, hardware e outros recursos de informática é regida pelas Normas de Segurança da Informação, e os colaboradores devem seguir as diretrizes e práticas estabelecidas nesta.<br>
+      É proibido retirar do local de trabalho equipamentos ou documentos sem a prévia autorização do seu superior imediato.</p>
+      <h4>Conduta dos Colaboradores<br>
+      Desenvolvimento dos nossos profissionais:</h4>
+      <p>Fazendo valer o nosso valor “Perpetual Learners” buscamos soluções melhores obsessivamente, não nos conformamos apenas com o que já sabemos, por isso a Omie:
+      Acredita que o desenvolvimento das pessoas é a base do nosso sucesso. Estamos em constante processo de aprendizagem. É prioridade da Omie a promoção da igualdade de oportunidades para desenvolvimento e crescimento profissional para todos os seus colaboradores e estagiários.<br>
+      A Omie valoriza a sinergia entre as áreas, a cooperação entre os colaboradores de todas as áreas de atuação e o compartilhamento de conhecimentos como forma de aprendizado e disseminação das melhores práticas, resguardados os critérios de confidencialidade. A interação entre as várias áreas da empresa é fundamental. Somos todos um só time. #juntos<p>
+      <h3>Conflito de Interesses<br>
+      Nosso comprometimento: </h4>
+      <p>A Omie compromete-se a adotar medidas para assegurar a isenção na atuação e nos processos de decisão, em situações de potencial conflito de interesses envolvendo a Empresa ou os colaboradores.<br>
+      Os colaboradores comprometem-se a:<br>
+      . Não implicar a Empresa nas suas atuações a título pessoal;
+      <br>. Não utilizar seu cargo, funções e influência para ter acesso a informações privilegiadas, em benefício próprio, de seus familiares ou de pessoas de seu relacionamento, em prejuízo dos negócios da Empresa ou das práticas de livre concorrência;
+      <br> . Comunicar ao comitê e a respectiva liderança e afastar-se dos respectivos processos de decisão, em todas as situações que possam gerar conflitos entre os seus interesses pessoais e o dever de lealdade para com a Empresa, tais como:
+      <br> . Relações familiares ou equiparadas em dependência hierárquica ou funcional direta;
+      <br>.Exercício de atividade profissional externa que interfira com as suas atribuições ou com as atividades da Empresa;
+      Titularidade de posições jurídicas, patrimoniais ou familiares suscetíveis de interferir com os interesses da Empresa ou com as atividades exercidas;
+      <br>.Outras situações que estejam em conflito com este Código de Ética;
+      Os colaboradores que possuem atividades profissionais paralelas, tais como empreendimentos comerciais, atividades acadêmicas de ensino e pesquisa, prestação de consultorias, etc., deverão relatar sua condição ao seu gestor e ao Comitê de Ética., que avaliará possíveis conflitos de interesse e eventuais situações de concorrência com o horário de trabalho.
+      <br>.Não envolver a Empresa em posturas partidárias, políticas, religiosas ou sectárias de qualquer ordem.</p>
+      <h4>Brindes, Presentes e Entretenimento<br>
+      Manter sempre o bom senso:</h4>
+      <p>Relações sólidas com parceiros de negócio são essenciais para qualquer empresa. Brindes e entretenimento são cortesias que ajudam a fortalecer essas relações – em algumas culturas mais que em outras.<br>
+      De maneira geral, a Omie permite dar e receber presentes e entretenimento, desde que sejam apropriados, ou seja, não geram à pessoa que recebe um sentimento ou dever de fazer algo em troca. Em  outras palavras, não devem gerar tendência de favorecimento como forma de retribuição.<br>
+      Brindes e entretenimentos inapropriados podem causar consequências negativas para a Empresa como, por exemplo, influenciar (ou a mera aparência de influenciar) indevidamente decisões de negócio ou criar um conflito de interesses.<br>      
+      Entretenimento inclui festas, entradas para eventos esportivos e culturais, viagens, hospedagens, etc.</p>
+      <h3>Ambiente Externo</h3>
+      
+      <h4>Cumprimento da Legislação</h4>
+      
+      <p>A Omie compromete-se a agir em total conformidade com a legislação e a regulamentação vigentes nas regiões onde opera, bem como a prestar às autoridades toda a colaboração ao seu alcance.<br>
+      Os colaboradores comprometem-se a:<br>
+      Respeitar as leis e os regulamentos aplicáveis à sua atividade ou dos quais possa resultar responsabilidade para a Empresa;<br>
+      Atender, de acordo com os procedimentos definidos, às solicitações que legitimamente lhes forem dirigidas pelas autoridades e não adotar qualquer comportamento que possa impedir o exercício das respectivas competências.</p>
+      <h3> Relação com Clientes</h3>
+      <p>A Omie compromete-se a manter o nosso valor “The journey matters” perene, mantendo o foco em:<br>
+      Respeitar os direitos dos clientes e os compromissos contratuais com eles assumidos, procurando, com sentido de serviço, satisfazer e superar as suas expectativas;<br>
+      Prestar informações fidedignas, em linguagem acessível e adaptada às necessidades, respondendo às solicitações, dúvidas e reclamações em prazos razoáveis;<br>
+      Melhorar continuamente o desempenho, bem como a qualidade dos seus produtos e serviços;<br>
+      Formular propostas comerciais honestas, transparentes e adaptadas às necessidades dos clientes.<br>
+      Os colaboradores comprometem-se a:<br>
+      A proceder com correção, cortesia e profissionalismo nas relações com clientes, respeitando os seus direitos, sensibilidades e diversidade.</p>
+      <h4>Relações com Acionistas</h4>
+      <p>A Omie adere práticas de governança corporativa. (Temos uma governança disseminada? Isso significa que o relacionamento com os públicos interno e externo da Companhia e a divulgação de informações para o mercado estão embasados em igualdade, transparência e veracidade;
+      A comunicação e divulgação de informações e qualquer outra forma de prestação de contas com os acionistas é feita pela Área de Relações com Investidores - RI;<br>
+      Para garantir decisões confiáveis, são realizados controles internos periódicos de caráter corretivo e preventivo. Além disso, continuamente, são avaliados os riscos de cada um dos negócios, é realizada a fiscalização da gestão e dos procedimentos internos, e são desenvolvidas estratégias para proteger o patrimônio e a imagem da Omie;
+      As nossas demonstrações financeiras são elaboradas de acordo com os princípios fundamentais da contabilidade e nos termos das normas legais, sendo submetidas periodicamente a avaliação de auditoria externa.</p>
+      <h4>Relações com o Sindicato</h4>
+      
+      <p>A Omie reconhece a legitimidade dos sindicatos e respeita o direito de liberdade dos Colaboradores de associarem-se a qualquer organização legítima e que esteja adequada à legislação vigente.<br>
+      Nestes termos, a Omie está comprometida com a busca de soluções que atendam as partes que componham a relação de trabalho, por meio do diálogo, em qualquer situação e, mediante prévia e formal autorização da Omie, permite a permanência de representantes de sindicatos nas dependências da Empresa.</p>
+      
+      
+      <h4>Relações com Fornecedores, Prestadores de Serviços, Parceiros e Consultores de Negócios</h4>
+      
+      
+      <p>A relação com fornecedores, Prestadores de serviços, parceiros e consultores de negócios deve ser sempre formalizada, ter como base os princípios da livre iniciativa e da lealdade na concorrência e considerar a inovação e a qualidade na contratação.</p>
+      <p>A Omie embasa as contratações de terceiros em padrões elevados de integridade e de conduta ética, transparente e honesta, deixando claro que a Empresa exige o cumprimento das leis vigentes e das suas políticas internas.<br>
+      O Omie espera que seus fornecedores, prestadores de serviços, parceiros e consultores de negócios sigam as ações abaixo para manter e perpetuar a parceria junto à empresa:<br>
+      Proibir atos de corrupção;<br>
+      Incentivar uma força de trabalho diversificada e fornecer um ambiente de trabalho sem discriminação, assédio ou qualquer forma de abuso;<br>
+      Respeitar os direitos humanos e proibir todas as formas de trabalho forçado ou compulsório;<br>
+      Assumir responsabilidade pela saúde e segurança de seus Colaboradores;<br>
+      Agir de acordo com as normas locais aplicáveis relativas às questões de saúde, segurança e meio ambiente, assim como outras legislações aplicáveis à atividade do fornecedor.</p>
+      <h4>Relação com Concorrentes</h4>
+      
+      
+      
+      <p>A Omie se baseia na livre e leal concorrência para seus produtos e serviços.<br>
+      É expressamente proibido aos colaboradores fornecer informações estratégicas, confidenciais ou sob qualquer outra forma, que seja ou venha a ser prejudicial aos negócios da empresa, a quaisquer terceiros, inclusive aos concorrentes.<br>
+      Todas as informações de mercado e de concorrentes devem ser obtidas através de práticas transparentes e idôneas, não se admitindo sua obtenção por meios ilícitos.<br>
+      As únicas vantagens competitivas que incentivamos são aquelas obtidas através de pesquisa, processos e marketing. Nossa intenção é fazer negócios através de produtos e serviços de alta qualidade, nunca através de práticas de negócios antiéticos ou questionáveis.<br>
+      Não nos engajamos em práticas injustas, imorais ou ilegais.<br>
+      Em nenhuma hipótese, realizamos acordos com os nossos concorrentes com o intuito de manipular o mercado e preços, ou influenciar inadequadamente o mercado ou um processo licitatório.<br>
+      Os colaboradores comprometem-se a:<br>
+      . A respeitar as empresas concorrentes e seus representantes, evitando quaisquer situações passíveis de constituir ou parecer ilícitos concorrenciais e, em particular, a não negociar nem efetuar acordos relativos a preços ou a partilha de mercados ou de clientes.</p>
+     
+<h4>Relação com a Mídia</h4>
+<p>Os colaboradores são responsáveis pela boa reputação da Omie e o conteúdo produzido que tenha a capacidade de impactar em sua própria imagem e na imagem a empresa. Assim, é preciso que, primeiro, cada colaborador compreenda o seu papel neste contexto.<br>
+  O fato de ter um vínculo trabalhista estabelece automaticamente uma relação entre o conteúdo que produz nos ambientes digitais e a imagem da Omie.<br>
+  Desse modo, os colaboradores devem se sentir parte da comunicação, além de corresponsáveis pelo sucesso dos negócios. Para preservar a imagem e os interesses da Omie, bem como das nossas marcas e produtos, a participação dos colaboradores em redes sociais e sites não permite colocar em risco os nossos valores.<br>
+  O bom senso de cada um é a chave para garantir as boas maneiras nas redes sociais. Se você se sentir inseguro ou tiver qualquer dúvida sobre as informações que deseja publicar, procure seu superior imediato para orientações.<br>
+  Vejam algumas orientações que podem ajudar:<br>
+.  Colaboradores podem identificar em seus perfis a sua relação com a Omie, porém, lembre-se que os colaboradores representam a empresa e são o seu retrato, portanto, recomenda-se não tomar partido em questões que possam trazer algum risco à reputação da empresa, suas marcas ou produtos. Não são aceitáveis críticas a profissionais da Omie, fornecedores ou clientes em sites públicos e mídias sociais.<br>
+.  Ao fazer publicações próprias ou comentar conteúdo de terceiros, seja cortês e pertinente. É possível discordar ou argumentar respeitosamente, mantendo a boa educação.<br>
+  .É proibido o compartilhamento de informações confidenciais da Omie ou clientes e parceiros, em redes públicas ou privadas, assim como comentários sobre assuntos internos tratados em reuniões ou em conversas com colegas de trabalho.<br>
+  .Tenha cuidado e atenção antes de postar qualquer conteúdo, pois tudo o que você publica é amplamente exposto. Além disso, a Internet tem um alto poder de disseminação. Lembre-se de que depois de publicado, o conteúdo foge do seu controle. É necessário atentar às restrições em relação à captura de fotos no ambiente da empresa.</p>
+
+<h4>Integridade</h4>
+<p>A Omie pautará a sua atuação pelos mais elevados padrões de integridade, incluindo tratamento ético, nomeadamente em matérias financeiras, corrupção e suborno, conflito de interesses e uso da informação e do patrimônio, mantendo para o efeito um sistema de controles adequado.</p>
+<h4>Matérias Financeiras
+</h4>
+<p>A Omie compromete-se a manter procedimentos de prevenção e detecção de práticas ilegais em matérias financeiras e contábeis, incluindo lavagem de dinheiro, por parte de colaboradores ou de terceiros.<br>
+  Os colaboradores comprometem-se a:<br>
+  Aplicar com rigor os procedimentos estabelecidos, promover a melhoria da sua eficácia e reportar quaisquer não conformidades verificadas.</p>
+
+  <h4>Corrupção e Suborno
+  </h4>
+  <p>A Omie não permite a prática de corrupção e suborno, na forma ativa ou passiva, quer por meio de atos ou omissões, quer por via da criação e/ou manutenção de situações de favorecimento por meio de pagamentos de facilitação ou de outras irregularidades.<br>
+    Os colaboradores comprometem-se a:<br>
+    Não fazer indicações a clientes, ainda que por eles solicitadas, de prestadores de serviços ou fornecedores, ou de empresas que mesmo indiretamente possam estar relacionadas aos negócios da Empresa;<br>
+    Não manter relações comerciais com fornecedores, notadamente aquelas em que o profissional, por força de cargo ou de atividade, possa ter influência direta sobre a compra ou venda de produtos e serviços;<br>
+    Respeitar, na sua relação com funcionários e responsáveis por entidades públicas, os deveres de isenção a que estes estão sujeitos, evitando qualquer ação que, direta ou indiretamente, tenha influência fraudulenta, coercitiva, manipuladora ou enganosa, e abster-se de lhes dar ou prometer qualquer tipo de benefício que não lhes seja devido;<br>
+    Não efetuar, em nome da Empresa, contribuições monetárias ou outras a partidos políticos.</p>
+    <h4>Respeito pelos Direitos Humanos e Trabalhistas
+    </h4>
+    <p>A Omie respeita e compromete-se a promover, em particular na cadeia de fornecimento, os direitos humanos e as práticas trabalhistas condignas.
+      A Omie compromete-se a:<br>
+      Apoiar, proteger e preservar os Direitos Humanos, adotando políticas e práticas que contribuam para a erradicação do trabalho infantil, do trabalho escravo, forçado ou compulsório e da exploração sexual de crianças e adolescentes. Não toleramos qualquer prática que viole esses direitos.<br>
+      Não empregar mão de obra infantil ou forçada nem pactuar com tais práticas por parte de terceiros que lhe forneçam produtos ou prestem serviços;<br>
+      Orientar as suas políticas e procedimentos trabalhistas no sentido de valorizar a diversidade e de impedir a discriminação injustificada e o tratamento diferenciado em função de origem étnica ou social, gênero, orientação sexual, idade, credo, estado civil, deficiência, orientação política, opinião, naturalidade ou associação sindical;<br>
+      Dar prioridade à segurança, à saúde e ao bem-estar dos colaboradores, assegurando o desenvolvimento de sistemas de gestão da saúde e segurança ocupacional adequados.<br>
+      Os colaboradores comprometem-se a:<br>
+      Agir de acordo com os compromissos da Empresa no âmbito dos direitos humanos e trabalhistas, preservando um ambiente de trabalho sadio;
+      Conhecer, cumprir e fazer cumprir as normas de higiene e segurança no trabalho, bem como reportar quaisquer não conformidades verificadas.
+    </p>
+    <h4>Responsabilidade Socioambiental Empresarial
+    </h4>
+    <p>A Omie assume o seu contributo para o Desenvolvimento Sustentável e a responsabilidade pelos impactos econômicos, ambientais e sociais resultantes das suas decisões e atividades.<br>
+      A Omie estimula o desenvolvimento contínuo de tecnologias eficientes, visando à otimização dos recursos e ao menor impacto ambiental.<br>
+      Os colaboradores comprometem-se a:<br>
+      Os colaboradores comprometem-se a concretizar e agir de acordo com os compromissos da Empresa no âmbito da responsabilidade socioambiental.</p>
+      <h4>Relação com os Fornecedores</h4>
+      <p>A Omie compromete-se a:<br>
+        Negociar apenas com fornecedores que obedeçam à legislação vigente, inclusive a trabalhista e ambiental do país, que não explorem direta ou indiretamente mão de obra infantil ou escrava e, preferencialmente, com aqueles que se comprometam com as práticas de responsabilidade social em sua cadeia produtiva;<br>
+        Estabelecer critérios de seleção – éticos, técnicos e econômicos – claros, imparciais e definidos;<br>
+        Manter um cadastro de fornecedores pré-avaliados e negociar preferencialmente com os fornecedores cujo cadastro mantém-se atualizado;<br>
+        Abster-se de abuso de posição dominante na negociação e na gestão dos contratos e a cumprir as condições acordadas;<br>
+        Promover junto aos fornecedores a observância das normas e práticas de segurança e da legislação trabalhista em vigor;<br>
+        Monitorar a conduta ética dos fornecedores e adotar medidas imediatas e rigorosas nos casos em que esta seja questionável;<br>
+        Abster-se de qualquer prática de fomento da concorrência desleal e, em particular, respeitar a confidencialidade da informação e a propriedade intelectual dos fornecedores.</p>
+
+        <h4>Comunidade</h4>
+        <p>A Omie compromete-se a:
+          Agir respeitando o princípio da precaução, quando das suas atividades possam resultar danos sérios e irreversíveis para a vida ou a saúde humana ou para o ambiente que, ainda que incertos, sejam cientificamente plausíveis, tomando medidas para evitar ou mitigar esses efeitos.</p>
+          <h4>Termo de Compromisso e Responsabilidade
+          </h4>
+          <p>Sobre o Código de Conduta da Omie, livre de qualquer vício de consentimento e de vontade, e nos termos da legislação vigente, DECLARO:
+
+          </p>
+      </div> 
+       
+    </div>  
+  </section>
+  <section class="container mtb-80">
+    <h2 class="sub-title text-left">Novidades e conteúdos exclusivos <br>para empreender da melhor forma</h2>
+   <div class="box-card-news d-flex justify-content-between">
+     <div>
+      <img src="./assets/images/about-us/video.png">
+       <div class="info-box">
+        <h4>O que são e como funcionam as microfranquias?</h4>
+        <p>As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!</p>
+        <div>
+          <button>Saiba Mais</button>
+          <img src="./assets/images/Arrow-right.png">
+        </div>       
+      </div>
+     </div>
+
+     <div>
+      <img src="./assets/images/about-us/video.png">
+      <div class="info-box">
+       <h4>O que são e como funcionam as microfranquias?</h4>
+       <p>As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!</p>
+       <div>
+        <button>Saiba Mais</button>
+        <img src="./assets/images/Arrow-right.png">
+      </div>     
+     </div>
+    </div>
+
+    <div>
+      <img src="./assets/images/about-us/video.png">
+      <div class="info-box">
+       <h4>O que são e como funcionam as microfranquias?</h4>
+       <p>As microfranquias são opções vantajosas para investir seu dinheiro. Conheça!</p>
+        <div>
+          <button>Saiba Mais</button>
+          <img src="./assets/images/Arrow-right.png">
+        </div>      
+     </div>
+    </div>
+   </div>
+  </section>
+
+
+  <footer>
+    <div class="container con-partners">
+      <div class="row">
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-astella.png" alt="">
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-softbank.png" alt="">
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-riverwood.png" alt="">
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <img src="assets/images/logo-aws.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row d-lg-none">
+        <div class="col-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Contadores</button>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Franquias
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Empresas
+              </button>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Segurança e privacidade
+              </button>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                A Omie
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <ul>
+                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="">Seja parceiro</a></li>
+                  <li><a href="">Produtos para contadores</a></li>
+                  <li><a href="">Clube de vantagens</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="anchor-links">
+              <li><a href="">Ajuda</a></li>
+              <li><a href="">Fale conosco</a></li>
+              <li><a href="">Experimente grátis</a></li>
+              <li><a href="">Funcionalidades</a></li>
+              <li><a href="">Cursos Omie.Academy</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center d-none d-lg-flex">
+        <div class="col-lg-3">
+          <ul class="links-site">
+            <li class="list-title">Contadores</li>
+            <li><a href="">Omie para contadores</a></li>
+            <li><a href="">Seja Parceiro</a></li>
+            <li><a href="">Produtos para contadores</a></li>
+            <li><a href="">Clube de vantagens</a></li>
+          </ul>
+
+          <ul class="links-site">
+            <li class="list-title">Franquias</li>
+            <li><a href="">Benefícios</a></li>
+            <li><a href="">Unidades franqueadas</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="links-site">
+            <li class="list-title">Empresas</li>
+            <li><a href="">Omie para empresas</a></li>
+            <li><a href="">Planos</li>
+            <li><a href="">Omie.Cash</a></li>
+            <li><a href="">Produtos financeiros</a></li>
+            <li><a href="">Treinamentos</a></li>
+            <li><a href="">Loja de aplicativos</a></li>
+          </ul>
+
+          <ul class="links-site">
+            <li class="list-title">Segurança e privacidade</li>
+            <li><a href="">Política de privacidade</a></li>
+            <li><a href="">Segurança de informação</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="links-site links-unique">
+            <li class="list-title">A Omie</li>
+            <li><a href="">Quem somos</a></li>
+            <li><a href="">Parceiros</a></li>
+            <li><a href="">Quem ama usa</a></li>
+            <li><a href="">Sala de imprensa</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Carreiras</a></li>
+            <li><a href="">Eventos</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="links-site links-unique">
+            <li><a href="" class="list-title">Ajuda</a></li>
+            <li><a href="" class="list-title">Fale conosco</a></li>
+            <li><a href="" class="list-title">Experimente grátis</a></li>
+            <li><a href="" class="list-title">Funcionalidades</a></li>
+            <li><a href="" class="list-title">Cursos Omie.Academy</a></li>
+            <li><a href="" class="list-title">Desenvolvedores</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-heavy-blue">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-md-3 col-lg-2 order-md-1 d-none d-md-block">
+          <a href="/" class="logo-omie-footer">
+            <img src="assets/images/logo-omie.png" alt="Logo Omie footer">
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 order-md-3">
+          <div class="row social">
+            <div class="col-3 text-center">
+              <a href="https://www.facebook.com/omieoficial" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/facebook.svg" alt="Facebook Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="https://www.instagram.com/omieoficial/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/insta.svg" alt="Instagram Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="https://www.linkedin.com/company/omie/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/linkedin.svg" alt="Linkedin Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="https://www.youtube.com/user/omiexperience" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/youtube.svg" alt="Youtube Omie" class="img-fluid" height="35" width="35">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-7 text-center order-md-2">
+          <address class="text-white mb-0">Av. Jurubatuba, 460 - São Paulo - SP <br class="d-block d-md-none"> 0800 942 7592</address>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="assets/js/utils/tab.js"></script>
+  <script>
+    const clickTab = document.querySelector('.clickTab');
+    const clickTab = document.querySelector('.clickTab');
+  </script>
+</body>
+</html>

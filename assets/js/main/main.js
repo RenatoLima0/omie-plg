@@ -168,17 +168,13 @@ if(tela <= 1024){
   const animaScroll = () => {
     const menuDesktop = document.querySelector('nav.nav-desktop');
     const banner = document.querySelector('.banner');
-    const windowMetade = window.innerHeight * 0.1;
     const bannerBottom = banner.getBoundingClientRect().top;
-    const isBannerVisible = (bannerBottom + windowMetade) < -350;
     
-    if(!isBannerVisible){
+    if(!(bannerBottom < -350)){
       menuDesktop.classList.remove('ativo');
     } else {
       menuDesktop.classList.add('ativo');
     }
-
-    // console.log(menuDesktop.getBoundingClientRect().top);
   }
 
   window.addEventListener('scroll', animaScroll);

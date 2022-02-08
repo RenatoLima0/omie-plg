@@ -8,6 +8,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/home/index.css">
 </head>
 <body class="">
   <nav class="nav-mobile d-xl-none">
@@ -72,142 +73,218 @@
     </div>
   </nav>
 
-  <section class="slide-home banner">
-    <div class="d-flex justify-content-between align-items-center row">
-      <div class="position-relative mb-80  col-md-12 col-lg-6">
-        <div class="position-relative slide-img">
-          <img src="./assets/images/home/play-azul.png" />
-          <img src="./assets/images/home/play-laranja.png" />
-          <img src="./assets/images/home/play-cinza.png" />
-          <img src="./assets/images/home/persona1.png" />
-        </div>
-
-        <div class="box-banner w-100 h-100 text-left">
-          <p>Aprimorou suas habilidades de gestão através dos cursos da Omie.Academy</p>
-          <p>Luana Santana, Empresária Omie</p>
-        </div>
-      </div>    
-      <div class="box-info-slide mb-80 col-md-12 col-lg-6">
-        <div>
-          <h3>Automatize sua rotina e veja seu negócio crescer</h3>
-          <p>Oferecemos uma plataforma única para gestão online, serviços financeiros e educação empreendedora.</p>
-          <button class="btn-primary">Conheça os planos</button>
-        </div>
-      </div>    
-    </div>
-  </section>
-
-  <section class="pattern-home-1  pb-0">    
+  <header class="banner banner-home">
     <div class="container">
-      <div class="d-flex justify-content-between px-0 row">
-        <div class="box-info-list mb-80 col-md-12 col-lg-6">
-          <h3>Soluções para facilitar o seu dia a dia</h3>
-          <p>Um sistema online, integrado e sem complicações, para fazer a gestão e automatizar as atividades do seu negócio.</p>
-          <button class="btn-primary">Veja mais funcionalidades</button>
-        </div>    
-        <div class="box-list-home col-md-12 col-lg-6 mb-4">
-          <ul>
-            <li class="d-flex align-items-center mb-2">
-              <img src="./assets/images/home/processosautomatizados.png">
-              <div class="col-md-6">
+      <div class="row">
+        <div class="col-12">
+          <h1>Automatize sua rotina e veja seu negócio crescer</h1>
+          <p>Oferecemos uma plataforma única para gestão online, serviços financeiros e educação empreendedora.</p>
+
+          <div class="actions">
+            <a href="" class="cta blue-cta">Conheça os planos</a>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="images-banner">
+            <img src="assets/images/home/play-azul.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="sec-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="pe-5 mb-4">Soluções para facilitar o seu dia a dia</h2>
+            <p>Um sistema online, integrado e sem complicações, para fazer a gestão e automatizar as atividades do seu negócio.</p>
+          </div>
+
+          <div class="col-12">
+            <div class="div-solucoes">
+              <article class="solucao">
+                <img src="assets/images/home/processosautomatizados.png" alt="Processos automatizados" class="img-fluid">
                 <h3>Processos automatizados</h3>
-                <p>Emita notas fiscais e boletos em apenas um clique. Automatize o processo de faturamento de produtos e serviços, e faça tudo rápido e sem erros.</p>
-              </div>
-            </li>
-            <li class="d-flex align-items-center mb-2">
-              <img src="./assets/images/home/integracaoautomatica.png">
-              <div class="col-md-6">
+                <p class="mb-4">Emita notas fiscais e boletos em apenas um clique. Automatize o processo de faturamento de produtos e serviços, e faça tudo rápido e sem erros.</p>
+
+                <div class="actions">
+                  <a href="" class="cta blue-cta">Veja mais funcionalidades</a>
+                </div>
+              </article>
+
+              <article class="solucao">
+                <img src="./assets/images/home/integracaoautomatica.png" alt="Integração automática" class="img-fluid">
                 <h3>Integração automática</h3>
-                <p>Incorpore qualquer software contábil ao Sistema Omie. A conexão ideal entre empresa e contabilidade para manter sua operação sempre em dia.</p>
-              </div>
-            </li>
-            <li class="d-flex align-items-center mb-2">
-              <img src="./assets/images/home/finaneiroemtempo.png">
-              <div class="col-md-6">
+                <p class="mb-4">Incorpore qualquer software contábil ao Sistema Omie. A conexão ideal entre empresa e contabilidade para manter sua operação sempre em dia.</p>
+
+                <div class="actions">
+                  <a href="" class="cta blue-cta">Veja mais funcionalidades</a>
+                </div>
+              </article>
+
+              <article class="solucao">
+                <img src="./assets/images/home/finaneiroemtempo.png" alt="Financeiro em tempo real" class="img-fluid">
                 <h3>Financeiro em tempo real</h3>
-                <p>Controle as operações diárias da sua empresa. É fácil integrar com qualquer banco e ter segurança e eficiência nas contas a pegar e receber.</p>
-              </div>
-            </li>
-            <li class="d-flex align-items-center mb-2">
-              <img src="./assets/images/home/acessorapido.png">
-              <div class="col-md-6">
+                <p class="mb-4">Controle as operações diárias da sua empresa. É fácil integrar com qualquer banco e ter segurança e eficiência nas contas a pegar e receber.</p>
+
+                <div class="actions">
+                  <a href="" class="cta blue-cta">Veja mais funcionalidades</a>
+                </div>
+              </article>
+
+              <article class="solucao">
+                <img src="./assets/images/home/acessorapido.png" alt="Acesso rápido e seguro" class="img-fluid">
                 <h3>Acesso rápido e seguro</h3>
-                <p>Acesse tudo o que precisa de  forma rápida e simplificada. Nosso sistema funciona 100% online e garante a segurança dos seus dados.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>      
-    </div>
-  </section>
+                <p class="mb-4">Acesse tudo o que precisa de  forma rápida e simplificada. Nosso sistema funciona 100% online e garante a segurança dos seus dados.</p>
 
-  <section class="box-mid-two d-flex justify-content-between pattern-home-3 box-default row">
-    <div class="col-md-12 col-lg-5">
-      <h2>Omie para empresas</h2>
-      <p>Possibilidades para negócios de todos os tamanhos e segmentos.</p>
+                <div class="actions">
+                  <a href="" class="cta blue-cta">Veja mais funcionalidades</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div class="box-mid-icons d-flex justify-content-between">
-        <div>
-          <img src="./assets/images/home/ico-comercio.svg" />
-          <p><strong>Comércio</strong> de <br/> todos os tipos</p>
-        </div>
-        <div>
-          <img src="./assets/images/home/ico-industria.svg" />
-          <p><strong>Indústria</strong> de <br/>todos os tamanhos</p>
-        </div>
-        <div>
-          <img src="./assets/images/home/ico-servicos.svg" />
-          <p><strong>Serviços</strong> e demais <br/> segmentos</p>
-        </div>
-      </div>
-      <div>
-        <button class="btn-primary mr-2">Saiba mais</button>
-        <button class="btn-thirty">Conheça os planos</button>
-      </div>
-    </div>
-    <div class="col-md-12 col-lg-5">
-      <h2>Omie para contabilidade</h2>
-      <p>Vantagens para evoluir o seu negócio e de seus clientes.</p>
+    <section class="sec-main bg-gray-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4">Omie para empresas</h2>
+            <p>Possibilidades para negócios de todos os tamanhos e segmentos.</p>
+          </div>
 
-      <div class="box-mid-icons d-flex justify-content-between">
-        <div>
-          <img src="./assets/images/home/ico-integracao.svg" />
-          <p><strong>Integração</strong><br /> com clientes</p>
-        </div>
-        <div>
-          <img src="./assets/images/home/ico-automatizacao.svg" />
-          <p><strong>Automatização</strong><br /> de processos</p>
-        </div>
-        <div>
-          <img src="./assets/images/home/ico-controle.svg" />
-          <p><strong>Controle</strong> <br />de produtividade</p>
-        </div>
-      </div>
-      <div>
-        <button class="btn-primary mr-3">Saiba mais</button>
-      </div>
-    </div>
-  </section>
+          <div class="col-12">
+            <div class="div-justify-center">
+              <article class="box">
+                <img src="./assets/images/home/ico-comercio.svg" alt="Comércio de todos os tipos"/>
+                <p><strong>Comércio</strong> de <br/> todos os tipos</p>
+              </article>
+              <article class="box">
+                <img src="./assets/images/home/ico-industria.svg" alt="Indústria de todos os tamanhos"/>
+                <p><strong>Indústria</strong> de <br/>todos os tamanhos</p>
+              </article>
+              <article class="box">
+                <img src="./assets/images/home/ico-servicos.svg" alt="Serviços e demais segmentos"/>
+                <p><strong>Serviços</strong> e demais <br/> segmentos</p>
+              </article>
+            </div>
 
-  <section class="banner-about-us banner-mid height-auto box-default">
-    <img src="./assets/images/logo-omie.png" />
-    <img src="./assets/images/about-us/setas-grafismo.png" />
-    
-    <div class="d-flex box-bussiness w-100 justify-content-around">
-      <div>
-        <h3>Gestão</h3>
-        <p>Um sistema de gestão eficiente onde você controla todas as áreas da sua empresa de um jeito simples e rápido.</p>
+            <div class="actions">
+              <a href="" class="cta blue-cta">Saiba mais</a>
+              <a href="" class="cta transparent-cta mt-4">Conheça os planos</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>Finanças</h3>
-        <p>Todas as funcionalidades de um banco digital diretamente no sistema de gestão, para facilitar o seu dia a dia.</p>
+    </section>
+
+    <section class="sec-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4">Omie para contabilidade</h2>
+            <p>Vantagens para evoluir o seu negócio e de seus clientes.</p>
+          </div>
+
+          <div class="col-12">
+            <div class="div-justify-center">
+              <article class="box">
+                <img src="./assets/images/home/ico-integracao.svg" alt="Integração com clientes"/>
+                <p><strong>Integração</strong><br /> com clientes</p>
+              </article>
+              <article class="box">
+                <img src="./assets/images/home/ico-automatizacao.svg" alt="Automatização de processos"/>
+                <p><strong>Automatização</strong><br /> de processos</p>
+              </article>
+              <article class="box">
+                <img src="./assets/images/home/ico-controle.svg" alt="Controle de produtividade"/>
+                <p><strong>Controle</strong> <br />de produtividade</p>
+              </article>
+            </div>
+
+            <div class="actions">
+              <a href="" class="cta blue-cta">Saiba mais</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>Educação</h3>
-        <p>Cursos gratuitos com os melhores profissionais do mercado para potencializar as habilidades da sua equipe e impulsionar seu negócio.</p>
-      </div>    
-    </div>
-  </section>
+    </section>
+
+    <section class="sec-main bg-heavy-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-white mb-4">Vamos impulsionar seu negócio</h2>
+            <p class="text-white">Queremos alavancar o empreendedorismo brasileiro através de uma plataforma que reune gestão, finanças e educação.</p>
+          </div>
+          <div class="col-12">
+            <div class="cards-business">
+              <article class="card">
+                <div class="card-header">
+                  <h3 class="text-white">Gestão</h3>
+                </div>
+                <div class="card-content">
+                  <p class="text-white mb-0">Um sistema de gestão eficiente onde você controla todas as áreas da sua empresa de um jeito simples e rápido.</p>
+                </div>
+                <span class="purple"></span>
+              </article>
+
+              <article class="card">
+                <div class="card-header">
+                  <h3 class="text-white">Finanças</h3>
+                </div>
+                <div class="card-content">
+                  <p class="text-white mb-0">Todas as funcionalidades de um banco digital diretamente no sistema de gestão, para facilitar o seu dia a dia.</p>
+                </div>
+                <span class="green"></span>
+              </article>
+
+              <article class="card">
+                <div class="card-header">
+                  <h3 class="text-white">Educação</h3>
+                </div>
+                <div class="card-content">
+                  <p class="text-white mb-0">Cursos gratuitos com os melhores profissionais do mercado para potencializar as habilidades da sua equipe e impulsionar seu negócio.</p>
+                </div>
+                <span class="orange"></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-4">Estamos revolucionando o mercado</h2>
+            <p>Atualmente, movimentamos 1,7% do PIB brasileiro.</p>
+          </div>
+
+          <div class="col-12">
+            <ul class="counter-list">
+              <li><span>105</span> franquias</li>
+              <li><span>14BI</span> notas emitidas</li>
+              <li><span>72K</span> clientes</li>
+            </ul>
+            <div class="actions"><a href="" class="cta blue-cta">Saiba mais sobre a Omie</a></div>
+          </div>
+
+          <div class="col-12">
+            <article class="depoiment">
+              
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <section class="pattern-video-2">
     <div class="container">

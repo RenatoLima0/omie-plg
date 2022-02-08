@@ -8,7 +8,7 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 
 // Funçao para compilar o SASS e adicionar os prefixos
-function compilaSass() {
+function compilaSassGeral() {
   return gulp
   .src('assets/css/scss/*.scss')
   .pipe(sass({
@@ -23,8 +23,23 @@ function compilaSass() {
 }
 
 // Tarefa de gulp para a função de SASS
-// gulp.task('sass', compilaSass);
-exports.compilaSass = compilaSass;
+exports.compilaSassGeral = compilaSassGeral;
+
+function compilaSassHome() {
+  return gulp
+  .src('assets/css/scss/pages/home/*.scss')
+  .pipe(sass({
+    outputStyle: 'compressed'
+  }))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(gulp.dest('assets/css/pages/home/'))
+  .pipe(browserSync.stream());
+}
+
+exports.compilaSassHome = compilaSassHome;
 
 // Função para juntar o JS
 function gulpJS() {
@@ -39,7 +54,6 @@ function gulpJS() {
   .pipe(browserSync.stream());
 }
 
-// gulp.task('mainjs', gulpJS);
 exports.gulpJS = gulpJS;
 
 // Função para usar os plugins do node 
@@ -51,7 +65,6 @@ function pluginJS() {
   .pipe(browserSync.stream());
 }
 
-// gulp.task('pluginjs', pluginJS);
 exports.pluginJS = pluginJS;
 
 // Função para iniciar o browser
@@ -64,12 +77,12 @@ function browser() {
 }
 
 // Tarefa para iniciar o browser-sync
-// gulp.task('browser-sync', browser);
 exports.browser = browser;
 
 // Função de watch do Gulp
 function watch() {
-  gulp.watch('assets/css/scss/**/*.scss', compilaSass);
+  gulp.watch('assets/css/scss/**/*.scss', compilaSassGeral);
+  gulp.watch('assets/css/scss/**/*.scss', compilaSassHome);
   gulp.watch('assets/js/main/*.js', gulpJS);
   gulp.watch(['*.html']).on('change', browserSync.reload);
 }
@@ -80,4 +93,4 @@ exports.watch = watch;
 
 // Tarefa padrão do Gulp, que inicia o watch e o browser-sync
 // gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass', 'mainjs', 'pluginjs'));
-exports.default = gulp.parallel(watch, browser, compilaSass, gulpJS, pluginJS);
+exports.default = gulp.parallel(watch, browser, compilaSassGeral, compilaSassHome, gulpJS, pluginJS);

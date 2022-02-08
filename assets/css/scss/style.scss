@@ -119,7 +119,7 @@ section {
 }
 
 .box-default {
-  padding: 80px;
+  padding: 80px!important;
 
   @media(max-width:1440px) {    
     padding: 60px;
@@ -1657,6 +1657,7 @@ footer {
 .grid-container-4 {
   grid-template-columns: 24% 24% 24% 24%;
   display: grid;
+  column-gap: 32px;
 }
 
 .box-funcionalidades {
@@ -1694,6 +1695,10 @@ footer {
 }
 .box-map {
   background:#001E27;
+
+  div {
+    padding:40px 0;
+  }
 }
 .box-info-map {
   background: #fff;
@@ -1859,6 +1864,14 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
+  row-gap: 16px;
+  column-gap: 16px;
+
+  &.grid-vantagens {
+    div {
+      background:#F7F7F7;
+    }   
+  }
 
   @media(max-width:980px) {
     grid-template-columns: 100%;
@@ -1869,7 +1882,7 @@ footer {
   }
   
   .grid-item {
-    padding: 24px 64px;  
+    padding: 24px;  
 
     h3 {
       font-size: 1.4em;
@@ -1878,6 +1891,7 @@ footer {
 
     p {
       line-height: 24px;
+      margin-top: 32px;
     }
   }
 }
@@ -1943,25 +1957,49 @@ footer {
 
   ul {
     padding: 0;
-    border-bottom: 1px solid #DBDFDE;
+  
     display: flex;
+    justify-content: center;
+    margin:40px 0;
+
     li {
       width: 300px;
       list-style: none;
       text-align: center;
       font-size: 1.7vw;
       cursor: pointer;
+      border-bottom: 1px solid #DBDFDE;
       &.active {
         border-bottom: 2px #00E2F4 solid;
       }
     }
   }
 
+ 
   div {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
+    column-gap: 16px;
 
+    &.box {
+      background-color: #F7F7F7;
+      height: 240px;
+      width: 100%;
+      max-width: 397px;
+      padding: 24px;
+
+      .înfo {
+        align-items: flex-start;
+  
+        p {
+          text-align: left;
+        }
+      }  
+    }
+
+   
+   
     img {
       margin-bottom: 32px;
     }
@@ -2246,6 +2284,14 @@ footer {
   margin-bottom: 80px;
 }
 
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .box-info-tab-list {
   @media (max-width:1024px) {
     flex-direction: column;
@@ -2320,4 +2366,11 @@ footer {
     font-weight: 600;
     color: #4F5C5C;
   }
+}
+
+.rigth-video {
+  right: 30px;
+}
+.max-width-auto {
+  max-width: inherit!important;
 }

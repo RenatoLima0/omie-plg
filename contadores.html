@@ -309,31 +309,37 @@
     <h2 class="sub-title mb-1">Gerencie todos os seus clientes no Painel do Contador</h2>
     <p class="text-center mb-4">Seu relacionamento com seus clientes fica mais rápido e fácil. Você recebe toda a documentação fiscal e contábis e realiza sua rotina em um sistema totalmente online.</p>
     <section class="box-tab-select d-flex justify-content-between mt-4">
-      <div class="tab col-md-3">
-        <div class="box active">
-          <div class="title-tab">
-            <img src="./assets/images/contadores/ico-controle.svg" />
-            <h5>Controle de Lançamentos</h5>
+      <div class="tab col-md-12 col-lg-3">
+        <div class="box tablinks active">
+          <div class="title-tab" data-tab="box-1">
+            <img src="./assets/images/contadores/ico-controle.svg" data-tab="box-1" />
+            <h5 data-tab="box-1">Controle de Lançamentos</h5>
+          </div>        
+          <p class="info-tab"  data-tab="box-1">Você pode bloquear os lançamentos de períodos já fechados e evitar inconsistências na sua contabilidade.</p>
+        </div>
+        <div class="box tablinks">
+          <div class="title-tab" data-tab="box-2">
+            <img src="./assets/images/contadores/ico-controle.svg"  data-tab="box-2"/>
+            <h5 data-tab="box-2">Controle de Lançamentos</h5>
           </div>        
           <p class="info-tab">Você pode bloquear os lançamentos de períodos já fechados e evitar inconsistências na sua contabilidade.</p>
         </div>
-        <div class="box">
-          <div class="title-tab">
-            <img src="./assets/images/contadores/ico-controle.svg" />
-            <h5>Controle de Lançamentos</h5>
+        <div class="box tablinks">
+          <div class="title-tab" data-tab="box-2">
+            <img src="./assets/images/contadores/ico-controle.svg"  data-tab="box-3"/>
+            <h5 data-tab="box-3">Controle de Lançamentos</h5>
           </div>        
-          <p class="info-tab">Você pode bloquear os lançamentos de períodos já fechados e evitar inconsistências na sua contabilidade.</p>
-        </div>
-        <div class="box">
-          <div class="title-tab">
-            <img src="./assets/images/contadores/ico-controle.svg" />
-            <h5>Controle de Lançamentos</h5>
-          </div>        
-          <p class="info-tab">Você pode bloquear os lançamentos de períodos já fechados e evitar inconsistências na sua contabilidade.</p>
+          <p class="info-tab" data-tab="box-3">Você pode bloquear os lançamentos de períodos já fechados e evitar inconsistências na sua contabilidade.</p>
         </div>
       </div>
-      <div class="info-tab col-md-9">
-        <p>aadsasdas</p>
+      <div id="box-1" class="info-tab col-md-12 col-lg-9 tabcontent">
+        <p>London</p>
+      </div>
+      <div id="box-2" class="info-tab col-md-12 col-lg-9 tabcontent d-none">
+        <p>tewt</p>
+      </div>
+      <div id="box-3" class="info-tab col-md-12 col-lg-9 tabcontent d-none">
+        <p>123</p>
       </div>
     </section>
 
@@ -343,7 +349,7 @@
     <div class="container pattern-home-4">   
       <div class="container position-relative box-video pattern-home-5">
         <img src="./assets/images/about-us/video.png">
-        <div>
+        <div class="mt-80">
           <p>“Com a parceria com a Omie a gente consegue ajudar o cliente a tomar a melhor decisão e acompanhar sua evolução.”</p>
           <p>Fabio Oberle <span>Contador consultivo Omie</span></p>
         </div>
@@ -405,28 +411,28 @@
         </h3>
         <button class="btn-primary">Seja Parceiro</button>
       </div>
-      <div class="d-flex flex-column justify-content-between col-md-3 w-100">
+      <div class="d-flex flex-column justify-content-between col-md-3 w-100 expansive-div">
         <img src="./assets/images/contadores/ico-comissao.svg" />
         <h6>Comissão por indicação</h6>
       </div>
-      <div class="d-flex flex-column justify-content-between col-md-3 w-100">
+      <div class="d-flex flex-column justify-content-between col-md-3 w-100 expansive-div">
         <img src="./assets/images/contadores/ico-linhacredito.svg" />
         <h6>Linha de crédito exclusiva</h6>
       </div>
     </div>
     <div class="grid-container">
-      <div class="d-flex flex-column justify-content-between col-md-6 w-100">
+      <div class="d-flex flex-column justify-content-between col-md-6 w-100 expansive-div">
         <div class="d-flex w-100 justify-content-between align-items-baseline">          
           <img src="./assets/images/contadores/ico-omaior.svg" />
           <div class="div-gradient">&nbsp;</div>
         </div>
         <p>O maior clube de vantagens para contadores do Brasil</p>
       </div>
-      <div class="d-flex flex-column justify-content-between col-md-3 w-100">
+      <div class="d-flex flex-column justify-content-between col-md-3 w-100 expansive-div">
         <img src="./assets/images/contadores/ico-sistemagratuito.svg" />
         <h6>Comissão por indicação</h6>
       </div>
-      <div class="d-flex flex-column justify-content-between col-md-3 w-100">
+      <div class="d-flex flex-column justify-content-between col-md-3 w-100 expansive-div">
         <img src="./assets/images/contadores/ico-suporte.svg" />
         <h6>Linha de crédito exclusiva</h6>
       </div>
@@ -467,7 +473,7 @@
     </div> 
   </section>
   <section class="container pattern-video no-image-bg mtb-80">  
-    <div class="d-flex justify-content-between container px-0 mtb-80 responsive-flex-column">
+    <div class="d-flex justify-content-between container px-0 mtb-80 responsive-flex-column row">
       <div class="box-info-list mb-80 col-md-12 col-lg-6">
         <h3>Respondemos as dúvidas mais frequentes de outros contadores</h3>
       </div> 
@@ -476,36 +482,36 @@
           <li>
             <div class="d-flex justify-content-between align-items-center">
               <h4>O que é o produto do Oneflow? </h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
+               <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-1"></i>
             </div>
-            <div class="info">
+            <div class="info info-faq" id="tab-faq-1">
               <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
             </div>
           </li>
           <li>
             <div class="d-flex justify-content-between align-items-center">
               <h4>Qual o valor do plano para contador parceiro? </h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
+               <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-2"></i>
             </div>
-            <div class="info">
+              <div class="info info-faq d-none" id="tab-faq-2">
               <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
             </div>
           </li>
           <li>
             <div class="d-flex justify-content-between align-items-center">
               <h4>É possível agendar algum treinamento com a Omie?</h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
+              <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-3"></i>
             </div>
-            <div class="info">
+              <div class="info info-faq d-none" id="tab-faq-3">
               <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
             </div>
           </li>
           <li>
             <div class="d-flex justify-content-between align-items-center">
               <h4>Posso utilizar o Omie para gerir meu próprio escritório? </h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
+               <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-4"></i>
             </div>
-            <div class="info">
+              <div class="info info-faq d-none" id="tab-faq-4">
               <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
             </div>
           </li>
@@ -516,11 +522,12 @@
   </section>
 
 
+
   <section class="h-400">
-    <div class="container box-plan w-80 float-left bg-secundary float-left h-100">
-      <div class="box-default">
-        <h2 class="text-left color-white">Seja Parceiro Omie e aproveite todos os benefícios o</h2>
-        <p class="text-left color-white">Responda algumas perguntas para entendermos a melhor forma de você se tornar um Parceiro Omie.</p>
+    <div class="container box-plan w-80 float-left bg-secundary float-left h-100 box-default">
+      <div>
+        <h2 class="text-left color-white mb-4">Seja Parceiro Omie e aproveite todos os benefícios o</h2>
+        <p class="text-left color-white mb-4">Responda algumas perguntas para entendermos a melhor forma de você se tornar um Parceiro Omie.</p>
       </div>
       <div class="box-btn-plan">
         <button>Seja Parceiro</button>
@@ -731,5 +738,59 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+  var tabFaq = document.querySelectorAll(".tab-faq");
+  var contentFaq = document.querySelectorAll(".info-faq");
+
+  tabFaq.forEach(item => {
+    item.addEventListener('click', event => {       
+      var dataTarget = event.target.getAttribute('data-faq');
+      var classIcon = event.target  
+
+      tabFaq.forEach((e) => { 
+        e.classList.remove('rotate-icon-180');  
+      })  
+
+      classIcon.classList.add('rotate-icon-180');  
+      contentFaq.forEach((e) => { 
+        var id = e.getAttribute('id');
+       
+        if (id === dataTarget) {
+          e.classList.remove("d-none")
+          e.classList.add('active');                   
+        } else {
+          e.classList.add("d-none");
+          e.classList.remove('rotate-icon-180');  
+        }
+      });
+    })
+  });
+
+  var tablinks = document.querySelectorAll(".tablinks");
+  var boxTab = document.querySelectorAll(".tabcontent");
+  
+  tablinks.forEach(item => {
+    item.addEventListener('click', event => {       
+      var dataTarget = event.target.getAttribute('data-tab');
+      var classIcon = event.target  
+
+      tablinks.forEach((e) => { 
+        e.classList.remove('active');  
+      })  
+
+      classIcon.classList.add('active'); 
+      boxTab.forEach((e) => { 
+        var id = e.getAttribute('id');
+        if (id === dataTarget) {
+          e.classList.remove("d-none")
+          e.classList.add('active');
+        } else {
+          e.classList.add("d-none");
+        }
+      });
+    })
+  });
+</script>
 </body>
 </html>

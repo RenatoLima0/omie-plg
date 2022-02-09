@@ -978,7 +978,7 @@ footer {
 }
 
 .h-100 {
-  height: 100%;
+  height: 100%!important;
 }
 
 .banner-seta-roxo {
@@ -1064,18 +1064,8 @@ footer {
       padding-bottom: 16px;
       margin-bottom: 16px;
 
-      &:nth-of-type(1) {
-        .info {
-          display: block;
-        }
-      }
-
       p {
         margin: 0;
-      }
-
-      .info {
-        display: none;
       }
     }
   }
@@ -1083,7 +1073,13 @@ footer {
 
 .link-a {
   font-weight: 700;
-  font-size: 1.7vw;
+  font-size: 1vw;
+  padding: 8px 16px;
+
+  &:hover {
+    background: #f7f7f7;
+    border-radius: 53px;    
+  }
 }
 
 .cursor-pointer {
@@ -1115,8 +1111,7 @@ footer {
     }
       
     .box {
-      border: 1px solid #DBDFDE;
-      padding: 20px 16px;
+      border: 1px solid #DBDFDE;     
       border-radius: 8px;
       margin-bottom: 16px;
       cursor: pointer;
@@ -1124,6 +1119,7 @@ footer {
       .title-tab {
         display: flex;
         align-items: center;
+        padding: 20px 16px;
 
         img {
           margin-right: 8px;
@@ -1139,6 +1135,7 @@ footer {
 
         .info-tab {
           display: block;
+          padding: 0 24px 24px;
         }
       }
 
@@ -1454,7 +1451,7 @@ footer {
 
   div {
     padding: 24px;
-    height:280px;
+    height:280px;  
 
     @media(max-width:1024px) {
       margin-bottom: 24px;
@@ -1638,7 +1635,7 @@ footer {
 .grid-container-2 {
   grid-template-columns: 49% 49%;
   display: grid;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
 
 .grid-container-3 {
@@ -1864,9 +1861,7 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  row-gap: 16px;
-  column-gap: 16px;
-
+  
   &.grid-vantagens {
     div {
       background:#F7F7F7;
@@ -1905,9 +1900,19 @@ footer {
     box-sizing: border-box;
     box-shadow: 0px 4px 2px rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-    padding: 24px 24px 0 24px;
+    padding: 16px 24px 0 24px;
     width: 397px;
     border-bottom: 0!important;
+    height: 60px;
+    overflow: hidden;
+    transition: height 1s;
+
+    &:hover {
+      transition: height 1s;
+      height: 220px;
+    }
+
+
     @media(max-width:980px) {
       width: 100%;
       margin-bottom: 24px;
@@ -2336,13 +2341,13 @@ footer {
 }
 
 .border-radius-8 {
-  border-radius: 8px;
+  border-radius: 8px!important;
 }
 
 .banner-sobre {
-  height: auto;
-    padding: 170px 0;
-    margin-top: 120px;
+  height: 800px;
+  padding: 170px 0;
+  margin-top: 120px;
 }
 
 .banner-faq {
@@ -2373,4 +2378,21 @@ footer {
 }
 .max-width-auto {
   max-width: inherit!important;
+}
+
+.expansive-div {
+  transition: all 0.2s linear;
+  
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+  }
+}
+
+.rotate-icon-180 {
+  transform: rotate(180deg);
+}
+
+.tab-faq {
+  transition: all linear 1s;
 }

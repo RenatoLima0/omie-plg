@@ -139,5 +139,16 @@ if(document.querySelector('.sec-tab')){
   arrowNext.addEventListener('click', nextStepTab);
   arrowPrev.addEventListener('click', prevStepTab);
 }
-
 // ######################## FIM PÁGINA FIT ###########################
+
+function tabSelected(tablniks, boxTab) {
+  boxTab.forEach((e) => { 
+    var id = e.getAttribute('id');
+    if (id === dataTarget) {
+      e.classList.remove("d-none")
+      e.classList.add('active');
+    } else {
+      e.classList.add("d-none");
+    }
+  });
+}

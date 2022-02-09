@@ -626,17 +626,26 @@
       <img src="./assets/images/home/pattern3.png" />
     </div>
   </section> 
-  <section class="pattern-video no-image-bg mtb-80">
-    <div class="container">
-    <div class="d-flex justify-content-between container px-0 responsive-flex-column">
+  <section class="container pattern-video no-image-bg">
+    <div class="d-flex justify-content-between container px-0 mtb-80">
       <div class="box-info-list mb-80">
-        <h3>Respondemos as dúvidas mais frequentes sobre os nossos planos</h3>
+        <h3>Respondemos as dúvidas mais frequentes sobre a franquia Omie
+        </h3>
       </div> 
       <div class="box-ask">
         <ul>
           <li>
             <div class="d-flex justify-content-between align-items-center">
-              <h4>O que é o produto do Oneflow?</h4>
+              <h4>Preciso ter formação ou experiência na área de tecnologia para me tornar um franqueado?</h4>
+              <i class="fas fa-chevron-down cursor-pointer"></i>
+            </div>
+            <div class="info">
+              <p>Não é necessário ter formação para atuar como franqueado. </p>
+            </div>
+          </li>
+          <li>
+            <div class="d-flex justify-content-between align-items-center">
+              <h4>Preciso ter uma equipe na minha franquia?</h4>
               <i class="fas fa-chevron-down cursor-pointer"></i>
             </div>
             <div class="info">
@@ -645,7 +654,7 @@
           </li>
           <li>
             <div class="d-flex justify-content-between align-items-center">
-              <h4>Qual o valor do plano para contador parceiro?</h4>
+              <h4>A franqueadora Omie cobra royalties mínimas das franquias?</h4>
               <i class="fas fa-chevron-down cursor-pointer"></i>
             </div>
             <div class="info">
@@ -654,16 +663,7 @@
           </li>
           <li>
             <div class="d-flex justify-content-between align-items-center">
-              <h4>É possível agendar algum treinamento com a Omie?</h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
-            </div>
-            <div class="info">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Posso utilizar o Omie para gerir meu próprio escritório?</h4>
+              <h4>Vou vender o ERP Omie para contadores também?</h4>
               <i class="fas fa-chevron-down cursor-pointer"></i>
             </div>
             <div class="info">
@@ -674,7 +674,6 @@
         </ul>
       </div>      
     </div>  
-    </div>
   </section>
 
 
@@ -878,5 +877,33 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script>
+    var tabFaq = document.querySelectorAll(".tab-faq");
+    var contentFaq = document.querySelectorAll(".info-faq");
+  
+    tabFaq.forEach(item => {
+      item.addEventListener('click', event => {       
+        var dataTarget = event.target.getAttribute('data-faq');
+        var classIcon = event.target  
+  
+        tabFaq.forEach((e) => { 
+          e.classList.remove('rotate-icon-180');  
+        })  
+  
+        classIcon.classList.add('rotate-icon-180');  
+        contentFaq.forEach((e) => { 
+          var id = e.getAttribute('id');
+         
+          if (id === dataTarget) {
+            e.classList.remove("d-none")
+            e.classList.add('active');                   
+          } else {
+            e.classList.add("d-none");
+            e.classList.remove('rotate-icon-180');  
+          }
+        });
+      })
+    });
+  </script>
 </body>
 </html>

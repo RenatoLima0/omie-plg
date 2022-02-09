@@ -1,0 +1,153 @@
+@import "./../../components/colors";
+
+.banner-home {
+  background: 
+    url('/assets/images/home/persona1.png') no-repeat -70px 400px, 
+    url('/assets/images/home/bg-banner-home.png') no-repeat -10px 320px, 
+    linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+  background-size: contain;
+  height: calc(100vh - 89.89px);
+  margin: 80px 0 0 0;
+  padding: 4rem 0 1rem;
+
+  h1, p {
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+
+  .images-banner {
+    margin-top: 2rem;
+  }
+
+  img {
+    &:first-child {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      width: 70%;
+    }
+  }
+
+}
+
+.div-solucoes {
+  margin: 2rem 0 0;
+
+  .solucao {
+    display: grid;
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    margin: 0 auto 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.406rem;
+    font-weight: 400;
+  }
+}
+
+.div-justify-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0 1rem;
+
+  .box {
+    display: grid;
+    margin: 0 1rem 1rem;
+    text-align: center;
+
+    &:last-child {
+      margin: 0 0 0;
+    }
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.cards-business {
+  margin-top: 1rem;
+
+  h3 {
+    font-size: 1.406rem;
+    font-weight: 400;
+  }
+
+  .card {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0 0;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-header, .card-content {
+    padding: 0 1rem;
+  }
+
+  span {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 6px;
+    margin: 2rem auto 0;
+    width: 99%;    
+  }
+
+  span.purple {
+    background: $mainPurple;
+  }
+
+  span.green {
+    background: $mainGreen;
+  }
+
+  span.orange {
+    background: $mainOrange;
+  }
+}
+
+.counter-list {
+  list-style: none;
+  margin: 2rem 0 3rem;
+  padding: 0;
+
+  li {
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    
+    &:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+  }
+  
+  span {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}

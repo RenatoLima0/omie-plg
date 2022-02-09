@@ -4,13 +4,14 @@
   display: block;
   padding: 2rem .5rem 1rem;
   position: fixed;
-  z-index: 10;
+  top: 0;
   width: 100%;
+  z-index: 10;
 
   .cta.transparent-cta {
     color: #fff;
     border: 2px solid #fff;
-    margin-left: 1rem;
+    margin-left: .5rem;
   }
   
   header {
@@ -24,11 +25,12 @@
   }
 
   .menu-hamburguer {
-    width: 2.5rem;
+    width: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: .3s;
   
     .traco {
       background-color: #fff;
@@ -54,6 +56,20 @@
   }
 
   .menu-hamburguer.ativo {
+    position: relative;
+    right: 5%;
+    width: 1.875rem;
+    z-index: 15;
+
+    .traco {
+      background: #000;
+      border-radius: 10px;
+      height: 3px;
+      margin: 3.75px 0;
+      transition: 0.5s;
+      width: 100%;
+    }
+    
     .traco-1 {
       transform: rotateZ(-45deg);
     }
@@ -69,10 +85,41 @@
 
   .items-menu {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem .5rem 1rem;
     position: fixed;
     transform: translateX(-150%);
     transition: .3s;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+
+    .link-nav-mobile {
+      margin-bottom: 3rem;
+    }
+
+    .link-menu-mobile {
+      font-weight: 500;
+      margin-bottom: .5rem;
+      padding: 1rem .5rem;
+    }
+
+    .cta.transparent-cta {
+      border: 2px solid $heavyBlue;
+      color: $heavyBlue;
+      margin-bottom: 2rem;
+    }
   }
+  
+  .items-menu.ativo {
+    transform: translateX(-2%);
+  }
+}
+
+.nav-desktop {
+  display: none;
 }
 
 @media (min-width: 428px){
@@ -80,7 +127,7 @@
     padding: 2rem 1.5rem 1rem;
 
     .menu-hamburguer {
-      width: 2.75rem;
+      width: 2.5rem;
     }
   }
 }
@@ -102,12 +149,13 @@
 
 @media (min-width: 1320px){
   .nav-desktop {
-    background: #fff;
+    background: transparent;
+    display: block;
     padding: 1.5rem $paddingFluidXDesktop;
-    // position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-
+    z-index: 99;
 
     .logo-omie-menu {
       display: flex;
@@ -154,6 +202,21 @@
     .cta.transparent-cta {
       border: 2px solid $heavyBlue;
       padding: .5rem 1.5rem;
+    }
+  }
+
+  .nav-desktop.ativo {
+    animation: showUp .5s forwards;
+    background-color: #fff;
+    position: fixed;
+  }
+
+  @keyframes showUp {
+    from {
+      transform: translate3d(0px, -90px, 0);
+    }
+    to {
+      transform: translate3d(0px, 0px, 0);
     }
   }
 

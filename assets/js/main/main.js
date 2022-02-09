@@ -1,4 +1,5 @@
 // BLOCO PARA INICIAR E FECHAR PÁGINA DE FORMULÁRIO
+
 // PRECISARÁ DE AJUSTES PARA VALIDAÇÃO DE LOGIN VIA E-MAIL, GOOGLE E LINKEDIN
 if(document.querySelector('.main-forms .btn-active-forms')){
   const activeForms = document.querySelector('.main-forms .btn-active-forms');
@@ -152,3 +153,43 @@ function tabSelected(tablniks, boxTab) {
     }
   });
 }
+// ######################## FIM PÁGINA FIT ###########################
+
+//MENU MOBILE 
+const tela = window.innerWidth;
+
+if(tela <= 1024){
+  const menuMobile = () => {
+    const menuHamburger = document.querySelector('.menu-hamburguer');
+    const itemsMenu = document.querySelector('.items-menu');
+    
+    menuHamburger.onclick = () => {
+      console.log('aqui');
+      menuHamburger.classList.toggle('ativo');
+      itemsMenu.classList.toggle('ativo');
+    }
+    
+    const fechaMenu = () => {
+      menuHamburger.classList.remove('ativo');
+    }
+  }
+
+  menuMobile();  
+} else {
+  
+  const animaScroll = () => {
+    const menuDesktop = document.querySelector('nav.nav-desktop');
+    const banner = document.querySelector('.banner');
+    const bannerBottom = banner.getBoundingClientRect().top;
+    
+    if(!(bannerBottom < -350)){
+      menuDesktop.classList.remove('ativo');
+    } else {
+      menuDesktop.classList.add('ativo');
+    }
+  }
+
+  window.addEventListener('scroll', animaScroll);
+  animaScroll();
+}
+//FIM MENU MOBILE

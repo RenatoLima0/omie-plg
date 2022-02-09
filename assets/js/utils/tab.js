@@ -4,5 +4,4 @@ function tabLink(click, box) {
 
   console.log('dataClick', dataClick)
   console.log('dataBox', dataBox)
-  
 }

@@ -10,13 +10,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/fit/index.css">
 </head>
 
 <body>
 
+  <!-- 10.681,67 -->
+
   <header class="header-form">
     <img src="assets/images/logo-omie.png" alt="Omie logo" class="logo-omie">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg back-page" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
       <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
     </svg>
@@ -29,19 +32,71 @@
           <div class="col-12 col-lg-7 col-xl-7 col-initial">
             <div class="texts">
               <h1>Olá, vamos começar!</h1>
-              <p>Crie sua conta em poucos passos para experimentar</p>
             </div>
 
             <div class="data-user">
+              <label for="firstName">Qual é seu nome?</label>
               <input type="text" name="firstName" id="firstName" placeholder="Nome" />
+            </div>
+
+            <div class="data-user">
+              <label for="cnpj">Qual é seu CNPJ?</label>
               <input type="text" name="cnpj" id="cnpj" placeholder="00.000.000/0000-00" />
             </div>
 
-            <div class="form-check form-check-fit">
+            <div class="data-user">
+              <label for="segmentos">Qual o segmento do seu negócio?</label>
+              <select name="segmentos" id="" class="form-select">
+                <option value="">Indústria</option>
+                <option value="">Energia</option>
+                <option value="">Transportes</option>
+                <option value="">Tecnologia</option>
+                <option value="">Cursos e educação</option>
+              </select>
+            </div>
+
+            <div class="data-user">
+              <label for="faturamento">Qual o faturamento anual da sua empresa?</label>
+              <select name="faturamento" id="" class="form-select dropdown-toggle">
+                <option value="">Até R$180.000,00</option>
+                <option value="">Até R$360.000,00</option>
+                <option value="">Até R$1.800.000,00</option>
+                <option value="">De R$1.800.000,00 até R$10.000.000,00</option>
+                <option value="">A partir de R$10.000.000,00</option>
+              </select>
+            </div>
+
+            <div class="data-user">
+              <label for="">Qual o regime fiscal?</label>
+              <div class="radios d-xl-flex">
+                <div class="form-check me-xl-4">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    MEI
+                  </label>
+                </div>
+                <div class="form-check mx-xl-4">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Simples Nacional
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Lucro Real / Presumido
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- <div class="form-check form-check-fit">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">Meu faturamento não passa de R$180.000,00 por ano.</label>
-            </div>
-            <div class="form-check form-check-fit mb-xl-0">
+            </div> -->
+
+            <div class="form-check form-check-fit mb-xl-0 mt-xl-4">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">Concordo com os termos de uso e política de privacidade da Omie.</label>
             </div>
@@ -62,7 +117,285 @@
     <section class="sec-form-fit" data-tab="0">
       <div class="container px-0">
         <div class="row justify-content-between">
-          <div class="col-12 col-lg-6 col-xxl-7">
+          <!-- CADASTRAR EMPRESA  -->
+          <!-- <div class="col-12 col-lg-6 col-xxl-7">
+            <div class="row">
+              <div class="col-12 pt-5">
+                <h2>Agora, vamos cadastrar sua empresa!</h2>
+                <p>Com Omie.Cash você realiza suas transações bancárias em uma plataforma única, de um jeito rápido, simples e seguro.</p>
+              </div>
+              <div class="col-12 mt-5">
+                <h3 class="mb-0">Informações de contato</h3>
+                <form action="">
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Nome completo">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="E-mail">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Telefone comercial">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Telefone celular">
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-12 mt-5">
+                <h3 class="mb-0">Dados da empresa</h3>
+                <form action="">
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Nome fantasia">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="CNPJ">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Razão social">
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-12 mt-5">
+                <h3 class="mb-0">Endereço</h3>
+                <form action="">
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="CEP">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Endereço">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Número">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Complemento">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Bairro">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="Cidade">
+                  </div>
+                  <div class="form-group mb-4">
+                    <input type="text" placeholder="UF">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-12 col-lg-6 col-xl-7 col-xxl-7">
+            <div class="row">
+              <div class="col-12 pt-5">
+                <h2>Selecione o produto</h2>
+              </div>
+              <div class="col-12 mt-5">
+                <div class="cards-products-card">
+                  <article class="card-product">
+                    <header>
+                      <h3>Omie.Fit</h3>
+                      <button data-price="0">+</button>
+                    </header>
+                    <div class="content">
+                      <p>Para empresas com movimentação financeira de até R$ 180 mil nos últimos doze meses, que precisam emitir notas fiscais e boletos sem complicação, além de um controle financeiro integrado. <br> *limite de 10 NFs mensais </p>
+                    </div>
+                    <footer>
+                      <h4><span class="price">Grátis</span></h4>
+                    </footer>
+                  </article>
+
+                  <article class="card-product" data-price="59">
+                    <header>
+                      <h3>MEI</h3>
+                      <button data-price="59">+</button>
+                    </header>
+                    <div class="content">
+                      <p>Exclusivo para empresas MEI que também precisam organizar sua carteira de clientes e estoque com eficiência para crescer. </p>
+                    </div>
+                    <footer>
+                      <h4>R$<span class="price">59</span>,00</h4>
+                    </footer>
+                  </article>
+                </div>
+              </div>
+              <div class="col-12 mt-5 pt-4">
+                <h2>Produtos especiais para você</h2>
+                <p>Adicione aplicativos complementares e personalize o sistema de acordo com as necessidades da sua empresa.</p>
+
+                <div class="cards-products-card cards-products-card-special">
+                  <article class="card-product">
+                    <header>
+                      <h3>Treinamento - Pack P</h3>
+                      <button data-price="1350">+</button>
+                    </header>
+                    <div class="content">
+                      <ul>
+                        <li>Instrutores ao vivo sem limites</l>
+                        <li>Quantos usuários você precisar</l>
+                      </ul>
+                    </div>
+                    <footer>
+                      <h4>R$<span class="price">1350</span>,00</h4>
+                    </footer>
+                  </article>
+                  
+                  <article class="card-product">
+                    <header>
+                      <h3>Treinamento - Pack M</h3>
+                      <button data-price="2580">+</button>
+                    </header>
+                    <div class="content">
+                      <ul>
+                        <li>Instrutores ao vivo sem limites</li>
+                        <li>Quantos usuários você precisar</li>
+                        <li>1 diária de consultoria</li>
+                      </ul>
+                    </div>
+                    <footer>
+                      <h4>R$<span class="price">2580</span>,00</h4>
+                    </footer>
+                  </article>
+                  
+                  <article class="card-product">
+                    <header>
+                      <h3>Treinamento - Pack G</h3>
+                      <button data-price="4390">+</button>
+                    </header>
+                    <div class="content">
+                      <ul>
+                        <li>Instrutores ao vivo sem limites</li>
+                        <li>Quantos usuários você precisar</li>
+                        <li>2 diárias de consultoria</li>
+                      </ul>
+                    </div>
+                    <footer>
+                      <h4>R$<span class="price">4390</span>,00</h4>
+                    </footer>
+                  </article>
+                  
+                  <article class="card-product">
+                    <header>
+                      <h3>Suporte Estendido 14x6</h3>
+                      <button data-price="240">+</button>
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod wom as plter asmmter doplter wtneras.</p>
+                    </div>
+                    <footer>
+                      <h4>R$<span class="price">240</span>,00</h4>
+                    </footer>
+                  </article>
+                  
+                  <article class="card-product">
+                    <header>
+                      <h3>Suporte Estendido 24x7</h3>
+                      <button data-price="425">+</button>
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod wom as plter asmmter doplter wtneras.</p>
+                    </div>
+                    <footer>
+                      <h4>R$<span class="price">425</span>,00</h4>
+                    </footer>
+                  </article>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-xl-4 d-none d-lg-block">
+            <div class="card-summary">
+              <h3 class="mb-5">Resumo da compra</h3>
+
+              <div class="accordion" id="accordionExample"> </div>
+
+              <div class="total-price">
+                <p class="mt-5 mb-0">Total</p>
+                <span class="price">R$ <span>00</span>,00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-digital-bank" data-tab="1">
+      <div class="container px-0">
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-5 py-5 pe-xl-4">
+            <h2>Já pensou em ter um banco digital dentro do sistema de gestão?</h2>
+            <p class="pt-3">Com Omie.Cash você realiza suas transações bancárias em uma plataforma única, de um jeito rápido, simples e seguro. </p>
+
+            <div class="form-check form-check-fit-cash form-fit-desktop mb-0 mt-5">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Sim, eu gostaria de saber mais sobre Omie.Cash</label>
+            </div>
+
+            <div class="form-check form-check-fit-cash form-fit-desktop mt-0 mb-5">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Não tenho interesse</label>
+            </div>
+
+            <div class="card-message card-message-desktop">
+              <p class="mb-0">Em breve um de nossos consultores entrará em contato com você para abrir sua conta digital. Continue para realizar seu cadastro. </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-7">
+            <div class="cards-bank">
+              <div class="card">
+                <img src="assets/images/ico-controle.png" alt="" class="img-fluid">
+                <div class="content">
+                  <h3>Controle financeiro</h3>
+                  <p>Mais facilidade para fazer movimentações bancárias e controlar o fluxo de caixa da sua empresa.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/images/ico-integracao.png" alt="" class="img-fluid">
+                <div class="content">
+                  <h3>Integração automática</h3>
+                  <p>Todas as movimentações bancárias são atualizadas no sistema de gestão em tempo real.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/images/ico-antifraude.png" alt="" class="img-fluid">
+                <div class="content">
+                  <h3>Sistema antifraude</h3>
+                  <p>Boletos registrados com senha de acesso, para garantir mais segurança e integridade às informações.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/images/ico-pagamentos.png" alt="" class="img-fluid">
+                <div class="content">
+                  <h3>Pagamentos automatizados</h3>
+                  <p>Mais produtividade para fazer e receber pagamentos, economizando tempo no seu dia a dia.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check form-check-fit-cash form-fit-mobile my-5">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Sim, eu gostaria de saber mais sobre Omie.Cash</label>
+            </div>
+
+            <div class="card-message card-message-mobile">
+              <p class="mb-0">Em breve um de nossos consultores entrará em contato com você para abrir sua conta digital. Continue para realizar seu cadastro. </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-form-fit" data-tab="2">
+      <div class="container px-0">
+        <div class="row justify-content-between">
+          <!-- CADASTRAR EMPRESA  -->
+          <div class="col-12 col-lg-6 col-xl-7">
             <div class="row">
               <div class="col-12 pt-5">
                 <h2>Agora, vamos cadastrar sua empresa!</h2>
@@ -131,24 +464,86 @@
           </div>
 
           <div class="col-lg-5 col-xl-4 d-none d-lg-block">
-            <div class="card-summary">
+            <div class="card-summary card-confirm">
+              <h3 class="mb-5">Resumo da compra</h3>
+
+              <div class="accordion" id="accordionExample"> </div>
+
+              <div class="total-price">
+                <p class="mt-5 mb-0">Total</p>
+                <span class="price">R$ <span>00</span>,00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-payment" data-tab="3">
+      <div class="container px-0">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-12 pt-5 pb-5 pb-lg-3">
+                <h2>Para finalizar, como você prefere pagar?</h2>
+              </div>
+    
+              <!-- <div class="col-12">
+                <p class="mt-5 mt-lg-0">Você pode utilizar as seguintes formas de pagamento:</p>
+                <ul class="list-payments">
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
+                </ul>
+              </div> -->
+    
+              <div class="col-12 mt-5">
+                <span class="span-payment">Seleciona a forma de pagamento</span>
+                <select name="" id="" class="form-select">
+                  <option value="">Boleto</option>
+                  <option value="">Boleto Flash</option>
+                  <option value="">Pix</option>
+                  <option value="">Cartão de crédito</option>
+                  <option value="">Paypal</option>
+                </select>
+              </div>
+    
+              <div class="col-12 mt-lg-5">
+                <h3>Dados de pagamento</h3>
+                <!-- INSERIR FORM  -->
+    
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-xl-4 d-none d-lg-block">
+            <div class="card-summary card-confirm">
               <h3 class="mb-5">Resumo da compra</h3>
 
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <span class="product-name">Omie.Full <strong>+ R$100,00/mês</strong></span>
                   </button>
 
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body"> descricao </div>
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <span class="product-name">Devi PDV <strong> + grátis</stron></span>
                   </button>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body"> descricao </div>
                   </div>
                 </div>
@@ -164,7 +559,42 @@
       </div>
     </section>
 
-    <section class="sec-produto" data-tab="1">
+    <section class="sec-thanks sec-thanks-fit" data-tab="4">
+      <div class="container px-0 height-100">
+        <div class="row height-100 justify-content-between">
+          <div class="col-12 col-initial col-initial-thanks">
+            <div class="confirmation">
+              <h2><span class="name">Luzia</span>, agradecemos pelas informações!</h2>
+              <div>
+                <p class="pb-0 pb-lg-5">Agora basta acessar seu e-mail <strong class="email">luzia@email.com.br</strong> para ativar o plano e começar a utilizar o sistema.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-5">Além do plano Omie.Fit, você adquiriu o(s) produto(s) abaixo:</h3>
+
+          <div class="col-12 col-lg-10">
+            <div class="cards-products">
+              <div class="card">
+                <h3 class="card-title mt-0">Omie.Pix</h3>
+                <p>A conta corrente digital dentro do seu sistema de gestão.</p>
+              </div>
+
+              <div class="card">
+                <h3 class="card-title mt-0">Omie.Academy</h3>
+                <p>Os melhores cursos para fazer seu negócio crescer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3 d-flex justify-content-center mt-4">
+            <a href="" class="cta blue-cta w-100">Concluir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="sec-produto" data-tab="1">
       <div class="container px-0">
         <div class="row justify-content-between">
           <div class="col-12 col-lg-6 col-xl-7">
@@ -190,20 +620,18 @@
 
               <div class="col-12 py-5">
                 <h2>Produtos especiais para Serviços</h2>
-                <p>Adicione aplicativos complementares para personalizar o sistema de acordo com as necessidades da sua
-                  empresa.</p>
+                <p>Adicione aplicativos complementares para personalizar o sistema de acordo com as necessidades da sua empresa.</p>
               </div>
 
               <div class="col-12">
                 <div class="accordion" id="accordionExample">
 
                   <div class="accordion-item item-add-cart">
-                    <!-- ATIVAR A CLASSE item-add-cart QUANDO ADICIONAR O PRODUTO AO CARRINHO  -->
+                    
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseProductOne" aria-expanded="true" aria-controls="collapseProductOne">
                       <span class="product-name">Força de vendas <br> <span class="add-cart">Adicionado ao
                           carrinho</span></span>
-                      <!-- ATIVAR A CLASSE add-cart QUANDO ADICIONAR O PRODUTO AO CARRINHO  -->
                       <img src="assets/images/mercos.png" alt="">
                     </button>
                     <div id="collapseProductOne" class="accordion-collapse collapse show"
@@ -318,73 +746,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="sec-digital-bank" data-tab="2">
-      <div class="container px-0">
-        <div class="row">
-          <div class="col-12 col-lg-8 col-xl-5 py-5 pe-xl-4">
-            <h2>Já pensou em ter um banco digital dentro do sistema de gestão?</h2>
-            <p class="pt-3">Com Omie.Cash você realiza suas transações bancárias em uma plataforma única, de um jeito rápido, simples e seguro. </p>
-
-            <div class="form-check form-check-fit-cash form-fit-desktop my-5">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Sim, eu gostaria de saber mais sobre Omie.Cash</label>
-            </div>
-
-            <div class="card-message card-message-desktop">
-              <p class="mb-0">Em breve um de nossos consultores entrará em contato com você para abrir sua conta digital. Continue para realizar seu cadastro. </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-xl-7">
-            <div class="cards-bank">
-              <div class="card">
-                <img src="assets/images/ico-controle.png" alt="" class="img-fluid">
-                <div class="content">
-                  <h3>Controle financeiro</h3>
-                  <p>Mais facilidade para fazer movimentações bancárias e controlar o fluxo de caixa da sua empresa.</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="assets/images/ico-integracao.png" alt="" class="img-fluid">
-                <div class="content">
-                  <h3>Integração automática</h3>
-                  <p>Todas as movimentações bancárias são atualizadas no sistema de gestão em tempo real.</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="assets/images/ico-antifraude.png" alt="" class="img-fluid">
-                <div class="content">
-                  <h3>Sistema antifraude</h3>
-                  <p>Boletos registrados com senha de acesso, para garantir mais segurança e integridade às informações.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="assets/images/ico-pagamentos.png" alt="" class="img-fluid">
-                <div class="content">
-                  <h3>Pagamentos automatizados</h3>
-                  <p>Mais produtividade para fazer e receber pagamentos, economizando tempo no seu dia a dia.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-check form-check-fit-cash form-fit-mobile my-5">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Sim, eu gostaria de saber mais sobre Omie.Cash</label>
-            </div>
-
-            <div class="card-message card-message-mobile">
-              <p class="mb-0">Em breve um de nossos consultores entrará em contato com você para abrir sua conta digital. Continue para realizar seu cadastro. </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec-confirm" data-tab="3">
+    <!-- <section class="sec-confirm" data-tab="3">
       <div class="container px-0">
         <div class="row justify-content-between">
           <div class="col-12 col-lg-6 col-xl-7">
@@ -430,159 +794,11 @@
 
             </div>
           </div>
-          <!-- BUG: DIV NÃO ESTÁ ALINHANDO COM O GRID A DIREITA DA PRIMEIRA COLUNA  -->
-          <!-- <div class="col-12 col-lg-5 col-xl-4 d-none d-lg-block">
-        </div>
-
-          <div class="card-summary">
-            <h3 class="mb-5">Resumo da compra</h3>
-
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <span class="product-name">Omie.Full <strong>+ R$100,00/mês</strong></span>
-                </button>
-
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body"> descricao </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="product-name">Devi PDV <strong> + grátis</stron></span>
-                </button>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body"> descricao </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="total-price">
-              <p class="mt-5 mb-0">Total</p>
-              <span class="price">R$ 496,00</span>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <section class="sec-payment" data-tab="4">
-      <div class="container px-0">
-        <div class="row justify-content-between">
-          <div class="col-12 col-lg-6">
-            <div class="row">
-              <div class="col-12 pt-5 pb-5 pb-lg-3">
-                <h2>Para finalizar, como você prefere pagar?</h2>
-              </div>
-    
-              <div class="col-12">
-                <p class="mt-5 mt-lg-0">Você pode utilizar as seguintes formas de pagamento:</p>
-                <ul class="list-payments">
-                  <!-- COLOCAR IMAGENS DE FORMAS DE PAGAMENTO  -->
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                  <li><img src="assets/images/ico-pagamentos.png" alt=""></li>
-                </ul>
-              </div>
-    
-              <div class="col-12 mt-5">
-                <span class="span-payment">Seleciona a forma de pagamento</span>
-                <select name="" id="" class="form-select">
-                  <option value="">Boleto</option>
-                  <option value="">Boleto Flash</option>
-                  <option value="">Pix</option>
-                  <option value="">Cartão de crédito</option>
-                  <option value="">Paypal</option>
-                </select>
-              </div>
-    
-              <div class="col-12 mt-lg-5">
-                <h3>Dados de pagamento</h3>
-                <!-- INSERIR FORM  -->
-    
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-5 col-xl-4 d-none d-lg-block">
-            <div class="card-summary">
-              <h3 class="mb-5">Resumo da compra</h3>
-
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <span class="product-name">Omie.Full <strong>+ R$100,00/mês</strong></span>
-                  </button>
-
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body"> descricao </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <span class="product-name">Devi PDV <strong> + grátis</stron></span>
-                  </button>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body"> descricao </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="total-price">
-                <p class="mt-5 mb-0">Total</p>
-                <span class="price">R$ 496,00</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="sec-thanks sec-thanks-fit" data-tab="5">
-      <div class="container px-0 height-100">
-        <div class="row height-100 justify-content-between">
-          <div class="col-12 col-initial col-initial-thanks">
-            <div class="confirmation">
-              <h2><span class="name">Luzia</span>, agradecemos pelas informações!</h2>
-              <div>
-                <p class="pb-0 pb-lg-5">Agora basta acessar seu e-mail <strong class="email">luzia@email.com.br</strong> para ativar o plano e começar a utilizar o sistema.</p>
-              </div>
-            </div>
-          </div>
-
-          <h3 class="mt-5">Além do plano Omie.Fit, você adquiriu o(s) produto(s) abaixo:</h3>
-
-          <div class="col-12 col-lg-10">
-            <div class="cards-products">
-              <div class="card">
-                <h3 class="card-title mt-0">Omie.Pix</h3>
-                <p>A conta corrente digital dentro do seu sistema de gestão.</p>
-              </div>
-
-              <div class="card">
-                <h3 class="card-title mt-0">Omie.Academy</h3>
-                <p>Os melhores cursos para fazer seu negócio crescer.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-3 d-flex justify-content-center mt-4">
-            <a href="" class="cta blue-cta w-100">Concluir</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec-tab">
+    <section class="sec-tab d-none">
       <div class="container-sm-fluid container px-0">
         <div class="row">
           <div class="col-12">
@@ -597,8 +813,6 @@
                   <div class="" data-tab-list="2"></div>
                   <div class="" data-tab-list="3"></div>
                   <div class="" data-tab-list="4"></div>
-                  <div class="" data-tab-list="5"></div>
-                  <!-- <li class="" data-tab="five"></li> -->
                 </div>
               </div>
               <div class="seta-tab seta-baixo">
@@ -611,13 +825,12 @@
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="assets/js/plugins.js"></script>
 
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/form-trial.js"></script>
+  <script src="assets/js/fit-page.js"></script>
 </body>
 
 </html>

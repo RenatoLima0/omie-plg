@@ -1,14 +1,42 @@
 @import "./../../components/colors";
 
-.banner-home {
+@keyframes showLeft {
+  from {
+    transform: translate3d(-30px, 0px, 0);
+  }
+  to {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+
+.banner-1{
   background: 
     url('/assets/images/home/persona1.png') no-repeat -70px 400px, 
     url('/assets/images/home/bg-banner-home.png') no-repeat -10px 320px, 
     linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+}
+
+.banner-2{
+  background: 
+    url('/assets/images/home/persona2.png') no-repeat -30px 350px, 
+    url('/assets/images/home/bg-banner-home-2.png') no-repeat -10px 320px, 
+    linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+}
+
+.banner-3{
+  background: 
+    url('/assets/images/home/persona3.png') no-repeat -30px 360px, 
+    url('/assets/images/home/bg-banner-home-3.png') no-repeat -10px 320px, 
+    linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+}
+
+.banner-home {
   background-size: contain;
-  height: calc(100vh - 89.89px);
+  height: fit-content;
+  min-height: calc(100vh - 89.89px);
   margin: 80px 0 0 0;
-  padding: 4rem 0 1rem;
+  padding: 3rem 0 1rem;
+  position: relative;
 
   h1, p {
     color: #fff;
@@ -29,7 +57,7 @@
     margin-top: 2rem;
   }
 
-  img {
+  .images-banner img {
     &:first-child {
       display: none;
     }
@@ -40,6 +68,86 @@
     }
   }
 
+  .container, .row {
+    height: 100%;
+  }
+}
+
+.nav-banner {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .titles-banner {
+    background: #fff;
+    padding: .75rem;
+    position: inherit;
+    top: -75%;
+    width: 90%;
+    right: 2%;
+  }
+
+  .titles-banner p {
+    color: $heavyBlue;
+    font-size: 0.875rem;
+  }
+
+  .titles-banner .title-1 {
+    border-left: 5px solid $mainOrange;
+    padding: 0 0 0 8px;
+  }
+
+  .titles-banner .title-2 {
+    border-left: 5px solid $mainPurple;
+    padding: 0 0 0 8px;
+  }
+
+  .titles-banner .title-3 {
+    border-left: 5px solid $mainGreen;
+    padding: 0 0 0 8px;
+  }
+
+  .titles {
+    width: 40%;
+  }
+
+
+  span {
+    font-size: 0.875rem;
+  }
+
+  .bullets {
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+  }
+
+  .bullet {
+    background: rgba(0, 0, 0, .4);
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+  }
+  
+  .bullet.ativo {
+    background: rgba(0, 0, 0, .8);
+  }
+
+  .arrows {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrows img:first-child {
+    transform: rotate(180deg);
+  }
 }
 
 .div-solucoes {
@@ -93,6 +201,10 @@
     font-weight: 400;
   }
 
+  img {
+    filter: brightness(0) invert(1);
+  }
+
   .card {
     background-color: transparent;
     border: 2px solid #fff;
@@ -104,6 +216,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .card-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   .card-header, .card-content {
@@ -151,3 +269,193 @@
     font-weight: 700;
   }
 }
+
+article.depoiment {
+  background-color: #F7F7F7;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+
+  figcaption, cite {
+    padding: 1rem;
+  }
+
+  cite, cite * {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 428px){
+  .banner-home {
+    min-height: calc(93vh - 89.89px);
+  }
+
+  .nav-banner .titles-banner {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px){
+  .banner-home {
+    min-height: calc(75vh - 89.89px);
+  }
+
+  .banner-1{
+    background: 
+      url('/assets/images/home/persona1.png') no-repeat -80px 300px, 
+      url('/assets/images/home/bg-banner-home.png') no-repeat 100px 285px, 
+      linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+  }
+  
+  .banner-2{
+    background: 
+      url('/assets/images/home/persona2.png') no-repeat -20px 300px, 
+      url('/assets/images/home/bg-banner-home-2.png') no-repeat 100px 285px, 
+      linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+  }
+  
+  .banner-3{
+    background: 
+      url('/assets/images/home/persona3.png') no-repeat -40px 300px, 
+      url('/assets/images/home/bg-banner-home-3.png') no-repeat 100px 285px, 
+      linear-gradient(180deg, $heavyBlue 80%, #fff 50%);
+  }
+
+  .nav-banner {
+    background: transparent;
+    left: 40%;
+    padding: 1rem 5rem;
+    width: 50%;
+  }
+
+  .nav-banner .titles-banner {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .15);
+    left: 15%;
+    right: unset;
+    top: -160%;
+    width: 100%;
+  }
+
+  .nav-banner .bullets {
+    width: 40%;
+  }
+
+  .nav-banner .arrows {
+    width: 35%;
+  }
+
+  .nav-banner .titles {
+    display: none;
+  }
+
+  .div-solucoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .solucao {
+      margin: 0 auto;
+      width: 42%;
+
+      &:nth-child(1), 
+      &:nth-child(2) {
+        margin: 0 auto 4rem;
+      }
+    }
+  }
+
+  article.depoiment {
+    padding-top: 6rem;
+    margin-top: 15rem;
+
+    figure {
+      position: relative;
+      padding-left: 10%;
+    }
+
+    img {
+      position: absolute;
+      top: -200%;
+      left: 10%;
+      width: 50%;
+
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-1{
+    background: url('/assets/images/home/banner-1-desk.png');
+  }
+  
+  .banner-2{
+    background: url('/assets/images/home/banner-2-desk.png');
+  }
+  
+  .banner-3{
+    background: url('/assets/images/home/banner-3-desk.png');
+  }
+
+  .banner-home {
+    background-repeat: no-repeat;
+
+    h1, p {
+      color: $heavyBlue;
+    }
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  .div-solucoes {
+    margin: 0 0 0;
+
+    .solucao {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .actions {
+        display: none;
+      }
+    }
+
+    .content {
+      padding: 0 0 0 1rem;
+    }
+  }
+}
+
+// IPAD PRO 
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .banner-home {
+    min-height: unset;
+    height: calc(50vh - 89.89px);
+    background-size: 45%;
+
+    h1, p {
+      color: $heavyBlue;
+    }
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  .nav-banner {
+    background: transparent;
+    left: 5%;
+    padding: 1rem 0rem 1rem 4rem;
+    width: 40%;
+
+    .titles-banner {
+      left: 5%;
+    }
+
+    .bullets {
+      width: 25%;
+    }
+  }
+}
+

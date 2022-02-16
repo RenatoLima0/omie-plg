@@ -183,7 +183,7 @@ label {
 	font-weight: 600;
 }
 
-input, select {
+input, select, .form-select {
 	border: 1px solid #fff;
 	font-size: 1.2rem;
 	padding: .6rem;
@@ -209,6 +209,14 @@ input, select {
 		top: -.8rem;
 		font-size: .7rem;
 	}
+}
+
+.form-select {
+	background-color: #fff;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: right 0.75rem center;
+	background-size: 16px 12px;
 }
 
 // =============================
@@ -461,8 +469,9 @@ progress {
 }
 
 .sec-tab {
-	bottom: 0;
 	background-color: #fff;
+	bottom: 0;
+	box-shadow: 0px -1px 5px 1px rgb(0, 0, 0, .2);;
 	left: 0;
 	padding: .5rem 0;
 	position: fixed;

@@ -153,6 +153,9 @@ if(document.querySelector('.card-summary')){
   let products = [];
   
   const addCard = (e) => {
+
+    // checkItem(e);
+
     let total = 0;
     cartCardsContainer.innerHTML = '';
     cartCardsContainerConfirm.forEach(card => {
@@ -160,6 +163,7 @@ if(document.querySelector('.card-summary')){
     })
 
     products.push({
+      id: e.currentTarget.dataset.id,
       price: +e.currentTarget.dataset.price,
       name: e.currentTarget.previousElementSibling.innerText,
       description: (e.currentTarget.parentElement.parentElement.children[1].innerHTML),
@@ -179,7 +183,7 @@ if(document.querySelector('.card-summary')){
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${cardName}" aria-expanded="false" aria-controls="collapse${cardName}">
             <span class="product-name">${product.name}<strong> + ${product.price === 0 ? "Grátis" : product.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}/mês</strong></span>
 
-            <span class="remove">X</span>
+            <span class="remove" data-id="${product.id}">X</span>
           </button>
   
           <div id="collapse${cardName}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -195,7 +199,7 @@ if(document.querySelector('.card-summary')){
           <div class="accordion-item">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${cardName}" aria-expanded="false" aria-controls="collapse${cardName}">
               <span class="product-name">${product.name}<strong> + ${product.price === 0 ? "Grátis" : product.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}/mês</strong></span>
-              <span class="remove">X</span>
+              <span class="remove" data-id="${product.id}">X</span>
             </button>
     
             <div id="collapse${cardName}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -209,10 +213,43 @@ if(document.querySelector('.card-summary')){
       })
 
     })
+
+    // const removeItem = (event) => {
+    //   console.log(event.currentTarget);
+      
+    // }
+
+    const btnsRemove = document.querySelectorAll('.card-summary .remove');
+    console.log(btnsRemove);
+    btnsRemove.forEach(btn => btn.addEventListener('click', (event) => {
+      console.log(event.currentTarget);
+      console.log(event.currentTarget.dataset.id);
+    }));
   }
 
-  btnsAdd.forEach(btn => btn.addEventListener('click', addCard))
+  const checkItem = (item) => {
+    const productName = item.currentTarget.previousElementSibling.innerText;
+    
+    if(products.length === 0) {
+      addCard(item);
+    }
+
+    products.forEach(product => {
+      if (product.name === `${productName}`){
+        
+      } else {
+        // console.log('diferente');
+        addCard(item);
+      }
+    })
+    
+  }
+
+  btnsAdd.forEach(btn => btn.addEventListener('click', addCard));
+
 }
+
+let teste = {}
 
 
 

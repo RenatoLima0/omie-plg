@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+.text-soft-white {
+  color: #F7F7F7;
+}
+
 h2 {
   font-size: 2vw;
 
@@ -109,9 +113,14 @@ section {
   border: 3px solid $heavyBlue;
 }
 
+.img-pattern {
+  position: absolute;
+}
+
 .main-content {
   section.sec-main {
     padding: 4rem 0;
+    position: relative;
   }
 
   h2 {
@@ -227,7 +236,14 @@ footer {
   }
 
   .actions {
-    width: 50%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: fit-content;
+
+    .cta {
+      width: fit-content;
+    }
   }
 
   footer {

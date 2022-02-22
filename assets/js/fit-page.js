@@ -113,4 +113,108 @@ if(document.querySelector('.sec-tab')){
   arrowNext.addEventListener('click', nextStepTab);
   arrowPrev.addEventListener('click', prevStepTab);
 }
+
+if(document.querySelector('.card-summary')){ 
+  const btnsAdd = document.querySelectorAll('.sec-form-fit .card-product button');
+  const cartCardsContainer = document.querySelector('.sec-form-fit .card-summary .accordion');
+  const cartCardsContainerConfirm = document.querySelectorAll('.sec-form-fit .card-summary.card-confirm .accordion');
+  const totalPrice = document.querySelector('.sec-form-fit .total-price .price span');
+  let products = [];
+  
+  const addCard = (e) => {
+
+    // checkItem(e);
+
+    let total = 0;
+    cartCardsContainer.innerHTML = '';
+    cartCardsContainerConfirm.forEach(card => {
+      card.innerHTML = '';
+    })
+
+    products.push({
+      id: e.currentTarget.dataset.id,
+      price: +e.currentTarget.dataset.price,
+      name: e.currentTarget.previousElementSibling.innerText,
+      description: (e.currentTarget.parentElement.parentElement.children[1].innerHTML),
+    })
+
+    localStorage.produtos =  JSON.stringify(products);
+    const pegarProdutos = JSON.parse(localStorage.produtos);
+
+    pegarProdutos.forEach((product) => {
+      let cardName = product.name.toLowerCase().split(' ').join(',').replaceAll(',', '').replaceAll('.', '');
+      
+      total = product.price + total;
+      totalPrice.innerText = total;
+
+      cartCardsContainer.innerHTML += `
+        <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${cardName}" aria-expanded="false" aria-controls="collapse${cardName}">
+            <span class="product-name">${product.name}<strong> + ${product.price === 0 ? "Grátis" : product.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}/mês</strong></span>
+
+            <span class="remove" data-id="${product.id}">X</span>
+          </button>
+  
+          <div id="collapse${cardName}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              ${product.description}
+            </div>
+          </div>
+        </div>
+      `;
+
+      cartCardsContainerConfirm.forEach(card => {
+        card.innerHTML += `
+          <div class="accordion-item">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${cardName}" aria-expanded="false" aria-controls="collapse${cardName}">
+              <span class="product-name">${product.name}<strong> + ${product.price === 0 ? "Grátis" : product.price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}/mês</strong></span>
+              <span class="remove" data-id="${product.id}">X</span>
+            </button>
+    
+            <div id="collapse${cardName}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                ${product.description}
+              </div>
+            </div>
+          </div>
+        `;
+
+      })
+
+    })
+
+    // const removeItem = (event) => {
+    //   console.log(event.currentTarget);
+      
+    // }
+
+    const btnsRemove = document.querySelectorAll('.card-summary .remove');
+    console.log(btnsRemove);
+    btnsRemove.forEach(btn => btn.addEventListener('click', (event) => {
+      console.log(event.currentTarget);
+      console.log(event.currentTarget.dataset.id);
+    }));
+  }
+
+  const checkItem = (item) => {
+    const productName = item.currentTarget.previousElementSibling.innerText;
+    
+    if(products.length === 0) {
+      addCard(item);
+    }
+
+    products.forEach(product => {
+      if (product.name === `${productName}`){
+        
+      } else {
+        // console.log('diferente');
+        addCard(item);
+      }
+    })
+    
+  }
+
+  btnsAdd.forEach(btn => btn.addEventListener('click', addCard));
+
+}
 // ######################## FIM PÁGINA FIT ###########################

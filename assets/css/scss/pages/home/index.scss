@@ -418,6 +418,10 @@ article.depoiment {
     padding: 1rem 0rem;
     width: 30%;
 
+    .arrows img:hover {
+      cursor: pointer;
+    }
+
     .nav-banner .arrows {
       width: 20%;
     }
@@ -529,6 +533,24 @@ article.depoiment {
   .sec-negocio {
     background: url(/assets/images/home/pattern3.png) 112% 100% no-repeat, linear-gradient(90deg, $heavyBlue 70%, transparent 50%);
   }
+
+  .col-solutions-fixed.fixa {
+    position: fixed;
+    top: 40%;
+    width: 39%;
+  }
+
+  .col-solutions-fixed.initial {
+    position: initial;
+    width: 100%;
+  }
+
+  .col-solutions-fixed.absolute {
+    bottom: 2%;
+    position: absolute;
+    top: unset;
+    width: 92%;
+  }
 }
 
 // IPAD PRO 
@@ -562,13 +584,10 @@ article.depoiment {
     }
   }
 
-  // .col-solutions-fixed-xl {
-  //   background: transparent;
-  //   height: fit-content;
-  //   padding-right: 2rem;
-  //   position: fixed;
-  //   width: inherit;
-  // }
+  .col-solutions-fixed.fixa {
+    top: 18%;
+    width: 38.5%;
+  }
 }
 
 @media (min-width: 1320px){
@@ -675,6 +694,18 @@ article.depoiment {
   .sec-negocio {
     background: url(/assets/images/home/pattern3.png) 105% 100% no-repeat,linear-gradient(90deg, #001e27 75.6%, transparent 50%);
   }
+
+  .col-solutions-fixed.fixa {
+    width: 31%;
+  }
+
+  .col-solutions-fixed.initial {
+    width: 93%;
+  }
+
+  .col-solutions-fixed.absolute {
+    width: 86.6%;
+  }
 }
 
 @media (min-width: 1920px){
@@ -705,5 +736,19 @@ article.depoiment {
         margin: 2rem auto 0;
       }
     }
+  }
+
+  .col-solutions-fixed.fixa {
+    top: 27%;
+    width: 25%;
+  }
+
+  .col-solutions-fixed.initial {
+    width: 93%;
+  }
+
+  .col-solutions-fixed.absolute {
+    bottom: 3%;
+    width: 86.6%;
   }
 }

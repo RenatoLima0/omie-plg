@@ -129,6 +129,10 @@
     .menu-hamburguer {
       width: 2.5rem;
     }
+
+    .items-menu.ativo {
+      transform: translateX(-6%);
+    }
   }
 }
 
@@ -137,6 +141,10 @@
     .cta.transparent-cta {
       margin-left: 15rem;
       padding: 0.625rem 4rem;
+    }
+
+    .items-menu.ativo {
+      transform: translateX(-2%);
     }
   }
 }

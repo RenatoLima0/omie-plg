@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omie PLG</title>
 
+  <!-- LAZY LOAD  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      lozad().observe();
+    });
+  </script>
+  <!-- LAZY LOAD  -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/pages/home/index.css">
@@ -73,7 +82,22 @@
     </div>
   </nav>
 
-  <header class="banner banner-home banner-1" data-banner>
+  <header class="banner banner-home bg-gray-main lozad" data-background-image="./assets/images/home/1.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-lg-7 col-xl-6 pe-4 px-md-0">
+          <h1>Tudo em <span>um só lugar!</span> <br class="d-none d-md-block"> Otimize todos seus processos.</h1>
+          <p class="pe-lg-5">Uma plataforma única para gestão online, serviços <br class="d-none d-lg-block"> financeiros e educação empreendedora.</p>
+
+          <div class="actions">
+            <a href="" class="cta green-cta">Conheça os planos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- <header class="banner banner-home banner-1" data-banner>
     <img src="assets/images/home/pattern1.png" alt="" class="img-fluid d-none d-xl-block img-pattern">
     <div class="container">
       <div class="row">
@@ -115,7 +139,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <main class="main-content">
     <section class="sec-main sec-main-col-fixed">
@@ -224,7 +248,7 @@
         <div class="row">          
           <div class="col-12 col-lg-6 col-contabilidade">
             <h2 class="mb-4">Omie para contabilidade</h2>
-            <p class="mb-lg-5 mb-xxl-0">Vantagens para evoluir o seu negócio e de seus clientes.</p>
+            <p class="mb-lg-5 mb-xxl-0 pe-5 pe-md-0">Vantagens para evoluir o seu negócio e de seus clientes.</p>
             <div class="div-justify-center pt-lg-2 pt-xxl-0">
               <article class="box">
                 <img src="./assets/images/home/ico-integracao.svg" alt="Integração com clientes"/>
@@ -303,7 +327,7 @@
       <div class="container">
         <div class="row align-items-lg-center pt-xxl-5">
           <div class="col-12 col-lg-6 pt-lg-4 pe-lg-5 pt-xxl-0">
-            <h2 class="mb-4">Estamos revolucionando o mercado</h2>
+            <h2 class="mb-4">Estamos revolucionando <br class="d-none d-xl-block"> o mercado</h2>
             <p>Atualmente, movimentamos 1,7% do PIB brasileiro.</p>
             <div class="actions d-none d-lg-flex w-75 mt-5"><a href="" class="cta blue-cta">Saiba mais sobre a Omie</a></div>
           </div>
@@ -330,7 +354,7 @@
       </div>
     </section>
 
-    <section class="sec-main sec-negocio bg-heavy-blue">
+    <section class="sec-main sec-negocio bg-heavy-blue" style="background: url(./assets/images/home/pattern3.png) 100% 100% no-repeat,linear-gradient(90deg, #001e27 81.5%, transparent 50%);">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-8 col-xxl-6">

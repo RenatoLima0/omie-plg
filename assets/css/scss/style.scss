@@ -21,38 +21,6 @@ a {
   color: #F7F7F7;
 }
 
-h2 {
-  font-size: 2vw;
-
-  @media(max-width: 1280px) {
-    font-size: 1.7vw;
-  }
-
-  @media(max-width: 980px) {
-    font-size: 1.2vw;
-  }
-}
-
-h3 {
-  font-size: 1.9vw;
-
-  @media(max-width: 1280px) {
-    font-size: 2.2vw;
-  }
-
-  @media(max-width: 980px) {
-    font-size: 3.3vw;
-  }
-}
-
-h6 {
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.4em;
-}
-
 a:hover {
   color: inherit;
   text-decoration: none;
@@ -78,7 +46,7 @@ section {
 }
 
 .bg-gray-main {
-  background: #F7F7F7;
+  background: #f2f5fc;
 }
 
 .actions {
@@ -107,6 +75,15 @@ section {
 .blue-cta {
   background-color: $lightBlue;
   border: 3px solid $lightBlue;
+}
+
+.green-cta {
+  background-color: $mainGreen;
+  border: 3px solid $mainGreen;
+
+  &:hover {
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.6);
+  }
 }
 
 .transparent-cta {
@@ -199,7 +176,7 @@ footer {
 }
 
 .con-partners {
-  background-color: #f7f7f7;
+  background-color: #f2f5fc;
   margin: 0;
   padding-top: 2.5rem;
   max-width: 100%;

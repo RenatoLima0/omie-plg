@@ -160,7 +160,7 @@
     background: transparent;
     display: block;
     padding: 1.5rem $paddingFluidXDesktop;
-    // position: absolute;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 99;
@@ -213,9 +213,14 @@
     }
   }
 
+  .nav-desktop.nav-desktop-home {
+    position: initial;
+  }
+
   .nav-desktop.ativo {
     animation: showUp .5s forwards;
     background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .15);
     position: fixed;
   }
 

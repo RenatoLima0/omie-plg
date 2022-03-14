@@ -1,0 +1,227 @@
+@import "./../../components/colors";
+
+.banner {
+  position: relative;
+
+  h1 {
+    color: $lightBlue;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.banner.banner-home {
+  background-size: contain;
+  height: fit-content;
+  min-height: calc(70vh - 89.89px);
+  margin: 5rem 0 0 0;
+  padding: 3rem 0 1rem;
+
+  .images-banner {
+    margin-top: 2rem;
+  }
+
+  .images-banner img {
+    &:first-child {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      width: 70%;
+    }
+  }
+
+  .container, .row {
+    height: 100%;
+  }
+
+  h1 span {
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0 .25rem;
+  }
+}
+
+.banner.banner-interno {
+  background: url('/assets/images/contadores/img-banner.png') no-repeat 20px 90%, linear-gradient(0deg, #fff 30%, $heavyBlue 30%);
+  background-size: contain;
+  height: calc(90vh - 89.39px);
+  margin-top: 89.39px;
+  padding-top: 1rem;
+
+  h1, p {
+    color: #F7F7F7;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media(min-width: 428px){
+  .banner.banner-home {
+    min-height: calc(60vh - 89.89px);
+  }
+
+  .banner.banner-interno {
+    padding-right: 1rem;
+  }
+}
+
+@media(min-width: 768px){
+  .banner.banner-home {
+    min-height: calc(50vh - 89.89px);
+
+    h1 span {
+      background-color: $heavyBlue;
+      // color: inherit;
+      // font-size: inherit;
+      // font-weight: inherit;
+      // padding: 0 .25rem;
+    }
+
+    // h1 {
+    //   font-size: 2.5rem;
+    //   font-weight: 700;
+    //   color: $lightBlue;
+    // }
+  }
+  
+  .banner.banner-interno {
+    background-size: 70%;
+    height: calc(75vh - 89.39px);
+  }
+}
+
+@media(min-width: 1024px){
+  .banner-home {
+    min-height: unset;
+    height: calc(100vh - 5rem);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 0 0;
+
+    // h1 {
+    //   font-size: 2.5rem;
+    //   font-weight: 700;
+    //   color: $lightBlue;
+    // }
+
+    // h1 span {
+    //   background-color: $heavyBlue;
+    //   color: inherit;
+    //   font-size: inherit;
+    //   font-weight: inherit;
+    //   padding: 0 .25rem;
+    // }
+
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  .banner.banner-interno{
+    background: 
+      url('/assets/images/contadores/img-banner.png') no-repeat 40px 20px, 
+      url('/assets/images/home/play-azul.png') no-repeat -80px 0px, 
+      linear-gradient(90deg, transparent 80%, transparent 50%);
+    display: flex;
+    align-items: center;
+    background-size: 40%;
+    // height: calc(45vh - 89.39px);
+
+    h1, p {
+      color: $heavyBlue;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .banner-home {
+    min-height: unset;
+    height: calc(50vh - 89.89px);
+    background-size: 45%;
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  .banner.banner-interno{
+    background-size: 50%;
+    height: calc(45vh - 89.39px);
+  }
+}
+
+@media(min-width: 1320px){
+  .banner {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .banner.banner-home {
+    background-size: 45%;
+    margin: 0 0;
+    min-height: unset;
+    height: calc(100vh - 93.69px);
+    position: relative;
+
+    .container, .row {
+      height: 100%;
+    }
+
+    .row {
+      align-items: center;
+    }
+
+    // h1 span {
+    //   background-color: $heavyBlue;
+    //   color: inherit;
+    //   font-size: inherit;
+    //   font-weight: inherit;
+    //   padding: 0 .25rem;
+    // }
+
+    // .img-pattern {
+    //   position: absolute;
+    //   right: 0;
+    //   bottom: 0;
+    // }
+  }
+
+  .banner.banner-interno{
+    background: 
+    url('/assets/images/contadores/img-banner.png') no-repeat 20px 100px, 
+    url('/assets/images/home/play-azul.png') no-repeat -80px -40px, 
+    linear-gradient(90deg, transparent 80%, transparent 50%);
+    background-size: 45%;
+    height: 90vh;
+    margin: 0 0;
+
+    h1 {
+      font-size: 2.813rem;
+    }
+
+    p {
+      font-size: 1.406rem;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .banner.banner-home {
+    background-image: none !important;
+  }
+}

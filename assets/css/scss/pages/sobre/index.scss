@@ -1,0 +1,209 @@
+@import "./../../components/colors";
+@import "./../../components/banner";
+@import "./../../components/carousels";
+@import "./../../components/cards";
+@import "./../../components/depoiment";
+@import "./../../components/tabs";
+
+.cards-benef {
+  min-height: 260px;
+
+  .card-benef {
+    min-height: 260px;
+  }
+}
+
+.sec-main {
+  .carousel-indicators {
+    margin-top: 1rem;
+    position: relative;
+  
+    [data-bs-target] {
+      background-color: $heavyBlue;
+      border-radius: 50%;
+      height: 15px;
+      margin: 0 .5rem;
+      width: 15px;
+    }
+  }
+}
+
+.sec-timeline {
+  .card-timeline {
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .1);
+    padding: 1.5rem 1rem;
+  }
+
+  .data {
+    font-weight: 700;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin: 3rem 0 .5rem;
+  }
+
+  .owl-carousel {
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    button.owl-dot {
+      background-color: #DBDFDE;
+      border-radius: 50%;
+      height: 15px;
+      margin: 0 .5rem;
+      width: 15px;
+      
+      &.active {
+        background-color: $heavyBlue
+      }
+    }
+    .owl-stage-outer {
+      padding: 1rem 0 1rem 8px;
+    }
+
+    // .owl-item {
+    //   img {
+    //     margin-bottom: 24px;
+    //     width: 20%;
+    //   }
+    // }
+  } 
+}
+
+.imgs-invest {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+
+  img {
+    margin: 1rem 0;
+    width: 50%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sec-trabalhe-conosco {
+  align-items: flex-end;
+  background: url(/assets/images/about-us/img-trabalheconosco-mob.png) 0% 0%, url(/assets/images/about-us/pattern2.png) 0 45%, #f7f7f7;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  height: 85vh;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  img {
+    padding-bottom: 4rem;
+    width: 55%;
+  }
+}
+
+@media(min-width: 428px){
+  .sec-trabalhe-conosco {
+    background: url(/assets/images/about-us/img-trabalheconosco-mob.png) 0% 0%, url(/assets/images/about-us/pattern2.png) 0 45%, #f7f7f7;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 768px){
+  .sec-trabalhe-conosco {
+    background: #f7f7f7;
+    background-size: 80%;
+    height: fit-content;
+
+    img {
+      display: none;
+    }
+  }
+
+  .imgs-invest {
+    margin-bottom: 3rem;
+
+    img {
+      width: 30%;
+    }
+  } 
+
+  .sec-timeline {
+    .owl-carousel .owl-stage-outer {
+      padding: 1rem 0 1rem 8px;
+    }
+
+    .card-timeline {
+      box-shadow: 0px 0px 8px 3px rgba(0,0,0, .05);
+    }
+  }
+
+  .cards-acreditamos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    h3 {
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+
+    .card-acred {
+      margin-bottom: 1rem;
+      width: 45%;
+
+      &:nth-child(5), &:nth-child(6) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media(min-width: 1024px){
+  .imgs-invest {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    img {
+      margin: 1.5rem 1rem;
+    }
+  }
+
+  .sec-timeline {
+    background: linear-gradient(0deg, $heavyBlue 50%, #fff 50%);
+
+    .card-timeline {
+      background: #fff;
+    }
+  }
+
+  .sec-timeline .owl-carousel button.owl-dot.active {
+    background-color: #fff;
+  }
+
+  .sec-timeline .owl-carousel button.owl-dot {
+    background-color: rgba(255, 255, 255, .5);
+  }
+
+  .cards-acreditamos .card-acred {
+    margin-bottom: 1rem;
+    width: 30%;
+  }
+
+  .sec-play-laranja {
+    background-image: url(/assets/images/about-us/play-laranja.png);
+    background-position: 100%;
+    background-size: contain;
+  }
+}

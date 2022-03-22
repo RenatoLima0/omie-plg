@@ -1,0 +1,33 @@
+.tabs-content-main {
+  .nav-tabs {
+    display: flex;
+
+    .nav-link.active {
+      border: none;
+      border-bottom: 3px solid $lightBlue;
+      font-weight: 700;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+    
+    .nav-link {
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: $heavyBlue;
+      padding: .5rem 0;
+      transform: .2s;
+
+      &:hover {
+        color: inherit;
+        font-weight: 500;
+      }
+    }
+  }
+
+  li {
+    text-align: center;
+    width: 50%;
+  }
+}

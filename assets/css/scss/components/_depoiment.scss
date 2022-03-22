@@ -1,0 +1,62 @@
+article.depoiment {
+  background-color: #f2f5fc;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+
+  figcaption, cite {
+    padding: 1rem;
+  }
+
+  cite, cite * {
+    font-size: 0.875rem;
+  }
+}
+
+@media(min-width: 768px){
+  article.depoiment {
+    padding-top: 6rem;
+    margin-top: 15rem;
+    
+    figure {
+      position: relative;
+      padding-left: 10%;
+    }
+    
+    img {
+      position: absolute;
+      top: -200%;
+      left: 10%;
+      width: 50%;
+      
+    }
+  }
+}
+
+@media(min-width: 1024px){
+  article.depoiment {
+    margin-top: 15rem;
+    padding-top: 3rem;
+    
+    figure {
+      padding-left: 60%;
+    }
+    
+    img {
+      top: -75%;
+      left: 5%;
+    }
+  } 
+}
+
+@media(min-width: 1320px){
+  article.depoiment {
+    padding-bottom: 3rem;
+  }
+
+  article.depoiment img {
+    left: 5%;
+    top: -120%;
+    width: 45%;
+  }
+}

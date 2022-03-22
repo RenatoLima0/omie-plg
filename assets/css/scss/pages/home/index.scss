@@ -1,5 +1,9 @@
 @import "./../../components/colors";
 @import "./../../components/banner";
+@import "./../../components/carousels";
+@import "./../../components/cards";
+@import "./../../components/depoiment";
+@import "./../../components/tabs";
 
 // @keyframes showLeft {
 //   from {
@@ -130,10 +134,22 @@
   }
 }
 
+.tabs-content-main.sec-tab-carousel {
+  .nav-tabs {
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  li {
+    width: 33%;
+  }
+}
+
 .div-justify-center {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 2rem 0 1rem;
 
   .box {
@@ -151,61 +167,7 @@
   }
 }
 
-.cards-business {
-  margin-top: 1rem;
 
-  h3 {
-    font-size: 1.406rem;
-    font-weight: 400;
-  }
-
-  img {
-    filter: brightness(0) invert(1);
-  }
-
-  .card {
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem 0 0;
-    position: relative;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .card-header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .card-header, .card-content {
-    padding: 0 1rem;
-  }
-
-  span {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    height: 6px;
-    margin: 2rem auto 0;
-    width: 99%;    
-  }
-
-  span.purple {
-    background: $mainPurple;
-  }
-
-  span.green {
-    background: $mainGreen;
-  }
-
-  span.orange {
-    background: $mainOrange;
-  }
-}
 
 .counter-list {
   list-style: none;
@@ -228,144 +190,6 @@
   }
 }
 
-article.depoiment {
-  background-color: #f2f5fc;
-  margin-top: 4rem;
-  padding-bottom: 1rem;
-  cursor: pointer;
-
-  figcaption, cite {
-    padding: 1rem;
-  }
-
-  cite, cite * {
-    font-size: 0.875rem;
-  }
-}
-
-.sec-cards-tab {
-  .carousel-indicators {
-    margin-top: 1rem;
-    position: relative;
-
-    [data-bs-target] {
-      background-color: $heavyBlue;
-      border-radius: 50%;
-      height: 15px;
-      margin: 0 .5rem;
-      width: 15px;
-    }
-    
-    // [data-bs-target].active {}
-  } 
-
-  .img-video {
-    filter: drop-shadow(0px 0px 10px rgba(0, 30, 39, 0.15));
-  }
-
-  .card-icons {
-    background: #F7F7F7;
-    border: 1px solid #DBDFDE;
-    border-radius: 8px;
-    margin: 0 0;
-    padding: 1rem;
-  }
-
-  .title {
-    align-items: center;
-    display: flex;
-    margin-bottom: .75rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    margin: 0 0 0 1rem;
-  }
-}
-
-.sec-benef {
-  .carousel-indicators {
-    margin-top: 1rem;
-    position: relative;
-
-    [data-bs-target] {
-      background-color: $heavyBlue;
-      border-radius: 50%;
-      height: 15px;
-      margin: 0 .5rem;
-      width: 15px;
-    }
-    
-    // [data-bs-target].active {}
-  } 
-}
-
-.cards-benef {
-  display: flex;
-  flex-direction: column;
-  min-height: 600px;
-
-  .card-benef {
-    align-items: flex-start;
-    background: #F7F7F7;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem .5rem 1.5rem 1.5rem;
-  }
-  
-  .card-benef.card-benef-princ {
-    background: linear-gradient(45deg, #F7F7F7 90%, $mainPurple 50%);
-  }
-
-  h3 {
-    font-size: 1.406rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    padding-right: .5rem;
-  }
-
-  a {
-    // background: red;
-    padding-right: .5rem;
-    text-align: right;
-    width: 100%;
-
-    span {
-      font-weight: 700;
-      line-height: 24px;
-    }
-  }
-}
-
-.cards-hover {
-  display: flex;
-  flex-direction: column;
-
-  .card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 30, 39, 0.02), 0px 8px 24px rgba(0, 30, 39, 0.08);
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 1.406rem;
-    font-weight: 400;
-  }
-}
 
 .sec-faq .accordion {
   .accordion-item {
@@ -388,8 +212,10 @@ article.depoiment {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
   }
+}
 
-  
+.sec-benef-empresa .cards-benef {
+  min-height: 315px;
 }
 
 @media (min-width: 428px){
@@ -398,9 +224,7 @@ article.depoiment {
   //   width: 85%;
   // }
 
-  .cards-benef .card-benef {
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  }
+
 
   .cards-hover .card .content {
     padding-right: 1.5rem;
@@ -483,24 +307,6 @@ article.depoiment {
       &:nth-child(2) {
         margin: 0 auto 4rem;
       }
-    }
-  }
-
-  article.depoiment {
-    padding-top: 6rem;
-    margin-top: 15rem;
-
-    figure {
-      position: relative;
-      padding-left: 10%;
-    }
-
-    img {
-      position: absolute;
-      top: -200%;
-      left: 10%;
-      width: 50%;
-
     }
   }
 
@@ -592,20 +398,7 @@ article.depoiment {
     }
   }
 
-  .cards-business {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-    .card {
-      margin-bottom: 2.5rem;
-      width: 45%;
-
-      &:first-child {
-        margin-right: 1.5rem;
-      }
-    }
-  }
 
   .div-justify-center {
     .box {
@@ -634,20 +427,6 @@ article.depoiment {
       }
     }
   }
-
-  article.depoiment {
-    margin-top: 15rem;
-    padding-top: 3rem;
-
-    figure {
-      padding-left: 60%;
-    }
-
-    img {
-      top: -75%;
-      left: 5%;
-    }
-  } 
 
   .sec-negocio {
     background: url(/assets/images/home/pattern3.png) 112% 100% no-repeat, linear-gradient(90deg, $heavyBlue 70%, transparent 50%) !important;
@@ -695,14 +474,28 @@ article.depoiment {
       border: 1px solid rgba(0, 0, 0, .15);
       border-radius: 8px;
       margin-bottom: 1rem;  
-    }
 
+    }
+    
     .nav-item .nav-link {
       background-color: #fff;
       position: relative;
+      
+      p {
+        display: none;
+      }
 
+      .title {
+        margin: 0;
+      }
+      
       &.active {
         background-color: #f7f7f7;
+
+        p {
+          display: block;
+          margin-top: .750rem;
+        }
       }
     }
 
@@ -715,84 +508,14 @@ article.depoiment {
     }
   }
 
-  .cards-benef {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-height: 550px;
-    min-height: 550px;
-    padding: 0;
+  .sec-benef-empresa .cards-benef .card-benef:nth-child(4),
+  .sec-benef-empresa .cards-benef .card-benef:nth-child(6) {
+    width: 25%;
+    background: #eceeed;
+  }
 
-    h3 {
-
-    }
-
-    .card-benef {
-      flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 0;
-      max-height: 275px;
-      min-height: 275px;
-      transition: .2s;
-      width: 25%;
-      
-      &:nth-child(1), &:nth-child(4) {
-        width: 50%;
-      } 
-      
-      &:nth-child(3), &:nth-child(5) {
-        background: #eceeed;
-      } 
-      
-      &.card-null {
-        background: transparent;
-      }
-
-      // h3, p {
-      //   margin: 0;
-      // }
-      
-      p, a {
-        // opacity: 0;
-        // height: 0;
-        transition: .1s;
-        display: none;
-      }
-      
-      &:hover {
-        min-height: unset;
-        padding: 1.5rem .5rem 1.5rem 1rem;
-        transform: scale(1.1);
-        
-        p, a {
-          display: block;
-          opacity: 1;
-          height: auto;
-        }
-      }
-      
-      &:nth-child(4):hover {
-        max-height: unset;
-      } 
-
-      &:first-child {
-        padding: 0 1.5rem 0 0;
-        justify-content: flex-start;
-      }
-
-      &:first-child:hover {
-        transform: none;
-      }
-    }
-
-    .actions {
-      width: 100%;
-    }
-
-    .actions .cta {
-      // padding: ;
-      text-align: center;
-      width: 50%;
-    }
+  .sec-benef-empresa .cards-benef .card-benef:nth-child(5) {
+    background: #f7f7f7;
   }
 
   .cards-hover {
@@ -827,6 +550,29 @@ article.depoiment {
   .sec-play-laranja {
     background-image: url(/assets/images/contadores/play-laranja.png);
     background-size: contain;
+  }
+
+  .sec-play-verde {
+    background-image: url(/assets/images/empresas/play-verde.png);
+    background-size: contain;
+    background-position: 20% 0;
+    margin-bottom: 3rem;
+  }
+
+  .sec-double-gradient {
+    background: linear-gradient(90deg, #fff 2%, $heavyBlue 2%, $heavyBlue 80%, #fff 80%);
+    position: relative;
+
+    .img-pattern {
+      position: absolute;
+      right: -8.5%;
+      bottom: -4%;
+    }
+  }
+
+  main.main-content {
+    overflow-x: hidden
+    ;
   }
 }
 
@@ -904,23 +650,6 @@ article.depoiment {
     }
   }
 
-  .cards-business {
-    justify-content: space-between;
-
-    .card {
-      margin: 0 0 0 0;
-      width: 31%;
-
-      &:first-child, &:last-child {
-        margin: 0 0 0 0;
-      }
-
-      &:first-child span.purple {
-        margin: 3.5rem auto 0;
-      }
-    }
-  }
-
   .sec-counter {
     background: url(/assets/images/home/play-roxo.png);
     background-repeat: no-repeat;
@@ -932,16 +661,6 @@ article.depoiment {
       right: 12%;
       width: 8%;
     }
-  }
-
-  article.depoiment {
-    padding-bottom: 3rem;
-  }
-
-  article.depoiment img {
-    left: 5%;
-    top: -120%;
-    width: 45%;
   }
 
   .sec-negocio {
@@ -983,28 +702,30 @@ article.depoiment {
     z-index: 2;
   }
 
-  .sec-play-laranja {
+  .sec-play-laranja,
+  .sec-play-verde {
     background-position: 140px 0;
   }
 
-  .cards-benef {
-    max-height: 510px;
-    min-height: 510px;
+  .sec-double-gradient {
+    background: linear-gradient(90deg, #fff 7%, $heavyBlue 7%, $heavyBlue 78.4%, #fff 78.4%);
+    position: relative;
+  }
 
-    .card-benef {
-      max-height: 255px;
-      min-height: 255px;
-      padding: 1.5rem 0.5rem 1rem 1rem;
-  
-      p {
-        font-size: 0.875rem;
-      }
-  
-      &:hover {
-  
-      }
+  .main-content .sec-main.bg-heavy-blue.sec-double-gradient {
+    .img-pattern:first-child {
+      position: absolute;
+      left: 0%;
+      bottom: unset;
+      top: 4%;
     }
-  } 
+    .img-pattern:last-child {
+      position: absolute;
+      right: 0%;
+      bottom: -4%;
+      top: unset;
+    }
+  }
 }
 
 @media (min-width: 1920px){
@@ -1023,16 +744,6 @@ article.depoiment {
     background: url(/assets/images/home/pattern3.png) 100% 100% no-repeat,linear-gradient(90deg, #001e27 81.5%, transparent 50%) !important;
   }
 
-  .cards-business {
-    .card {
-      width: 32.5%;
-
-      &:first-child span.purple {
-        margin: 2rem auto 0;
-      }
-    }
-  }
-
   .col-solutions-fixed.fixa {
     top: 40%;
     width: 25%;
@@ -1047,9 +758,24 @@ article.depoiment {
     width: 86.6%;
   }
 
-  .sec-play-laranja {
+  .sec-play-laranja,
+  .sec-play-verde {
     background-position: 25% 0;
     padding: 6rem 0 !important;
+  }
+
+  .sec-double-gradient {
+    background: linear-gradient(90deg, #fff 7%, $heavyBlue 7%, $heavyBlue 84.6%, #fff 84.6%);
+    position: relative;
+  }
+
+  .main-content .sec-main.bg-heavy-blue.sec-double-gradient {
+    .img-pattern:last-child {
+      position: absolute;
+      right: 0%;
+      bottom: -4%;
+      top: unset;
+    }
   }
 }
 

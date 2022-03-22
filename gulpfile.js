@@ -38,6 +38,21 @@ function compilaSassHome() {
 }
 exports.compilaSassHome = compilaSassHome;
 
+function compilaSassSobre() {
+  return gulp
+  .src('assets/css/scss/pages/sobre/*.scss')
+  .pipe(sass({
+    outputStyle: 'compressed'
+  }))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(gulp.dest('assets/css/pages/sobre/'))
+  .pipe(browserSync.stream());
+}
+exports.compilaSassSobre = compilaSassSobre;
+
 function compilaSassFit() {
   return gulp
   .src('assets/css/scss/pages/fit/*.scss')
@@ -95,6 +110,7 @@ exports.browser = browser;
 function watch() {
   gulp.watch('assets/css/scss/**/*.scss', compilaSassGeral);
   gulp.watch('assets/css/scss/**/*.scss', compilaSassHome);
+  gulp.watch('assets/css/scss/**/*.scss', compilaSassSobre);
   gulp.watch('assets/css/scss/**/*.scss', compilaSassFit);
   gulp.watch('assets/js/main/*.js', gulpJS);
   gulp.watch(['*.html']).on('change', browserSync.reload);
@@ -106,4 +122,4 @@ exports.watch = watch;
 
 // Tarefa padrão do Gulp, que inicia o watch e o browser-sync
 // gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass', 'mainjs', 'pluginjs'));
-exports.default = gulp.parallel(watch, browser, compilaSassGeral, compilaSassHome, compilaSassFit, gulpJS, pluginJS);
+exports.default = gulp.parallel(watch, browser, compilaSassGeral, compilaSassHome, compilaSassFit, compilaSassSobre, gulpJS, pluginJS);

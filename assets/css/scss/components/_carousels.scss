@@ -1,0 +1,234 @@
+.owl-carousel {
+  .owl-dots {
+    // display: flex;
+    // justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  button.owl-dot {
+    background-color: #DBDFDE;
+    border-radius: 50%;
+    height: 15px;
+    margin: 0 .5rem;
+    width: 15px;
+    
+    &.active {
+      background-color: $heavyBlue
+    }
+  }
+
+  .owl-item {
+    img {
+      margin-bottom: 24px;
+      width: 20%;
+    }
+  }
+} 
+
+.banner .card-carousel-banner {
+  background: #f7f7f7;
+  border: 1px solid #DBDFDE;
+  border-radius: 8px;
+  min-height: 172px;
+  padding: 1rem .5rem 1rem 1rem;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: #4F5C5C;
+  }
+}
+
+.sec-tab-carousel{
+  .card-carousel {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  h3 {
+    font-size: 1.406rem;
+    font-weight: 400;
+  }
+  
+  span.price {
+    font-size: 1.406rem;
+    font-weight: 700;
+    margin: .5rem 0;
+  }
+
+  .owl-carousel {
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    button.owl-dot {
+      background-color: #DBDFDE;
+      border-radius: 50%;
+      height: 15px;
+      margin: 0 .5rem;
+      width: 15px;
+      
+      &.active {
+        background-color: $heavyBlue
+      }
+    }
+
+    .owl-item {
+      img {
+        margin-bottom: 24px;
+        width: 20%;
+      }
+    }
+  } 
+
+}
+
+.sec-cards-tab {
+  .carousel-indicators {
+    margin-top: 1rem;
+    position: relative;
+
+    [data-bs-target] {
+      background-color: $heavyBlue;
+      border-radius: 50%;
+      height: 15px;
+      margin: 0 .5rem;
+      width: 15px;
+    }
+    
+    // [data-bs-target].active {}
+  } 
+
+  .img-video {
+    filter: drop-shadow(0px 0px 10px rgba(0, 30, 39, 0.15));
+  }
+
+  .card-icons {
+    background: #F7F7F7;
+    border: 1px solid #DBDFDE;
+    border-radius: 8px;
+    margin: 0 0;
+    padding: 1rem;
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    margin-bottom: .75rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+  }
+}
+
+.sec-benef .carousel-indicators {
+  margin-top: 1rem;
+  position: relative;
+
+  [data-bs-target] {
+    background-color: $heavyBlue;
+    border-radius: 50%;
+    height: 15px;
+    margin: 0 .5rem;
+    width: 15px;
+  }
+} 
+
+@media (min-width: 768px) {
+  
+  .banner .card-carousel-banner {
+    min-height: 224px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sec-tab-carousel {
+    .card-carousel {
+      border-radius: 8px;
+      justify-content: space-between;
+      min-height: 250px;
+      opacity: .5;
+      
+      img {
+        filter: grayscale(1);
+      }
+    }
+    
+    .owl-carousel.owl-carousel-apps {
+
+      .owl-nav.disabled {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 45%;
+        width: 100%;
+
+        span {
+          font-size: 2rem;
+          line-height: 1;
+          padding: 0 1rem;
+        }
+      }
+
+      .owl-prev {
+        left: -4%;
+        position: relative;
+      }
+
+      .owl-next {
+        right: -4%;
+        position: relative;
+      }
+
+      .owl-item {
+        position: relative;
+        z-index: 10;
+        
+        p, span {
+          display: none;
+        }
+      }
+
+      .owl-stage-outer {
+        display: flex;
+        flex: row;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 340px;
+      }
+      
+      .owl-item.center {
+        z-index: 999;
+
+        .card-carousel {
+          box-shadow: 0px 4px 8px rgba(0, 30, 39, 0.02), 0px 4px 8px rgba(0, 30, 39, 0.08);
+          opacity: 1;
+          transform: scale(1.2);
+
+          img {
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
+  }
+
+  .banner.banner-interno.banner-sobre .card-carousel-banner p {
+    color: #4F5C5C;
+  }
+
+  .banner .card-carousel-banner {
+    min-height: 182px;
+  }
+}

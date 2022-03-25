@@ -6,12 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omie PLG</title>
 
+  <!-- LAZY LOAD  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      lozad().observe();
+    });
+  </script>
+  <!-- LAZY LOAD  -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="assets/css/pages/home/index.css">
+  <link rel="stylesheet" href="assets/css/pages/fintech/index.css">
+
+  <style>
+    @media (min-width: 1024px) {
+      .sec-counter {
+        background-image: none;
+      }
+
+      main.main-content section.sec-main.sec-counter.sec-counter-contadores {
+        padding: 5rem 0 4rem 0;
+      }
+    }
+  </style>
 </head>
 <body class="">
   <nav class="nav-mobile d-xl-none">
+    
     <header>
       <a href="/" class="link-nav-mobile">
         <img src="assets/images/logo-omie.png" alt="Destaques" class="">
@@ -295,227 +318,381 @@
       </div>
     </div>
   </nav>
-  <div class="banner-contadores d-flex justify-content-between align-items-end">
-    <div class="col-md-12 col-lg-6">
-      <img src="./assets/images/fintech/img-banner.png" />
+  
+  <header class="banner banner-interno banner-fintech bg-gray-main">
+    <div class="container">
+      <div class="row justify-content-lg-end">
+        <div class="col-12 col-md-10 col-lg-5 col-xl-6 pe-4 px-md-0 hide-responsive">
+          <h1>Aumente sua produtividade e cresça junto com seus clientes</h1>
+          <description class="pe-lg-5">
+            <p class="mb-xl-0">As melhores vantagens para você se tornar um consultor contábil e ainda aproveitar todos os benefícios exclusivos de ser Parceiro Omie.</p>
+          </description>
+        </div>
+      </div>
     </div>
-    <div class="col-md-12 col-lg-6 info-fale-conosco">
-      <h1>Tenha um banco digital dentro do sistema de gestão</h1>
-      <p>Você realiza todas as suas transações bancárias em uma plataforma única, de um jeito rápido, simples e seguro.</p>
-    </div>
-  </div>
-
-  <section class="container">
-    <div class="mtb-80">
-      <h2 class="sub-title text-left">Aproveite os benefícios de fazer tudo em um só lugar
-      </h2>
-      <p>Em poucos cliques, você abre uma conta digital sem tarifa de manutenção e faz toda gestão financeira da sua empresa em uma plataforma única.
-      </p>
-      <div class="col-md-12">
+  </header>
+  <main class="main-content">
+    <section class="sec-main sec-cards-tab">
+      <div class="container">      
         <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <span>
-              <img src="./assets/images/fintech/ico-controlefinanceiro.svg" class="mb-3 mt-3"/>
-            </span>
-            <h4>Controle financeiro</h4>
-            <p>Mais facilidade para fazer movimentações bancárias e controlar o fluxo de caixa da sua empresa.</p>
+          <div class="col-12 text-lg-center">
+            <div class="show-responsive">
+              <h1>Tenha um banco digital dentro do sistema de gestão</h1>
+              <description class="pe-lg-5">
+                <p class="mb-xl-0">Você realiza todas as suas transações bancárias em uma plataforma única, de um jeito rápido, simples e seguro.</p>
+              </description>
+            </div>
+            <h2 class="my-4 mt-80">Aproveite os benefícios de fazer tudo em um só lugar</h2>
+            <p>Em poucos cliques, você abre uma conta digital sem tarifa de manutenção e faz toda gestão financeira da sua empresa em uma plataforma única.</p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <span>
-              <img src="./assets/images/fintech/ico-integracaoautomatica.svg" class="mb-3 mt-3"/>
-            </span>
-            <h4>Integração automática</h4>
-            <p>Todas as movimentações bancárias atualizadas no sistema de gestão em tempo real.</p>
+          <div class="col-12 mt-3 d-lg-none">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-controlefinanceiro.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Controle financeiro</h3>
+                    </div>
+                    <p class="mb-0">Mais facilidade para fazer movimentações bancárias e controlar o fluxo de caixa da sua empresa.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-integracaoautomatica.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Integração automática</h3>
+                    </div>
+                    <p class="mb-0">Todas as movimentações bancárias atualizadas no sistema de gestão em tempo real.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-sistemaantifraude.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Sistema antifraude</h3>
+                    </div>
+                    <p class="mb-0">Boletos registrados com senha de acesso, para garantir segurança e integridade às informações.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-pagamentosautomatizados.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Pagamentos automatizados</h3>
+                    </div>
+                    <p class="mb-0">Mais produtividade para fazer e receber pagamentos, economizando tempo no seu dia a dia.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <span>
-              <img src="./assets/images/fintech/ico-sistemaantifraude.svg" class="mb-3 mt-3"/>
-            </span>
-            <h4>Sistema antifraude</h4>
-            <p>Boletos registrados com senha de acesso, para garantir segurança e integridade às informações.</p>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <span>
-              <img src="./assets/images/fintech/ico-pagamentosautomatizados.svg" class="mb-3 mt-3"/>
-            </span>
-            <h4>Pagamentos automatizados</h4>
-            <p>Mais produtividade para fazer e receber pagamentos, economizando tempo no seu dia a dia.</p>
-          </div>    
+        </div>      
+      </div>
+    </section>
+    <section class="sec-main sec-main-col-fixed">
+      <div class="container">
+        <div class=" box-fintech">
+          <div class="col-md-12 col-lg-6 p-0">
+            <div class="col-md-12 h-100 w-100">
+              <img src="./assets/images/logo-omie.png" class="img-logo" />
+            
+              <div class="col-12 text-lg-center mt-80">
+                <h2 class="color-white mb-3">Otimize sua gestão financeira com os recursos da conta digital</h2>
+                <p class="color-white pe-3">Você garante um bom controle financeiro para sua operação, e agiliza tarefas de um jeito prático e eficiente.</p>
+                <a href="#" class="link-a float-right color-white">Saiba mais <span><img src="./assets/images/fintech/ico-seta.svg" /></span></a>
+            </div>
+            </div>    
+          </div>   
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="sec-main sec-benef hide-responsivo hide-responsivo">
+      <div class="container">
+        <div class="row d-none d-lg-flex">
+          <div class="cards-benef">
+            <div class="card-benef card-null">
+              <h2 class="mb-4">Faça seu negócio evoluir com os benefícios da Parceria Omie</h2>
+              <div class="actions">
+                <a href="" class="cta blue-cta d-block">Seja parceiro</a>
+              </div>
+            </div>
+            <article class="card-benef">
+              <img src="./assets/images/fintech/ico-pagamentos.svg" alt="Pagamentos" class="img-fluid mb-3"/>
+              <h3>Pagamentos</h3>
+              <p class="mb-0">Todos os pagamentos e transferências centralizados em uma mesma plataforma.</p>
+            </article>
 
-  <section class="container">
-    <div class=" row">
-      <div class="col-md-12 col-lg-6 p-0">
-        <div class="col-md-12 h-100 w-100 box-fintech">
-          <img src="./assets/images/logo-omie.png" class="img-logo" />
-          <div class="color-white">
-          <h3 class="color-white">Otimize sua gestão financeira com os recursos da conta digital</h3>
-          <p class="color-white">Você garante um bom controle financeiro para sua operação, e agiliza tarefas de um jeito prático e eficiente.</p>
-          <a href="#" class="link-a float-right color-white">Saiba mais <span><img src="./assets/images/fintech/ico-seta.svg" /></span></a>
+            <article class="card-benef">
+              <img src="./assets/images/contadores/ico-boletos.svg" alt="Boletos" class="img-fluid mb-3">
+              <h3>Boletos</h3>
+              <p class="mb-0">Emissão de boletos a baixo custo, de forma simples, rápida e personalizada.</p>
+            </article>
+            <article class="card-benef">
+              <img src="./assets/images/contadores/ico-sistemagratuito.svg" alt="Sistema gratuito" class="img-fluid mb-3">
+              <h3>Sistema gratuito</h3>
+              <p class="mb-0">Todas as funcionalidades disponíveis para você aproveitar do melhor jeito para o seu negócio.</p>
+            </article>
+
+            <article class="card-benef">
+              <img src="./assets/images/contadores/ico-suporte.svg" alt="Sistema gratuito" class="img-fluid mb-3">
+              <h3>Suporte completo</h3>
+              <p class="mb-0">Nossa equipe está sempre à disposição para dar toda assistência que você precisa no dia a dia.</p>
+            </article>
+            <article class="card-benef card-benef-princ">
+              <img src="./assets/images/contadores/ico-omaior.svg" alt="Pix" class="img-fluid mb-3"/>
+              <h3 class="pe-xl-5">Pix</h3>
+              <p class="">Cobranças facilitadas via QR Code, para sua empresa receber na hora, sem custos.</p>
+
+              <a href="">
+                <span>Saiba mais <img src="./assets/images/Arrow-right.png" alt=""></span>
+              </a>
+            </article>
+          </div>
         </div>
-        </div>    
-      </div>   
-      <div class="col-md-12 col-lg-6 p-0 grid-4-fintech">
-        <div class="d-flex flex-column justify-content-between col-md-12 col-lg-6 w-100">
-          <img src="./assets/images/fintech/ico-pagamentos.svg" />
-          <h6>Pagamentos</h6>
-        </div>
-        <div class="d-flex flex-column justify-content-between col-md-12 col-lg-6 w-100">
+      </div>
+    </section>
+    <section class="sec-main sec-cards-tab">
+      <div class="container">      
+        <div class="row">
+          <div class="col-12 mt-3 d-lg-none">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-pagamentos.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Pagamentos</h3>
+                    </div>
+                    <p class="mb-0">Todos os pagamentos e transferências centralizados em uma mesma plataforma.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-controlefinanceiro.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Boletos</h3>
+                    </div>
+                    <p class="mb-0">Emissão de boletos a baixo custo, de forma simples, rápida e personalizada. &nbsp;</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-icons">
+                    <div class="title">                     
+                      <img src="./assets/images/fintech/ico-controlefinanceiro.svg"/>
+                    </div>
+                    <div class="title">
+                      <h3 class="mx-0">Pix</h3>
+                    </div>
+                    <p class="mb-0">Cobranças facilitadas via QR Code, para sua empresa receber na hora, sem custos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="mtb-80">
+        <h2 class="sub-title text-left m-0">Invista no seu negócio com soluções exclusivas de crédito </h2>
+        <p class="mb-4">Através de nossas parcerias, você tem acesso às melhores taxas, 100% on-line e sem burocracias.</p>
         
-        </div>
-        <div class="d-flex flex-column justify-content-between col-md-12 col-lg-6 w-100">
-          <img src="./assets/images/fintech/ico-boletos.svg" />
-          <h6>Boletos</h6>
-        </div>
-        <div class="d-flex flex-column justify-content-between col-md-12 col-lg-6 w-100">
-          <img src="./assets/images/fintech/ico-pix.svg" />
-          <h6>Pix</h6>
+        <div class="box-card-news d-flex justify-content-between mt-4">
+          <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="box">
+                  <img src="./assets/images/fintech/solucoesdecredito.png">
+                  <div class="info-box py-4">
+                    <h4>Soluções de crédito inteligentes</h4>
+                    <p>Ofertas de crédito rápido que se adaptam de acordo com o que você precisa.</p>
+                    <img src="./assets/images/fintech/logo-ergoncredit.svg">
+                    <div class="box-button-more-info">
+                      <button>Saiba Mais</button>
+                      <img src="./assets/images/Arrow-right.png">
+                    </div>     
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="box">
+                  <img src="./assets/images/fintech/linhadecredito.png">
+                  <div class="info-box py-4">
+                    <h4>Linha de crédito para clientes Omie</h4>
+                    <p>As melhores taxas, com rapidez e segurança, sem apresentar garantias.</p>
+                    <img src="./assets/images/fintech/logo-ergoncredit.svg">
+                    <div class="box-button-more-info">
+                      <button>Saiba Mais</button>
+                      <img src="./assets/images/Arrow-right.png">
+                    </div>     
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="box">
+                  <img src="./assets/images/fintech/emprestimocomgarantia.png">
+                  <div class="info-box py-4">
+                  <h4>Empréstimo com garantia de imóvel</h4>
+                  <p>Seu imóvel como garantia e até 50% do valor para você investir como quiser.</p>
+                  <img src="./assets/images/fintech/logo-cashme.svg">
+                    <div class="box-button-more-info">
+                      <button>Saiba Mais</button>
+                      <img src="./assets/images/Arrow-right.png">
+                    </div>      
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        
+      
+   
         </div>
       </div>
-    </div>
-  </section>
-  <section class="container">
-    <div class="mtb-80">
-      <h2 class="sub-title text-left m-0">Invista no seu negócio com soluções exclusivas de crédito </h2>
-      <p class="mb-4">Através de nossas parcerias, você tem acesso às melhores taxas, 100% on-line e sem burocracias.
-      </p>
-      <div class="box-card-news d-flex justify-content-between mt-4">
-        <div>
-          <img src="./assets/images/fintech/linhadecredito.png">
-          <div class="info-box">
-            <h4>Linha de crédito para clientes Omie</h4>
-            <p>As melhores taxas, com rapidez e segurança, sem apresentar garantias.</p>
-            <img src="./assets/images/fintech/logonexoos.svg">
-            <div>
-              <button>Saiba Mais</button>
-              <img src="./assets/images/Arrow-right.png">
-            </div>       
+    </section>
+  
+  
+    <section class="sec-main sec-counter">
+      <img src="assets/images/home/play-azul2.png" alt="Omie Grafismo" class="img-fluid d-none d-xl-block img-pattern">
+      <div class="container">
+        <div class="row align-items-lg-center pt-xxl-5">        
+          <div class="col-12">
+            <article class="depoiment" data-bs-toggle="modal" data-bs-target="#modalVideo">
+              <figure>
+                <img src="./assets/images/about-us/video.png" alt="Depoimento Fabio Oberle" class="img-fluid" data-video>
+                <figcaption>"Com a parceria com a Omie a gente consegue ajudar o cliente a tomar a melhor decisão e acompanhar sua evolução."</figcaption>
+                <cite><strong>Fabio Oberle</strong> - Contador consultivo Omie</cite>
+              </figure>
+            </article>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div>
-          <img src="./assets/images/fintech/solucoesdecredito.png">
-          <div class="info-box">
-          <h4>Soluções de crédito inteligentes</h4>
-          <p>Ofertas de crédito rápido que se adaptam de acordo com o que você precisa.</p>
-          <img src="./assets/images/fintech/logo-ergoncredit.svg">
-          <div>
-            <button>Saiba Mais</button>
-            <img src="./assets/images/Arrow-right.png">
-          </div>     
-        </div>
-        </div>
+    <section class="sec-main sec-faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <h2 class="mb-4">Respondemos as dúvidas mais frequentes de outros contadores</h2>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne"> O que é o produto do Oneflow? </button>
+                
+                <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="headingFaqOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">
+                  Qual o valor do plano para contador parceiro?
+                </button>
+                
+                <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="headingFaqTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFaqThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqThree" aria-expanded="false" aria-controls="collapseFaqThree">
+                    É possível agendar algum treinamento com a Omie?
+                  </button>
+                </h2>
+                <div id="collapseFaqThree" class="accordion-collapse collapse" aria-labelledby="headingFaqThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFaqFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqFour" aria-expanded="false" aria-controls="collapseFaqFour">
+                    Posso utilizar o Omie para gerir meu próprio escritório?
+                  </button>
+                </h2>
+                <div id="collapseFaqFour" class="accordion-collapse collapse" aria-labelledby="headingFaqFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div>
-          <img src="./assets/images/fintech/emprestimocomgarantia.png">
-          <div class="info-box">
-          <h4>Empréstimo com garantia de imóvel</h4>
-          <p>Seu imóvel como garantia e até 50% do valor para você investir como quiser.</p>
-          <img src="./assets/images/fintech/logo-cashme.svg">
-            <div>
-              <button>Saiba Mais</button>
-              <img src="./assets/images/Arrow-right.png">
-            </div>      
-        </div>
+          <div class="col-12 text-lg-end mt-5">
+            <a href="" class="text-end"><strong>Veja outras dúvidas</strong> <img src="/assets/images/Arrow-right.png" alt="" class="img-fluid"></a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="container pattern-video no-image-bg">   
-    <div class="container pattern-home-4">   
-      <div class="container position-relative box-video pattern-home-5">
-        <img src="./assets/images/about-us/video.png">
-        <div class="mt-80">
-          <p>“Com a parceria com a Omie a gente consegue ajudar o cliente a tomar a melhor decisão e acompanhar sua evolução.”</p>
-          <p>Fabio Oberle <span>Contador consultivo Omie</span></p>
+    </section>
+
+    <section class="sec-main sec-negocio bg-heavy-blue" style="background: url(./assets/images/home/pattern3.png) 100% 100% no-repeat,linear-gradient(90deg, #001e27 81.5%, transparent 50%);">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xxl-6">
+            <h2 class="text-soft-white mb-4">Planos para <br class="d-none d-lg-block"> todo tipo de negócio</h2>
+            <p class="text-soft-white">Com apenas algumas informações, indicamos o plano que melhor atende às necessidades da sua empresa.</p>
+
+            <div class="actions mt-5">
+              <a href="" class="cta white-cta">Conheça os planos</a>
+              <a href="" class="cta transparent-cta mt-4 mt-lg-0 ms-lg-4">Experimente grátis</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>   
-  </section> 
-  <section class="container pattern-video no-image-bg">
-    <div class="d-flex justify-content-between container px-0 responsive-flex-column mtb-80 row">
-      <div class="box-info-list mb-80 col-md-12 col-lg-6">
-        <h3>Respondemos as dúvidas mais frequentes sobre produtos para contabilidade</h3>
-      </div> 
-      <div class="box-ask col-md-12 col-lg-6">
-        <ul>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>O que é o produto do Oneflow? </h4>
-               <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-1"></i>
-            </div>
-            <div class="info info-faq" id="tab-faq-1">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Qual o valor do plano para contador parceiro? </h4>
-               <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-2"></i>
-            </div>
-              <div class="info info-faq d-none" id="tab-faq-2">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>É possível agendar algum treinamento com a Omie?</h4>
-              <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-3"></i>
-            </div>
-              <div class="info info-faq d-none" id="tab-faq-3">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Posso utilizar o Omie para gerir meu próprio escritório? </h4>
-               <i class="fas fa-chevron-down cursor-pointer tab-faq" data-faq="tab-faq-4"></i>
-            </div>
-              <div class="info info-faq d-none" id="tab-faq-4">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <a href="#" class="link-a float-right">Veja outras dúvidas <span><img src="./assets/images/home/setinhacarrossel.svg" /></span></a>
-        </ul>
-      </div>       
-    </div>  
-  </section>
-
-
-  <section class="h-400">
-    <div class="container box-plan w-80 float-left bg-secundary float-left h-100 box-default">
-      <div>
-        <h2 class="text-left color-white mb-4">Planos para todo tipo de negócio</h2>
-        <p class="text-left color-white mb-4">Com apenas algumas informações, indicamos o plano que melhor atende às necessidades da sua empresa.</p>
-      </div>
-      <div class="box-btn-plan">
-        <button>Conheça os planos</button>
-        <button>Experimente Grátis</button>
-      </div>
-    </div>
-    <div class="w-20 float-right d-flex justify-content-end align-items-end flex-column position-relative h-100">
-      <img src="./assets/images/home/pattern3.png" />
-    </div>
-  </section>
-
+    </section>
+  </main>
 
   <footer>
     <div class="container con-partners">
       <div class="row">
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-astella.png" alt="">
+          <img src="assets/images/logo-astella.png" alt="Logo Astella">
         </div>
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-softbank.png" alt="">
+          <img src="assets/images/logo-softbank.png" alt="Logo SoftBank Latin America Found">
         </div>
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-riverwood.png" alt="">
+          <img src="assets/images/logo-riverwood.png" alt="Logo Riverwood Capital">
         </div>
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-aws.png" alt="">
+          <img src="assets/images/logo-aws.png" alt="Logo AWS Partner Network">
         </div>
       </div>
     </div>
@@ -528,7 +705,7 @@
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Contadores</button>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <ul>
-                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="/contadores.html">Omie para contadores</a></li>
                   <li><a href="">Seja parceiro</a></li>
                   <li><a href="">Produtos para contadores</a></li>
                   <li><a href="">Clube de vantagens</a></li>
@@ -541,7 +718,7 @@
               </button>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <ul>
-                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="/contadores.html">Omie para contadores</a></li>
                   <li><a href="">Seja parceiro</a></li>
                   <li><a href="">Produtos para contadores</a></li>
                   <li><a href="">Clube de vantagens</a></li>
@@ -554,7 +731,7 @@
               </button>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <ul>
-                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="/contadores.html">Omie para contadores</a></li>
                   <li><a href="">Seja parceiro</a></li>
                   <li><a href="">Produtos para contadores</a></li>
                   <li><a href="">Clube de vantagens</a></li>
@@ -603,23 +780,23 @@
         <div class="col-lg-3">
           <ul class="links-site">
             <li class="list-title">Contadores</li>
-            <li><a href="">Omie para contadores</a></li>
+            <li><a href="/contadores.html">Omie para contadores</a></li>
             <li><a href="">Seja Parceiro</a></li>
-            <li><a href="">Produtos para contadores</a></li>
+            <li><a href="/produtos-contadores.html">Produtos para contadores</a></li>
             <li><a href="">Clube de vantagens</a></li>
           </ul>
 
           <ul class="links-site">
             <li class="list-title">Franquias</li>
             <li><a href="">Benefícios</a></li>
-            <li><a href="">Unidades franqueadas</a></li>
+            <li><a href="seja-franqueado.html">Unidades franqueadas</a></li>
           </ul>
         </div>
         <div class="col-lg-3">
           <ul class="links-site">
             <li class="list-title">Empresas</li>
-            <li><a href="">Omie para empresas</a></li>
-            <li><a href="">Planos</li>
+            <li><a href="empreendedores.html">Omie para empresas</a></li>
+            <li><a href="precos.html">Planos</li>
             <li><a href="">Omie.Cash</a></li>
             <li><a href="">Produtos financeiros</a></li>
             <li><a href="">Treinamentos</a></li>
@@ -635,7 +812,7 @@
         <div class="col-lg-3">
           <ul class="links-site links-unique">
             <li class="list-title">A Omie</li>
-            <li><a href="">Quem somos</a></li>
+            <li><a href="sobre-nos.html">Quem somos</a></li>
             <li><a href="">Parceiros</a></li>
             <li><a href="">Quem ama usa</a></li>
             <li><a href="">Sala de imprensa</a></li>
@@ -647,9 +824,9 @@
         <div class="col-lg-3">
           <ul class="links-site links-unique">
             <li><a href="" class="list-title">Ajuda</a></li>
-            <li><a href="" class="list-title">Fale conosco</a></li>
+            <li><a href="suporte.html" class="list-title">Fale conosco</a></li>
             <li><a href="" class="list-title">Experimente grátis</a></li>
-            <li><a href="" class="list-title">Funcionalidades</a></li>
+            <li><a href="funcionalidades-home.html" class="list-title">Funcionalidades</a></li>
             <li><a href="" class="list-title">Cursos Omie.Academy</a></li>
             <li><a href="" class="list-title">Desenvolvedores</a></li>
           </ul>
@@ -702,33 +879,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <script>
-    var tabFaq = document.querySelectorAll(".tab-faq");
-    var contentFaq = document.querySelectorAll(".info-faq");
-  
-    tabFaq.forEach(item => {
-      item.addEventListener('click', event => {       
-        var dataTarget = event.target.getAttribute('data-faq');
-        var classIcon = event.target  
-  
-        tabFaq.forEach((e) => { 
-          e.classList.remove('rotate-icon-180');  
-        })  
-  
-        classIcon.classList.add('rotate-icon-180');  
-        contentFaq.forEach((e) => { 
-          var id = e.getAttribute('id');
-         
-          if (id === dataTarget) {
-            e.classList.remove("d-none")
-            e.classList.add('active');                   
-          } else {
-            e.classList.add("d-none");
-            e.classList.remove('rotate-icon-180');  
-          }
-        });
-      })
-    });
-  </script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home-page.js"></script>
+
 </body>
 </html>

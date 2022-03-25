@@ -385,3 +385,30 @@ footer {
     }
   }
 }
+
+.mt-80 {
+  margin-top: 80px!important;
+}
+
+.color-white {
+  color: #fff!important;
+}
+
+.link-a {
+  font-weight: 700;
+}
+.float-right {
+  float: right
+} 
+
+.hide-responsive {
+  @media(max-width: 768px) {
+    display: none!important;
+  }
+}
+
+.show-responsive {
+   @media(min-width: 768px) {
+    display: none!important;
+  }
+}

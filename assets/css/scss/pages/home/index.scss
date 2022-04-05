@@ -224,12 +224,6 @@
   //   width: 85%;
   // }
 
-
-
-  .cards-hover .card .content {
-    padding-right: 1.5rem;
-  }
-
   .sec-faq .accordion .accordion-button {
     padding-right: 2.75rem;
     position: relative;
@@ -307,21 +301,6 @@
       &:nth-child(2) {
         margin: 0 auto 4rem;
       }
-    }
-  }
-
-  .cards-hover {
-    flex-direction: row;
-    justify-content: space-between;
-
-    .card {
-      margin-bottom: 0;
-      min-height: 302px;
-      width: 48%;
-    }
-
-    h3 {
-      min-height: 56px;
     }
   }
 }
@@ -516,35 +495,6 @@
 
   .sec-benef-empresa .cards-benef .card-benef:nth-child(5) {
     background: #f7f7f7;
-  }
-
-  .cards-hover {
-    flex-direction: column;
-
-    .card {
-      min-height: unset;
-      width: 100%;
-    }
-
-    .card:first-child {
-      margin-bottom: 1rem;
-    }
-
-    header {
-      align-items: center;
-      justify-content: flex-start;
-      position: relative;
-    }
-
-    header img:last-child {
-      position: absolute;
-      right: 0;
-    }
-
-    h3 {
-      margin: 0 8px;
-      min-height: unset;
-    }
   }
 
   .sec-play-laranja {

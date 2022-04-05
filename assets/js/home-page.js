@@ -102,22 +102,6 @@ if(document.querySelector('.col-solutions-fixed') && tela >= 1020){
       colFixa.classList.remove('initial');
       colFixa.classList.add('absolute');
     }
-
-    console.log(sectionBottom - windowMetade);
-
-
-    // const colFixaTop = sectionColFixa.getBoundingClientRect().bottom;
-    
-    // if(colFixaTop < 1730 && colFixaTop > 630){
-    // } else if (colFixaTop < 650) {
-    //   colFixa.classList.remove('fixa');
-    //   colFixa.classList.remove('initial');
-    //   colFixa.classList.add('absolute');
-    // } else if (colFixaTop > 1730) {
-    //   colFixa.classList.remove('fixa');
-    //   colFixa.classList.remove('absolute');
-    //   colFixa.classList.add('initial');
-    // }
   }
 
   window.addEventListener('scroll', animaCol);

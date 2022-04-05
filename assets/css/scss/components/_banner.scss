@@ -213,7 +213,8 @@
   }
 }
 
-@media(min-width: 1320px){
+@media(min-width: 1200px){
+
   .banner {
     h1 {
       font-size: 3rem;
@@ -277,6 +278,33 @@
     height: 90vh;
   }
 
+  .banner.banner-interno.banner-sobre {
+    align-items: center;
+    background: url(/assets/images/about-us/pattern1.png) -200px 85px, linear-gradient(0deg, #fff 20%, $heavyBlue 20%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+
+    .card-carousel-banner {
+      margin-top: 3rem;
+      min-height: 152px;
+      padding: 1rem 0.5rem 1rem 0.7rem;
+
+      p {
+        font-size: 1rem;
+      }
+    } 
+  } 
+}
+
+@media(min-width: 1400px){
+
+  .banner.banner-interno.banner-sobre { 
+    background: url(/assets/images/about-us/pattern1.png) -200px 55px,linear-gradient(0deg, #fff 20%, #001e27 20%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 65vh;
+  }
 }
 
 @media (max-width: 768px){

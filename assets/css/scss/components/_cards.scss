@@ -157,6 +157,7 @@
   }
 
   .saiba-mais {
+    align-items: flex-end;
     display: flex;
     justify-content: space-between;
   }
@@ -167,16 +168,59 @@
 }
 
 .owl-carousel.owl-carousel-novidades .owl-item img {
+  margin-bottom: 0;
   width: 100%;
 }
 
-.owl-carousel.owl-carousel-novidades .owl-item img {
+.owl-carousel.owl-carousel-novidades .owl-item .saiba-mais img {
   width: fit-content;
 }
 
 @media (min-width: 428px){  
   .cards-benef .card-benef {
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .cards-hover .card .content {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .cards-hover {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .card {
+      margin-bottom: 0;
+      min-height: 302px;
+      width: 48%;
+    }
+
+    h3 {
+      min-height: 56px;
+    }
+  }
+
+  .cards-acreditamos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    h3 {
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+
+    .card-acred {
+      margin-bottom: 1rem;
+      width: 45%;
+
+      &:nth-child(5), &:nth-child(6) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -271,6 +315,35 @@
       }
     }
   }
+
+  .cards-hover {
+    flex-direction: column;
+
+    .card {
+      min-height: unset;
+      width: 100%;
+    }
+
+    .card:first-child {
+      margin-bottom: 1rem;
+    }
+
+    header {
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    header img:last-child {
+      position: absolute;
+      right: 0;
+    }
+
+    h3 {
+      margin: 0 16px;
+      min-height: unset;
+    }
+  }
 }
 
 @media (min-width: 1320px){
@@ -307,7 +380,8 @@
   }
 }
 
-@media(min-width: 1920px){
+@media(min-width: 1400px){
+
   .cards-business {
     .card {
       width: 32.5%;

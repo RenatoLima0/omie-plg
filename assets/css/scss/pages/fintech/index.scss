@@ -1,24 +1,39 @@
 @import "../../components/colors";
-.box-fintech {
-  background: #001E27;
-  padding: 24px;
-  border-radius: 8px;
-}
 
 .banner.banner-interno.banner-fintech {
-  background: url('/assets/images/fintech/img-banner.png') no-repeat 05px 85%;
-  background-color: #fff;
-  background-size: contain;
+  // background: url('/assets/images/fintech/play-roxo.png'), url('/assets/images/fintech/banner-mobile.png') 0px 0px;
+  align-items: flex-end;
+  background: url('/assets/images/fintech/banner-mobile.png') 0px 0px;
+  background-repeat: no-repeat;
+  background-size: contain;  
+  display: flex;
+  height: calc(85vh - 89.39px);
+  margin: 0 0 0 0;
 
 
-
-  @media (max-width: 768px) {
-    background-size: cover;
-    background-position: 0;
+  h1, p {
+    color: $heavyBlue;
   }
 }
 
-.box-card-news {
+.box-fintech {
+  background: #001E27;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+
+  .content {
+    padding: 0 1.5rem;
+  }
+
+  .content img {
+    filter: invert(1);
+  }
+}
+
+.owl-carousel-novidades {
   .box {
     border: 1px solid #DBDFDE;
     border-radius: 8px;
@@ -26,7 +41,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 350px;
 
     .info-box {
       display: flex;
@@ -34,12 +48,20 @@
       justify-content: space-between;
       align-items: flex-start;
 
+      h4 {
+        margin-top: 1rem;
+      }
+
       .box-button-more-info {
         justify-content: space-between;
         display: flex;
         align-items: center;
         width: 100%;
         margin-top: 24px;
+
+        img {
+          width: 10%;
+        }
 
         button {
           background: transparent;
@@ -50,4 +72,185 @@
       }
     }
   }  
+
+}
+
+.owl-carousel.owl-carousel-novidades .owl-item .info-box img {
+  width: 50%;
+}
+
+.owl-carousel.owl-carousel-novidades .owl-item .box-button-more-info img {
+  width: 10%;
+}
+
+.sec-main .carousel-indicators {
+  position: relative;
+  margin-top: 2rem;
+
+  [data-bs-target] {
+    background-color: $heavyBlue;
+    border-radius: 50%;
+    height: 15px;
+    margin: 0 .5rem;
+    width: 15px;
+  }
+} 
+
+.cards-benef {
+  min-height: 250px;
+  margin-bottom: 0;
+
+  .card-benef {
+    min-height: 230px;
+  }
+}
+
+@media(min-width: 768px){
+  .banner.banner-interno.banner-fintech {
+    background: url(/assets/images/fintech/img-banner.png) 0px 0px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    height: calc(65vh - 89.39px);
+  }
+
+  .cards-benef {
+  
+    .cards-benef {
+      flex-direction: column-reverse;
+      width: 50%;
+    }
+  
+    .card-benef {
+      width: 50%;
+    }
+  
+    .card-grande-benef {
+      display: flex;
+      width: 50%;
+  
+      .card-benef {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media(min-width: 992px) {
+  .cards-benef{
+    .card-benef:nth-child(3), .cards-benef .card-benef:nth-child(5) {
+      background: #f7f7f7;
+    }
+
+    .card-benef:nth-child(1) {
+      background: #eceeed;
+      justify-content: space-between;
+      padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .card-grande-benef {
+      .card-benef {
+        background: $heavyBlue;
+        max-height: unset;
+        padding: 2rem 0 0;
+
+        &:hover {
+          transform: unset;
+        }
+      }
+      
+      .content {
+        padding: 0rem 1.5rem 2rem;
+      }
+
+      .content img {
+        filter: invert(1);
+      }
+
+      .logo-omie-cash {
+        margin-bottom: 3rem;
+      }
+    }
+  } 
+
+  .banner.banner-interno.banner-fintech {
+    background-size: 60%;
+    height: calc(110vh - 89.39px);
+  }
+
+  .cards-acreditamos .card-acred {
+    margin-bottom: 1rem;
+    width: 47%;
+  }
+}
+
+@media (min-height: 1366px) and (min-width: 1024px) {
+  .banner.banner-interno.banner-fintech {
+    height: calc(55vh - 89.39px);
+  }
+}
+
+@media(min-width: 1024px){
+  .sec-counter {
+    background-image: none;
+  }
+
+  article.depoiment {
+    margin-top: 10rem;
+  }
+}
+
+@media(min-width: 1200px){
+
+  .banner.banner-interno.banner-fintech {
+    background-size: contain;
+    height: 100vh;
+    padding-bottom: 1rem;
+  }
+
+  .cards-acreditamos .card-acred {
+    padding-right: 1.5rem;
+    width: 23%;
+
+    h3 {
+      font-size: 1.406rem;
+    }
+  }
+
+  .cards-benef .card-benef {
+    min-height: 200px;
+  }
+
+  .owl-carousel-novidades .box {
+    max-height: 510px;
+  }
+}
+
+@media(min-width: 1400px){
+  .banner.banner-interno.banner-fintech {
+    background-size: contain;
+    height: 80vh;
+    padding-bottom: 3rem;
+  }
+
+  .cards-acreditamos .card-acred {
+    padding-right: 0rem;
+    width: 24%;
+  }
+
+  .cards-benef .card-benef {
+    min-height: 230px;
+
+    &:hover {
+      min-height: 230px;
+    }
+  }
+
+  .owl-carousel-novidades .box {
+    max-height: 529px;
+  }
 }

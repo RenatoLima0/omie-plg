@@ -307,6 +307,17 @@
   }
 }
 
+@media(max-width: 980px){
+
+  .banner.banner-interno.banner-sobre { 
+    background-image: none;
+    background-color: #001e27;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px){
   .banner.banner-home {
     background-image: none !important;

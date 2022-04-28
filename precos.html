@@ -6,15 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omie PLG</title>
 
+  <!-- LAZY LOAD  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      lozad().observe();
+    });
+  </script>
+  <!-- LAZY LOAD  -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="assets/css/pages/home/index.css">
+
+  <style>
+    @media (min-width: 1024px) {
+      .sec-counter {
+        background-image: none;
+      }
+
+      main.main-content section.sec-main.sec-counter.sec-counter-contadores {
+        padding: 5rem 0 4rem 0;
+      }
+    }
+  </style>
 </head>
+
 <body class="">
   <nav class="nav-mobile d-xl-none">
     <header>
       <a href="/" class="link-nav-mobile">
-        <img src="assets/images/logo-omie.png" alt="Destaques" class="">
+        <img src="assets/images/logo-omie.png" alt="Omie logo" class="">
       </a>
 
       <a href="" class="cta transparent-cta">Experimente</a>
@@ -27,246 +50,23 @@
     </header>
 
     <div class="items-menu">
-      <!-- <form class="form-group" action="">
-        <input type="text" class="form-control" placeholder="Digite o que deseja">
-        <button type="submit" class="cta dark-cta"> Buscar </button>
-      </form> -->
 
-      <a class="cta menu btn-comercial green-cta btn-comercial-tag" data-bs-toggle="modal" data-bs-target="#modal-menu-comercial" data-eventlabel="falar-com-especialista" data-category="omie-menu" data-eventaction="intencao-clique-botao" data-lead="intencao-comercial">Falar com especialista</a>
-      <a class="cta menu btn-experimente blue-cta btn-comercial-tag" data-bs-toggle="modal" data-bs-target="#modal-menu-experimente" data-eventlabel="experimente" data-category="omie-menu" data-eventaction="intencao-clique-botao" data-lead="intencao-trial">Experimente</a>
+      <a href="/" class="link-nav-mobile">
+        <img src="assets/images/logo-omie.png" alt="Omie Logo" class="">
+      </a>
 
-      <hr>
+      <a href="" class="cta transparent-cta">Entrar</a>
 
-      <a href="https://app.omie.com.br/" rel="noreferrer" class="login-cta">Entrar</a>
+      <a href="./empresas.html" class="link-menu-mobile btn-interacao-tag" rel="noreferrer">Empresas</a>
 
-      <a href="#" class="btn dropdown-toggle" rel="noreferrer"> Soluções </a>
-      <div class="sub-menu">
-        <ul>
-          <li class="fecha-sub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-            Voltar
-          </li>
-          <li class="title-menu">Para empreendedores</li>
-          <li class="btn">
-            <a href="/sistema-erp/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-full" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Full <br> <small>Sistema de gestão completo</small></a>
-          </li>
-          <li class="btn">
-            <a href="/fit/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-fit" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.FIT <br> <small>Sistema ERP grátis</small></a>
-          </li>
-          <li class="btn">
-            <a href="/omie-cash/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-cash" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Cash <br> <small>Conta corrente digital</small></a>
-          </li>
-          <li class="btn">
-            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-academy" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Academy <br> <small>Cursos</small></a>
-          </li>
-          <li class="btn">
-            <a href="https://store.omie.com.br/" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-store" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Omie.Store <br> <small>Loja de Apps</small></a>
-          </li>
-          <li class="btn">
-            <a href="/treinamento/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="treinamentos" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Treinamentos</a>
-          </li>
-          <li class="btn">
-            <a href="/credito/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="credito-empresarial" data-category="omie-menu-solucoes" data-eventaction="empreendedor-clique-botao">Crédito empresarial</a>
-          </li>
+      <a href="./contadores.html" class="link-menu-mobile btn-interacao-tag" rel="noreferrer">Contadores</a>
 
-          <li class="title-menu">Para contadores</li>
-          <li class="btn">
-            <a href="/contadores/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="contabilidade-digital" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Contabilidade digital</a>
-          </li>
-          <li class="btn">
-            <a href="/sistema-erp/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-full" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Full <br> <small>Sistema de gestão completo</small></a>
-          </li>
-          <li class="btn">
-            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-academy" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Academy <br> <small>Cursos</small></a>
-          </li>
-          <li class="btn">
-            <a href="/infinity/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="omie-infinity" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Omie.Infinity</a>
-          </li>
-          <li class="btn">
-            <a href="/seja-franqueado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="franquias" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Franquias</a>
-          </li>
-          <li class="btn">
-            <a href="https://oneflow.com.br/" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="oneflow" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Oneflow</a>
-          </li>
-          <li class="btn">
-            <a href="/credito/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="credito-empresarial" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Crédito empresarial</a>
-          </li>
-          <li class="btn">
-            <a href="/simbiose/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="simbiose" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Simbiose</a>
-          </li>
-          <li class="btn">
-            <a href="https://www.aceleresuadigitalizacao.com.br/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="acelere-digitalizacao" data-category="omie-menu-solucoes" data-eventaction="contador-clique-botao">Acelere sua digitalização</a>
-          </li>
+      <a href="/precos/" class="link-menu-mobile plano-preco-menu-mobile btn-interacao-tag" rel="noreferrer" data-eventlabel="plano-preco" data-category="omie-menu-plano-preco" data-eventaction="plano-preco-clique-botao">Planos</a>
 
-        </ul>
-      </div>
+      <a href="" class="link-menu-mobile btn-interacao-tag" rel="noreferrer">Funcionalidades</a>
 
-      <a href="#" class="btn dropdown-toggle">Recursos do sistema</a>
-      <div class="sub-menu">
-        <ul>
-          <li class="fecha-sub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-            Voltar
-          </li>
-          <li class="title-menu">Para o seu negócio</li>
-          <li class="btn">
-            <a href="/segmentos/marketing-e-propaganda/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="agencia-marketing" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Agência de marketing</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/bares/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="bares-restaurantes" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Bares e restaurantes</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/comercio/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="comercio" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Comércio</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/construcao-civil/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="construcao-civil" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Construção civil</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/distribuidoras/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="distribuidoras" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Distribuidoras</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/sistema-erp-industria/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="industrias" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Indústrias</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/transportes/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="logistica" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Logística</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/loja-de-varejo-e-atacado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="varejo" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">PDV para lojas</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/servicos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="servicos" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Serviços</a>
-          </li>
-          <li class="btn">
-            <a href="/segmentos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="para-negocio-clique-botao">Ver todos</a>
-          </li>
+      <a href="" class="link-menu-mobile btn-interacao-tag" rel="noreferrer">Franquias</a>
 
-          <li class="title-menu">Módulos</li>
-          <li class="btn">
-            <a href="/modulos/compras-estoque-e-producao/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="compras-estoque" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Compras e estoque</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/crm/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="crm" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">CRM</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/financas/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="financas" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Finanças</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/painel-do-contador/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="painel-contador" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Painel do contador</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/compras-estoque-e-producao/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="producao-custos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Produção e custos</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/servicos-e-nfs-e/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="servicos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Serviços</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/vendas-e-nfe/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="vendas" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Vendas</a>
-          </li>
-          <li class="btn">
-            <a href="/modulos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="modulos-clique-botao">Ver todos</a>
-          </li>
-
-          <li class="title-menu">Funcionalidades</li>
-          <li class="btn">
-            <a href="/funcionalidades/conciliacao-bancaria/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="conciliacao-bancaria" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Conciliação bancária</a>
-          </li>
-          <li class="btn">
-            <a href="/funcionalidades/controle-financeiro-empresarial/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="controle-financeiro" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Controle financeira</a>
-          </li>
-          <li class="btn">
-            <a href="/funcionalidades/emissao-de-boletos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="emissao-de-boletos" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Emissão de boletos</a>
-          </li>
-          <li class="btn">
-            <a href="/funcionalidades/gerenciamento-de-estoque/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="gerenciamento-estoque" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Gerenciamento de estoque</a>
-          </li>
-          <li class="btn">
-            <a href="/funcionalidades/marketplace/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="marketplace" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Integração com marketplace</a>
-          </li>
-          <!-- <li class="btn">
-            <a href="/funcionalidades/">Inteligência artificial fiscal</a>
-          </li> -->
-          <li class="btn">
-            <a href="/funcionalidades/nota-fiscal/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="nota-fiscal" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Notas fiscais</a>
-          </li>
-          <li class="btn">
-            <a href="/funcionalidades/relatorios/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="relatorios" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Relatórios personalizados</a>
-          </li>
-          <li class="btn">
-            <a href="/funcionalidades/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="todos" data-category="omie-menu-recursos-sistemas" data-eventaction="funcionalidades-clique-botao">Ver todos</a>
-          </li>
-        </ul>
-      </div>
-
-      <a href="/precos/" class="btn plano-preco-menu-mobile btn-interacao-tag" rel="noreferrer" data-eventlabel="plano-preco" data-category="omie-menu-plano-preco" data-eventaction="plano-preco-clique-botao"> Plano e preços </a>
-
-      <a href="#" class="btn dropdown-toggle"> Omie pra Você </a>
-      <div class="sub-menu">
-        <ul>
-          <li class="fecha-sub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-            Voltar
-          </li>
-          <li class="title-menu">Quem somos?</li>
-          <li class="btn">
-            <a href="#">SEJA OMIE</a>
-          </li>
-          <li class="btn">
-            <a href="/seja-franqueado/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="seja-franqueado" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Seja franqueado</a>
-          </li>
-          <li class="btn">
-            <a href="/unidades-franqueadas/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="unidades-franqueadas" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Unidades franqueadas</a>
-          </li>
-          <li class="btn">
-            <a href="/contadores/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="parceiros" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Seja parceiro</a>
-          </li>
-          <li class="btn">
-            <a href="https://trabalheconosco.vagas.com.br/omie" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="trabalhe-conosco" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Trabalhe conosco</a>
-          </li>
-          <li class="btn">
-            <a href="/sobre/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="sobre" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Sobre nós</a>
-          </li>
-          <li class="btn">
-            <a href="/suporte/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="suporte" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Suporte</a>
-          </li>
-          <li class="btn">
-            <a href="https://developer.omie.com.br/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="developer" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Developer</a>
-          </li>
-          <li class="btn">
-            <a href="https://ajuda.omie.com.br/pt-BR/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="ajuda" data-category="omie-menu-para-voce" data-eventaction="quem-somos-clique-botao">Ajuda</a>
-          </li>
-          <li class="title-menu">Conteúdo</li>
-          <li class="btn">
-            <a href="https://blog.omie.com.br/?__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank"  class="btn-interacao-tag" rel="noreferrer" data-eventlabel="blog" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Blog</a>
-          </li>
-          <li class="btn">
-            <a href="/imprensa/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="sala-imprensa" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Sala de Imprensa</a>
-          </li>
-          <li class="btn">
-            <a href="https://blog.omie.com.br/categories/empreendedorismo/?utm_source=site&utm_medium=topo&__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="empreendedorismo" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Empreendedorismo</a>
-          </li>
-          <li class="btn">
-            <a href="https://blog.omie.com.br/categories/contadores/?utm_source=site&utm_medium=topo&__hstc=181257784.c21a95ba726b4e438eeda050958d75f1.1611248923402.1619539525229.1619542486865.223&__hssc=181257784.4.1619542486865&__hsfp=3017098018" target="_blank" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="contabilidade" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Contabilidade</a>
-          </li>
-          <li class="btn">
-            <a href="/eventos/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="eventos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Eventos</a>
-          </li>
-          <li class="btn">
-            <a href="/academy/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="cursos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Cursos</a>
-          </li>
-          <li class="btn">
-            <a href="/treinamento/" class="btn-interacao-tag" rel="noreferrer" data-eventlabel="treinamentos" data-category="omie-menu-para-voce" data-eventaction="conteudo-clique-botao">Treinamentos</a>
-          </li>
-          <!-- <li class="btn">
-            <a href="#">Podcasts</a>
-          </li> -->
-        </ul>
-      </div>
     </div>
   </nav>
 
@@ -278,420 +78,442 @@
             <img src="assets/images/logo-omie.png" alt="Logo Omie">
           </a>
         </div>
-        <div class="col-xl-9 col-xxl-6 d-flex justify-content-between">
+        <div class="col-xl-9 col-xxl-7 d-flex justify-content-between">
           <ul class="items-menu">
-            <li><a href="">Empresas</a></li>
-            <li><a href="">Contadores</a></li>
-            <li><a href="">Planos</a></li>
-            <li><a href="">Funcionalidades</a></li>
-            <li><a href="">Franquias</a></li>
+            <li><p class="mb-0"><a href="./empresas.html">Empresas</a></p></li>
+            <li><p class="mb-0"><a href="./contadores.html">Contadores</a></p></li>
+            <li><p class="mb-0"><a href="/precos.html">Planos</a></p></li>
+            <li><p class="mb-0"><a href="/funcionalidades-home.html">Funcionalidades</a></p></li>
+            <li><p class="mb-0"><a href="/seja-franqueado.html">Franquias</a></p></li>
           </ul>
 
-          <div class="btns-menu">
-            <a href="" class="entrar">Entrar</a>
-            <a href="" class="cta transparent-cta">Experimente grátis</a>
-          </div>
+          <ul class="btns-menu p-0 mb-0 list-unstyled">
+            <li><p class="mb-0"><a href="" class="entrar">Entrar</a></p></li>
+            <li><p class="mb-0"><a href="" class="cta transparent-cta">Experimente grátis</a></p></li>
+          </ul>
         </div>
       </div>
     </div>
-  </nav> 
+  </nav>
 
-  <section class="banner-about-us no-image-bg">
-    <div class="box-banner box-banner-funcionalidades negative-margin-12">
-      <h1>Encontre o plano ideal para o seu negócio e comece já</h1>
-      <p>O Sistema Omie facilita o seu dia a dia com as soluções ideais para todos os tipos e tamanhos de empresa.</p>
-    </div>    
-  </section>
- 
-  <section class="container negative-margin-12">
-    <div class="row">
-      <div class="col-md-12 col-lg-5">
-        <div class="box-price">
-          <div class="header">
-            <div class="d-flex justify-content-between mb-4">
-              <h3>Fit</h3>
-              <label><span>R$</span>0</label>
-            </div>            
-            <p>Para empresas pequenas que possuam um faturamento de até R$ 180.000,00 total anual.</p>
-          </div>
-          <div class="body">
-            <ul>
-              <li>
-                <img src="./assets/images/precos/ico-check.svg" /> 
-                <p>Painel do contador</p>
+  <header class="banner banner-interno banner-sobre bg-gray-main">
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-10 px-md-0 text-lg-center">
+          <h1>Potencializando o crescimento das empresas brasileiras</h1>
+          <description class="pe-lg-5">
+            <p class="mb-xl-0">Nossa missão é alavancar o empreendedorismo brasileiro através de um sistema de gestão intuitivo aliado a um banco digital e educação empreendedora.</p>
+          </description>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section>
+      <div class="container">
+        <div class="row gap-3">     
+
+          <div class="card col-12 col-lg-4 p-0">     
+            <div class="p-3 bg-light">
+              <div class="card-body d-flex justify-content-between px-0">
+                <h5 class="card-title fs-3 fw-bolder">Fit</h5>
+                <p class="card-text"> R$ <span class="fs-3 fw-bolder">0</span></p>
+              </div>
+              <p class="m-0">Para empresas pequenas que possuam um faturamento de até <strong>R$ 180.000,00</strong> total anual.</p>
+            </div>     
+            <ul class="list-group list-group-flush border-0 px-3 my-3">
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Painel do contador
               </li>
-              <li>
-                <img src="./assets/images/precos/ico-check.svg" /> 
-                <p>Usuários ilimitados</p>
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Usuários ilimitados
               </li>
-              <li>
-                <img src="./assets/images/precos/ico-check.svg" /> 
-                <p>Até 10 Notas fiscais emitidas</p>
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Até 10 Notas fiscais emitidas
               </li>
-              <li>
-                <img src="./assets/images/precos/ico-check.svg" /> 
-                <p>Limite de faturamento anual</p>
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Limite de faturamento anual
               </li>
             </ul>
-            <button class="btn-primary">Ativar Omie.Fit</button>
+            <div class="actions d-none d-lg-flex my-4 px-3">
+              <a href="" class="cta blue-cta w-100">Ativar Omie.Fit</a>
+            </div>
+          </div>
+          <div class="card col-12 col-lg-7 p-0">     
+            <div class="bg-info">
+              <div class="card-body d-flex justify-content-between px-3 pb-0 pt-4">
+                <h5 class="card-title fs-3 fw-bolder">Fit</h5>
+                <p class="card-text"> R$ <span class="fs-3 fw-bolder">0</span></p>
+              </div>
+              <div class="card-body d-flex justify-content-between pe-0 pt-0 align-items-start">
+                <p class="m-0">Nossa <strong>solução completa</strong> para sua empresa não para de evoluir, independente de faturamento.</p>
+           
+                <a href="" class="cta cta-semi-border-radius blue-cta w-100 border-start-0">Cancelamento gratuito</a>
+              </div>
+             
+            </div>     
+            <ul class="list-group list-group-flush border-0 px-3 my-3">
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Painel do contador
+              </li>
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Usuários ilimitados
+              </li>
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Até 10 Notas fiscais emitidas
+              </li>
+              <li class="list-group-item px-0 border-0">
+                <img src="./assets/images/precos/ico-check.svg" />
+                Limite de faturamento anual
+              </li>
+            </ul>
+            <div class="actions d-none d-lg-flex my-4 px-3">
+              <a href="" class="cta blue-cta w-100">Ativar Omie.Fit</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-12 col-lg-7">
-        <div class="box-price">
-          <div class="header bg-primary">
-            <div class="d-flex justify-content-between mb-4">
-              <h3>Full</h3>
-              <label><span>a partir de </span> R$55</label>
-            </div>            
-            <p>Nossa solução completa para sua empresa não para de evoluir, independente de faturamento.</p>
-          </div>
-          <div class="body">
-            <div class=" d-flex justify-content-between">
-              <ul>
-                <li>
-                  <img src="./assets/images/precos/ico-check.svg" /> 
-                  <p>Painel do contador</p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-check.svg" /> 
-                  <p>Usuários ilimitados</p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-check.svg" /> 
-                  <p>Notas fiscais ilimitadas</p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-check.svg" /> 
-                  <p>Sem faturamento anual</p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-check.svg" /> 
-                  <p>Módulo CRM</p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-check.svg" /> 
-                  <p>Importação de NF-e</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <img src="./assets/images/precos/ico-modulocrm.svg" /> 
-                  <p><strong>Módulo CRM</strong></p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-acessoapis.svg" /> 
-                  <p><strong>Acesso aos API's</strong></p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-gestao.svg" /> 
-                  <p><strong>Gestão de contratos</strong></p>
-                </li>
-                <li>
-                  <img src="./assets/images/precos/ico-integracao.svg" /> 
-                  <p><strong>Integração bancária</strong></p>
-                </li>
-              </ul>
+    </section>
+    <section class="sec-main sec-faq pt-0 my-4">
+      <div class="container">
+        <div class="row">      
+          <div class="col-12 col-lg-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item border-0">
+                <div class="text-center">
+                  <div class="d-inline-block">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">Compare os planos</button>   
+                  </div>
+                </div>
+                <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="headingFaqOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="table-responsive-lg">
+                      <table class="table-price table w-100">
+                        <thead>
+                          <tr>
+                            <td class="border-0"></td>
+                            <td class="border-0">
+                              <h4 class="m-0 float-left d-inline-block">Fit</h4>
+                              <label class="float-right d-flex align-items-baseline">
+                                <span class="mr-1">R$</span> 
+                                <p class="m-0">0</p>
+                              </label>
+                            </td>
+                            <td class="border-0">
+                              <h4 class="m-0 float-left d-inline-block">Full</h4>
+                              <label class="float-right d-flex align-items-baseline">
+                                <span class="mr-1">a partir de </span> 
+                                <p class="m-0"><span>R$</span>55</p>
+                              </label>
+                            </td>
+                          </tr>
+                        </thead>
+                        <tbody class="border-top-0">
+                          <tr>
+                            <td>
+                              <p>Número de usuários</p>
+                            </td>
+                            <td><p>Ilimitado</p></td>
+                            <td><p>Ilimitado</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Emissão de notas fiscais</p>
+                            </td>
+                            <td> <p>10 notas mensais </p></td>
+                            <td><p>Ilimitado</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Suporte</p>
+                            </td>
+                            <td><p>Completo</p></td>
+                            <td><p>Ilimitado</p></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Integrações</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Armazenamento na nuvem</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Personalizações do sistema</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Painel do Contador</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Status em tempo real</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Conciliações bancárias</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Módulo CRM</p>
+                            </td>
+                            <td>
+                              <p>-</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>SPED Bloco K automatizado</p>
+                            </td>
+                            <td>
+                              <p>-</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Conciliação de estoque</p>
+                            </td>
+                            <td>
+                              <p>-</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Importação automática de notas</p>
+                            </td>
+                            <td>
+                              <p>-</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Cadastro de contas</p>
+                            </td>
+                            <td>
+                              <p>-</p>
+                            </td>
+                            <td>
+                              <p><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="border-0">Fluxos e Relatórios customizados</p>
+                            </td>
+                            <td>
+                              <p class="border-0">-</p>
+                            </td>
+                            <td>
+                              <p class="border-0"><img src="./assets/images/precos/ico-check.svg" /></p>
+                            </td>
+                          </tr>      
+                        </tbody>
+                      </table>
+                    </div>                    
+                  </div>
+                </div>
+              </div>         
             </div>
-            <button class="btn-primary">Ativar Omie.Full</button>
+          </div>         
+        </div>
+      </div>
+    </section>  
+    <section class="sec-main sec-play-laranja pt-0 py-lg-5 background-position-75 my-4">
+      <div class="container">
+        <div class="row flex-row-reverse align-items-lg-center align-items-xl-start justify-content-between">
+          <div class="col-12 col-lg-7 col-xl-6">
+            <div class="cards-hover">
+              <article class="card">
+                <header>
+                  <img src="./assets/images/contadores/ico-omieacademy.svg" alt="Omie.Cash" class="img-fluid">
+                  <h3 class="d-none d-lg-block">Produtos financeiros</h3>
+                  <img src="./assets/images/Arrow-right.png" alt="Entrar" class="img-fluid">
+                </header>
+                <div class="content">
+                  <h3 class="d-lg-none">Produtos financeiros</h3>
+                  <p class="mb-0 ps-xl-5">Faça pagamentos, transferências e emita boletos, usando um banco digital totalmente integrado ao sistema de gestão.</p>
+                </div>
+              </article>
+              
+              <article class="card">
+                <header>
+                  <img src="./assets/images/contadores/ico-produtoscontabilidade.svg" alt="Omie.Academy" class="img-fluid">
+                  <h3 class="d-none d-lg-block">Produtos para contabilidade</h3>
+                  <img src="./assets/images/Arrow-right.png" alt="Entrar" class="img-fluid">
+                </header>
+                <div class="content">
+                  <h3 class="d-lg-none">Produtos para contabilidade</h3>
+                  <p class="mb-0 ps-xl-5">Modernize a rotina do seu escritório de contabilidade com produtos que vão agilizar sua rotina e fazer o seu negócio crescer.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 pe-lg-4">
+            <h2 class="mb-4">Potencialize seu plano com nossos produtos</h2>
+            <p>Com o apoio de nossos produtos, você potencializa sua rotina financeira e administrativa de acordo com o que sua empresa precisa.</p>
+          </div>        
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-main sec-double-gradient bg-heavy-blue my-4">
+      <img src="/assets/images/empresas/pattern2.png" alt="" class="img-fluid d-none d-lg-block img-pattern">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-10 col-xxl-9">
+            <h2 class="text-soft-white mb-4">Aproveite nossos treinamentos completos</h2>
+            <p class="text-soft-white">Nossos especialistas vão te ajudar a explorar todas as possibilidades que <br class="d-none d-xl-block"> o Sistema Omie oferece para o seu negócio.</p>
+
+            <div class="actions mt-5">
+              <a href="" class="cta white-cta">Conheça o treinamento</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <h4>Compare os Planos</h4>
-    <table class="table-price w-100">
-      <thead>
-        <tr>
-          <td></td>
-          <td>
-            <h4>Fit</h4>
-            <label>
-              <span>R$</span> 
-              0
-            </label>
-          </td>
-          <td>
-            <h4>Full</h4>
-            <label>
-              <span>a partir de R$</span> 
-              55
-            </label>
-          </td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <p>Número de usuários</p>
-          </td>
-          <td><p>Ilimitado</p></td>
-          <td><p>Ilimitado</p></td>
-        </tr>
-        <tr>
-          <td>
-            <p>Emissão de notas fiscais</p>
-          </td>
-          <td> <p>10 notas mensais </p></td>
-          <td><p>Ilimitado</p></td>
-        </tr>
-        <tr>
-          <td>
-            <p>Suporte</p>
-          </td>
-          <td><p>Completo</p></td>
-          <td><p>Ilimitado</p></td>
-        </tr>
-        <tr>
-          <td>
-            <p>Integrações</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Armazenamento na nuvem</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Personalizações do sistema</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Painel do Contador</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Status em tempo real</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Conciliações bancárias</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Módulo CRM</p>
-          </td>
-          <td>
-            <p>-</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>SPED Bloco K automatizado</p>
-          </td>
-          <td>
-            <p>-</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Conciliação de estoque</p>
-          </td>
-          <td>
-            <p>-</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Importação automática de notas</p>
-          </td>
-          <td>
-            <p>-</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Cadastro de contas</p>
-          </td>
-          <td>
-            <p>-</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Fluxos e Relatórios customizados</p>
-          </td>
-          <td>
-            <p>-</p>
-          </td>
-          <td>
-            <p><img src="./assets/images/precos/ico-check.svg" /></p>
-          </td>
-        </tr>      
-      </tbody>
-    </table>
-  </section>
+      <img src="/assets/images/empresas/pattern3.png" alt="" class="img-fluid d-none d-lg-block img-pattern">
+    </section>
 
+    <section class="sec-main sec-faq my-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <h2 class="mb-4">Respondemos as dúvidas mais frequentes de outros empreendedores</h2>
+          </div>
 
-  <section class="pattern-video no-image-bg mtb-80">
-    <div class="container">
-      <div class="d-flex justify-content-between container px-0 responsive-flex-column">
-        <div class="box-info-list mb-80">
-          <h3>Potencialize seu plano com nossos produtos</h3>
-          <p>Com o apoio de nossos produtos, você potencializa sua rotina financeira e administrativa de acordo com o que sua empresa precisa.</p>
-        </div> 
-        <div class="box-list bg-play-laranja">
-          <ul>
-            <li>
-              <div class="d-flex justify-content-between align-items-start">
-                <img src="./assets/images/contadores/ico-produtoscontabilidade.svg" />
-                <div>
-                  <h5>Produtos financeiros</h5>
-                  <p>Faça pagamentos, transferências e emita boletos, usando um banco digital totalmente integrado ao sistema de gestão.</p>
+          <div class="col-12 col-lg-7">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">Há segurança e integridade de dados?</button>
+                
+                <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="headingFaqOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Todas as suas informações conservadas no datacenter que atende aos mais rigorosos padrões de segurança ao redor do mundo: Amazon Web Services.</p>
+                  </div>
                 </div>
-                <img src="./assets/images/Arrow-right.png">
               </div>
-            </li>
-            <li>
-              <div class="d-flex justify-content-between align-items-start">           
-                <img src="./assets/images/contadores/ico-omieacademy.svg" />
-                <div>
-                  <h5>Produtos para contabilidade</h5>
-                  <p>Modernize a rotina do seu escritório de contabilidade com produtos que vão agilizar sua rotina e fazer o seu negócio crescer.</p>
+              <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">
+                  Qual o valor do plano para contador parceiro?
+                </button>
+                
+                <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="headingFaqTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
+                  </div>
                 </div>
-                <img src="./assets/images/Arrow-right.png">
               </div>
-            </li>          
-          </ul>
-        </div>     
-      </div>    
-    </div>
-  </section>
-  <section class="h-400 container">
-    <div class="box-default box-plan w-80 float-left bg-secundary float-left h-100 border-radius-8">
-      <div>
-        <h2 class="text-left color-white mb-4">Aproveite nossos treinamentos completos </h2>
-        <p class="text-left color-white mb-4">Nossos especialistas vão te ajudar a explorar todas as possibilidades que o Sistema Omie oferece para o seu negócio.</p>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFaqThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqThree" aria-expanded="false" aria-controls="collapseFaqThree">
+                    É possível agendar algum treinamento com a Omie?
+                  </button>
+                </h2>
+                <div id="collapseFaqThree" class="accordion-collapse collapse" aria-labelledby="headingFaqThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Todas as suas informações conservadas no datacenter que atende aos mais rigorosos padrões de segurança ao redor do mundo: Amazon Web Services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFaqFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqFour" aria-expanded="false" aria-controls="collapseFaqFour">
+                    Posso utilizar o Omie para gerir meu próprio escritório?
+                  </button>
+                </h2>
+                <div id="collapseFaqFour" class="accordion-collapse collapse" aria-labelledby="headingFaqFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Todas as suas informações conservadas no datacenter que atende aos mais rigorosos padrões de segurança ao redor do mundo: Amazon Web Services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-lg-end mt-5">
+            <a href="" class="text-end"><strong>Veja outras dúvidas</strong> <img src="/assets/images/Arrow-right.png" alt="" class="img-fluid"></a>
+          </div>
+        </div>
       </div>
-      <div class="box-btn-plan">
-        <button>Conheça os treinamentos</button>
-      </div>
-    </div>
-    <div class="w-20 float-right d-flex justify-content-end align-items-end flex-column position-relative h-100 box-img-none">
-      <img src="./assets/images/home/pattern3.png" />
-    </div>
-  </section> 
-  <section class="container pattern-video no-image-bg">
-    <div class="d-flex justify-content-between container px-0 mtb-80">
-      <div class="box-info-list mb-80">
-        <h3>Respondemos as dúvidas mais frequentes sobre a franquia Omie
-        </h3>
-      </div> 
-      <div class="box-ask">
-        <ul>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Preciso ter formação ou experiência na área de tecnologia para me tornar um franqueado?</h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
-            </div>
-            <div class="info">
-              <p>Não é necessário ter formação para atuar como franqueado. </p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Preciso ter uma equipe na minha franquia?</h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
-            </div>
-            <div class="info">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>A franqueadora Omie cobra royalties mínimas das franquias?</h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
-            </div>
-            <div class="info">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <li>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4>Vou vender o ERP Omie para contadores também?</h4>
-              <i class="fas fa-chevron-down cursor-pointer"></i>
-            </div>
-            <div class="info">
-              <p>Administre sua empresa de maneira descomplicada utilizando um sistema totalmente online e integrado, que atende todos os tipos de negócio descomplicada utilizando um sistema totalmente.</p>
-            </div>
-          </li>
-          <a href="#" class="link-a float-right">Veja outras dúvidas <span><img src="./assets/images/home/setinhacarrossel.svg" /></span></a>
-        </ul>
-      </div>      
-    </div>  
-  </section>
+    </section>
 
-
+  </main>
 
   <footer>
     <div class="container con-partners">
       <div class="row">
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-astella.png" alt="">
+          <img src="assets/images/logo-astella.png" alt="Logo Astella">
         </div>
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-softbank.png" alt="">
+          <img src="assets/images/logo-softbank.png" alt="Logo SoftBank Latin America Found">
         </div>
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-riverwood.png" alt="">
+          <img src="assets/images/logo-riverwood.png" alt="Logo Riverwood Capital">
         </div>
         <div class="col-6 col-lg-3 text-center">
-          <img src="assets/images/logo-aws.png" alt="">
+          <img src="assets/images/logo-aws.png" alt="Logo AWS Partner Network">
         </div>
       </div>
     </div>
@@ -704,7 +526,7 @@
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Contadores</button>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <ul>
-                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="/contadores.html">Omie para contadores</a></li>
                   <li><a href="">Seja parceiro</a></li>
                   <li><a href="">Produtos para contadores</a></li>
                   <li><a href="">Clube de vantagens</a></li>
@@ -717,7 +539,7 @@
               </button>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <ul>
-                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="/contadores.html">Omie para contadores</a></li>
                   <li><a href="">Seja parceiro</a></li>
                   <li><a href="">Produtos para contadores</a></li>
                   <li><a href="">Clube de vantagens</a></li>
@@ -730,7 +552,7 @@
               </button>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <ul>
-                  <li><a href="">Omie para contadores</a></li>
+                  <li><a href="/contadores.html">Omie para contadores</a></li>
                   <li><a href="">Seja parceiro</a></li>
                   <li><a href="">Produtos para contadores</a></li>
                   <li><a href="">Clube de vantagens</a></li>
@@ -779,23 +601,23 @@
         <div class="col-lg-3">
           <ul class="links-site">
             <li class="list-title">Contadores</li>
-            <li><a href="">Omie para contadores</a></li>
+            <li><a href="/contadores.html">Omie para contadores</a></li>
             <li><a href="">Seja Parceiro</a></li>
-            <li><a href="">Produtos para contadores</a></li>
+            <li><a href="/produtos-contadores.html">Produtos para contadores</a></li>
             <li><a href="">Clube de vantagens</a></li>
           </ul>
 
           <ul class="links-site">
             <li class="list-title">Franquias</li>
             <li><a href="">Benefícios</a></li>
-            <li><a href="">Unidades franqueadas</a></li>
+            <li><a href="seja-franqueado.html">Unidades franqueadas</a></li>
           </ul>
         </div>
         <div class="col-lg-3">
           <ul class="links-site">
             <li class="list-title">Empresas</li>
-            <li><a href="">Omie para empresas</a></li>
-            <li><a href="">Planos</li>
+            <li><a href="empresas.html">Omie para empresas</a></li>
+            <li><a href="precos.html">Planos</li>
             <li><a href="">Omie.Cash</a></li>
             <li><a href="">Produtos financeiros</a></li>
             <li><a href="">Treinamentos</a></li>
@@ -811,7 +633,7 @@
         <div class="col-lg-3">
           <ul class="links-site links-unique">
             <li class="list-title">A Omie</li>
-            <li><a href="">Quem somos</a></li>
+            <li><a href="sobre-nos.html">Quem somos</a></li>
             <li><a href="">Parceiros</a></li>
             <li><a href="">Quem ama usa</a></li>
             <li><a href="">Sala de imprensa</a></li>
@@ -823,9 +645,9 @@
         <div class="col-lg-3">
           <ul class="links-site links-unique">
             <li><a href="" class="list-title">Ajuda</a></li>
-            <li><a href="" class="list-title">Fale conosco</a></li>
+            <li><a href="suporte.html" class="list-title">Fale conosco</a></li>
             <li><a href="" class="list-title">Experimente grátis</a></li>
-            <li><a href="" class="list-title">Funcionalidades</a></li>
+            <li><a href="funcionalidades-home.html" class="list-title">Funcionalidades</a></li>
             <li><a href="" class="list-title">Cursos Omie.Academy</a></li>
             <li><a href="" class="list-title">Desenvolvedores</a></li>
           </ul>
@@ -876,34 +698,70 @@
     </div>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal modal-video fade" id="modalVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/aavewgbPiFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home-page.js"></script>
+
   <script>
-    var tabFaq = document.querySelectorAll(".tab-faq");
-    var contentFaq = document.querySelectorAll(".info-faq");
-  
-    tabFaq.forEach(item => {
-      item.addEventListener('click', event => {       
-        var dataTarget = event.target.getAttribute('data-faq');
-        var classIcon = event.target  
-  
-        tabFaq.forEach((e) => { 
-          e.classList.remove('rotate-icon-180');  
-        })  
-  
-        classIcon.classList.add('rotate-icon-180');  
-        contentFaq.forEach((e) => { 
-          var id = e.getAttribute('id');
-         
-          if (id === dataTarget) {
-            e.classList.remove("d-none")
-            e.classList.add('active');                   
-          } else {
-            e.classList.add("d-none");
-            e.classList.remove('rotate-icon-180');  
-          }
-        });
-      })
-    });
+    $('.owl-carousel-apps').owlCarousel({
+      loop:true,
+      margin:0,
+      nav: true,
+      responsive:{
+        0:{
+          items:1,
+          dots: true,
+          // nav:false,
+        },
+        600:{
+          items:3,
+          margin:8,
+          // nav:false,
+          dots: false,
+        },
+        1024:{
+          center: true,
+          dots: false,
+          items:3,
+          margin:0,
+        }
+      }
+    })
+
+    $('.owl-carousel-novidades').owlCarousel({
+      loop:true,
+      margin:16,
+      nav:false,
+      responsive:{
+        0:{
+          items:1.1,
+        },
+        600:{
+          items:2.2
+        },
+        1000:{
+          center: false,
+          items:3,
+          loop: false,
+        }
+      }
+    })
   </script>
+
 </body>
 </html>

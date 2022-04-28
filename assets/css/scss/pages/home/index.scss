@@ -657,6 +657,10 @@
     background-position: 140px 0;
   }
 
+  .background-position-75 {
+    background-position: 75% 0!important;
+  }
+
   .sec-double-gradient {
     background: linear-gradient(90deg, #fff 7%, $heavyBlue 7%, $heavyBlue 78.4%, #fff 78.4%);
     position: relative;
@@ -733,4 +737,102 @@
   .sec-negocio {
     background: $heavyBlue !important;
   }
+}
+
+.table-price {
+  thead {
+    tr {
+      td {    
+        height: 64px;   
+        padding: 8px 24px;
+
+        label {
+          @media(max-width:980px) {
+            flex-direction: column;
+            display: flex;
+            height: 100%;
+          }
+          p {
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+        &:nth-of-type(2) {
+          background-color:#F7F7F7;
+          border-radius: 8px 0 0 0;
+
+          @media(max-width:980px) {
+            flex-direction: column;
+            display: flex;
+            label {
+              flex-direction: initial;
+              display: flex;
+              height: 100%;
+            }
+            
+          }          
+        }
+        &:nth-of-type(3) {
+          background-color:#00E2F4;
+          border-radius: 0 8px 0 0;
+
+          @media(max-width:980px) {
+              
+            flex-direction:column;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  tbody {
+    border: 1px solid #F7F7F7;
+    tr {
+      td {
+        padding: 24px 24px 0 24px;
+        border: none;
+        text-align: center;
+        border-right: 1px solid #F7F7F7;
+        p {
+          margin: 0;
+          border-bottom:  1px solid #DBDFDE;
+          padding-bottom: 16px;
+
+          @media(max-width: 768px) {
+            font-size: 12px;
+          }
+        }
+
+        &:first-of-type {
+          background-color: #F7F7F7;
+          text-align: left;
+        }
+      }
+
+      &:first-of-type {
+        td {
+       
+          &:first-of-type {
+            border-radius: 8px 0 0 0;
+          }
+        }
+      }
+
+      &:last-of-type {
+        td {
+          &:first-of-type {
+            border-radius: 0 0 0 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.padding-43-percent {
+  padding: 0 43%;
 }
